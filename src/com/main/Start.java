@@ -7,50 +7,77 @@ import com.decoding.stackdecoder.StackDecoder;
 import com.model.DataSet;
 import com.model.Topic;
 import com.util.StopWords;
+import com.util.Tokenizers;
 
-public class Start
-{
-	private static String STOP_WORDS_FILE_PATH = "StopWords.txt";
-	
-	public static void main(String[] args) throws Exception
-	{
-		if(args.length!=1)
-		{
-			usage();
-			System.exit(-1);
-		}
-		StopWords.initializeStopWords(STOP_WORDS_FILE_PATH);
-		
-		//Test dataset - Stack Decoder
-		DataSet testDataSet = new DataSet(args[0]);
-		testDataSet.calculateImportanceScores(getWeights());
-		System.out.println("Start:main:: Running stack decoder .. ");
-		long in = System.currentTimeMillis();
-		for(Topic t:testDataSet.getTopics())
-		{
-			StackDecoder sd = new StackDecoder(t.getDocuments());
-			sd.runStackDecoder();
-			sd.printStack(101);
-			String path = "summaries/" + testDataSet.getTopicName(t.getTopicId()).toUpperCase()+".M.100.T.S2";
-			sd.dumpBestSummary(path);
-		}
-		long out = System.currentTimeMillis();
-		System.out.println("Start:main:: Time taken by Stack decoder (s): " + ((out-in)/1000));
-		
-	}
+import javax.swing.*;
 
-	private static void usage()
-	{
-		System.out.println("Usage: java <main> <path to data>");
-		System.out.println("Note: 'data' folder contains the sample input files.");
-	}
+public class Start {
+    private static String STOP_WORDS_FILE_PATH = "StopWords.txt";
 
-	public static List<Double> getWeights(){
-		//Obtained from training
-		List<Double> res = new ArrayList<Double>();
-		//Note: Set theta_0 in importance module
-		//TFIDFSum,SentLength,SentPost,NumLiteralsCalculator,UpperCaseCalculator
-		res.add(0.197971);res.add(0.283136);res.add(-0.300287);res.add(0.1664);res.add(0.160681);
-		return res;
-	}
+    JFileChooser chooser = new JFileChooser();
+
+
+    public static void main(String[] args) throws Exception {
+
+        //kukunin yung mga stop words na file path
+        StopWords.initializeStopWords(STOP_WORDS_FILE_PATH);
+
+        //para sa pagpili ng folder na may lamang mga isusummarize
+        String folder;
+        JFileChooser chooser  = new JFileChooser();
+        chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+        chooser.setAcceptAllFileFilterUsed(false);
+
+
+        if (!(chooser.showDialog(new JFrame(),"SELECT FOLDER")==JFileChooser.APPROVE_OPTION)) usage();
+        else {
+            //kukunin yung nakuhang folder path
+            String folderPath = chooser.getSelectedFile().getAbsolutePath();
+
+            //tokenization
+            Tokenizers.tokenizeFiles(folderPath);
+
+            //Test dataset - Stack Decoder
+            DataSet testDataSet = new DataSet(folderPath);
+
+            testDataSet.calculateImportanceScores(getWeights());
+
+            System.out.println("Start:main:: Running stack decoder .. ");
+
+            //initial time
+            long in = System.currentTimeMillis();
+
+            for (Topic t : testDataSet.getTopics()) {
+                System.out.println("TOPIC ID:"+t.getTopicId());
+                StackDecoder sd = new StackDecoder(t.getDocuments());
+                sd.runStackDecoder();
+                sd.printStack(100);
+                String path = "summaries/" + testDataSet.getTopicName(t.getTopicId()).toUpperCase() + ".txt";
+                sd.dumpBestSummary(path);
+            }
+
+            //final time
+            long out = System.currentTimeMillis();
+            System.out.println("Start:main:: Time taken by Stack decoder (s): " + ((out - in) / 1000));
+        }
+
+    }
+
+    private static void usage() {
+        System.out.println("Usage: java <main> <path to data>");
+        System.out.println("Note: 'data' folder contains the sample input files.");
+    }
+
+    public static List<Double> getWeights() {
+        //Obtained from training
+        List<Double> res = new ArrayList<Double>();
+        //Note: Set theta_0 in importance module
+        //TFIDFSum,SentLength,SentPost,NumLiteralsCalculator,UpperCaseCalculator
+        res.add(0.197971);
+        res.add(0.283136);
+        res.add(-0.300287);
+        res.add(0.1664);
+        res.add(0.160681);
+        return res;
+    }
 }

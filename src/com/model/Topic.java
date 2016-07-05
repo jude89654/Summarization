@@ -24,11 +24,15 @@ public class Topic
 	public Topic(String filename, long topicId)
 	{
 		documents = SentenceProcessor.getDocuments(filename, sentenceMap);
+
+        //di ko naman alam kung para saan to, kasi false lang ata lagi value nito
 		if(Constants.isDUC2002)
 		{
 			splitDocuments();
 		}
+        //initialize na yung summary
 		summaries = new ArrayList<Summary>();
+
 		this.topicId = topicId;
 	}
 	
