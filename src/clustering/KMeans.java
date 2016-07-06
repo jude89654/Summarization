@@ -22,12 +22,14 @@ public class KMeans {
     public static double inverseDocumentFrequency(ArrayList<String []> docs, String term){
         int count=0;
         for(String[] doc: docs){
-            for(String word : doc){
-                if(word.equalsIgnoreCase(term)){
+            for(String word : doc) {
+                if (word.equalsIgnoreCase(term)) {
                     count++;
                 }
             }
         }
-
+        return Math.log(docs.size()/count);
     }
+
+
 }

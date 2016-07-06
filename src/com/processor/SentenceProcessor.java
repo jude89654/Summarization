@@ -19,18 +19,21 @@ public class SentenceProcessor {
     final static String PUNCTUATION = "\"'`!?&_/\\);][<>~@-({}:";
     final static String TERMINAL = "#";
 
+
+    /*
+     * hindi rin marurun ang code na ito, kasi wala naman tayong lsp na file,
+     * at hindi nilagay nila sandeep sa project
+     */
     private static File getLSPPath(String filename) {
         String tempDir = "del";
         File path = new File(tempDir);
-        path.mkdir();
+        if(path.mkdir())System.out.println("directory made");
 
         try {
             String command = "perl external/runLSP.pl " + filename + " " + tempDir;
             Process p = Runtime.getRuntime().exec(command);
             p.waitFor();
-        } catch (IOException ioe) {
-            System.out.println("SentenceProcessor:getSentences:: Problem executing the command.");
-        } catch (InterruptedException ie) {
+        } catch (IOException | InterruptedException ioe) {
             System.out.println("SentenceProcessor:getSentences:: Problem executing the command.");
         }
 
@@ -258,20 +261,17 @@ public class SentenceProcessor {
     }
 
     private static boolean filterPunctuation(String word) {
-        if (PUNCTUATION.contains(word))
-            return true;
-        else
-            return false;
+        return PUNCTUATION.contains(word);
     }
 
     @SuppressWarnings("unused")
     private static void cleanTempDirectory(File path) {
         File[] files = path.listFiles();
-        for (int i = 0; i < files.length; i++) {
-            if (files[i].isDirectory()) {
-                cleanTempDirectory(files[i]);
+        for (File file : files) {
+            if (file.isDirectory()) {
+                cleanTempDirectory(file);
             } else {
-                files[i].delete();
+                file.delete();
             }
         }
         path.delete();

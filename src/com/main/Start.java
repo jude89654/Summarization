@@ -7,7 +7,7 @@ import com.decoding.stackdecoder.StackDecoder;
 import com.model.DataSet;
 import com.model.Topic;
 import com.util.StopWords;
-import com.util.Tokenizers;
+import com.util.Tokenizer;
 
 import javax.swing.*;
 
@@ -35,7 +35,7 @@ public class Start {
             String folderPath = chooser.getSelectedFile().getAbsolutePath();
 
             //tokenization
-            Tokenizers.tokenizeFiles(folderPath);
+            Tokenizer.tokenizeFiles(folderPath);
 
             //Test dataset - Stack Decoder
             DataSet testDataSet = new DataSet(folderPath);
@@ -45,28 +45,42 @@ public class Start {
             System.out.println("Start:main:: Running stack decoder .. ");
 
             //initial time
-            long in = System.currentTimeMillis();
+            long initialTime = System.currentTimeMillis();
 
-            for (Topic t : testDataSet.getTopics()) {
-                System.out.println("TOPIC ID:"+t.getTopicId());
-                StackDecoder sd = new StackDecoder(t.getDocuments());
-                sd.runStackDecoder();
-                sd.printStack(100);
-                String path = "summaries/" + testDataSet.getTopicName(t.getTopicId()).toUpperCase() + ".txt";
-                sd.dumpBestSummary(path);
+            //for each topic
+            for (Topic currentTopic : testDataSet.getTopics()) {
+
+                System.out.println("TOPIC ID:"+currentTopic.getTopicId());
+
+                //run yung stack decoder
+                StackDecoder stackDecoder = new StackDecoder(currentTopic.getDocuments());
+                stackDecoder.runStackDecoder();
+                stackDecoder.printStack(100);
+
+                //output yung summary
+                String summaryPath = "summaries/" + testDataSet.getTopicName(currentTopic.getTopicId()).toUpperCase() + ".txt";
+                stackDecoder.dumpBestSummary(summaryPath);
             }
 
+
             //final time
-            long out = System.currentTimeMillis();
-            System.out.println("Start:main:: Time taken by Stack decoder (s): " + ((out - in) / 1000));
+            long finalTime = System.currentTimeMillis();
+            System.out.println("Start:main:: Time taken by Stack decoder (s): " + ((finalTime - initialTime) / 1000));
         }
 
     }
 
+    /*
+     *para pag walang pinili na folder
+     */
     private static void usage() {
         System.out.println("Usage: java <main> <path to data>");
         System.out.println("Note: 'data' folder contains the sample input files.");
     }
+
+    /*
+     * eto raw yung mga scores na nakuha sa training, may ML pala dito
+     */
 
     public static List<Double> getWeights() {
         //Obtained from training

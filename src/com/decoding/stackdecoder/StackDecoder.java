@@ -66,7 +66,7 @@ public class StackDecoder {
 
 
     //kinukuha lang yung sentences needed sa summary
-    private List<Sentence> buildSentenceList() {
+    public List<Sentence> buildSentenceList() {
         List<Sentence> sentences = new ArrayList<Sentence>();
         int senNum = -1;
         for (int i = 0; i < documents.size(); i++) {

@@ -22,4 +22,7 @@ public class Constants {
 	
 	//Generic
 	public static final PorterStemmer porterStemmer = new PorterStemmer();
+
+	//Stemmer
+
 }

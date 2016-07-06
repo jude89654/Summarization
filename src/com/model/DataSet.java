@@ -31,7 +31,10 @@ public class DataSet {
     public DataSet() {
         //do nothing
     }
-
+/*
+ *Gumagawa ng documents at sentences after natokenize na yung dataset
+ * @param dirPath String ng path kung saan papunta sa data mo.
+ */
     public DataSet(String dirPath) {
         long topicId = 0;
 
@@ -73,46 +76,46 @@ public class DataSet {
         return res;
     }
 
+
+    /*method na na gumagawa ng list ng mga files na nandun sa ininput na path
+     *@path yun yung directory kung saan makikita ang mga files.
+     *@return yung list ng mga Files na nakalagay dun sa path na yun.
+     */
     private List<File> getFiles(File path) {
         List<File> result = new ArrayList<File>();
 
-        //yung .sum at yung mga .txt files
+        //Gagawan ng filter para yung .sum at yung mga .txt files lang ang tinatanggap
         List<String> extensions = new ArrayList<String>();
-
         extensions.add(EXT_SOURCE);
         extensions.add(EXT_SUMMARY);
-
         FilenameFilter filter = new Filter(extensions);
         String[] children = path.list(filter);
 
 
-        Arrays.sort(children, new Comparator<String>() {
-            //Custom sort field
-            @Override
-            public int compare(String o1, String o2) {
+        Arrays.sort(children, (o1, o2) -> {
 
-                Pattern p = Pattern.compile("d(\\d+)(.*)");
-                Matcher m1 = p.matcher(o1);
-                Matcher m2 = p.matcher(o2);
-                if (m1.find() && m2.find()) {
+            Pattern p = Pattern.compile("d(\\d+)(.*)");
+            Matcher m1 = p.matcher(o1);
+            Matcher m2 = p.matcher(o2);
+            if (m1.find() && m2.find()) {
 
-                    double d1 = Double.parseDouble(m1.group(1));
-                    double d2 = Double.parseDouble(m2.group(1));
-
-                    if (d1 < d2)
-                        return -1;
-                    else if (d1 == d2) {
-                        return -1 * FilePathUtil.getExtension(o1).compareTo(FilePathUtil.getExtension(o2));
-                    } else return 1;
-                }
-                return 0;
+                double d1 = Double.parseDouble(m1.group(1));
+                double d2 = Double.parseDouble(m2.group(1));
+                if (d1 < d2)
+                    return -1;
+                else if (d1 == d2) {
+                    return -1 * FilePathUtil.getExtension(o1).compareTo(FilePathUtil.getExtension(o2));
+                } else return 1;
             }
+            return 0;
         });
 
+
+        //lagi namang true, hindi ko alam kung para saan pa itong code na ito.
         if (children != null) {
-            for (int i = 0; i < children.length; i++) {
+            for (String aChildren : children) {
                 // Get filename of file or directory
-                String filename = children[i];
+                String filename = aChildren;
                 filename = path.getAbsolutePath() + File.separator + filename;
                 result.add(new File(filename));
             }
@@ -147,6 +150,7 @@ public class DataSet {
         }
     }
 
+
     public String getTopicName(long topicId) {
         return nameMap.get(topicId);
     }
@@ -156,7 +160,9 @@ public class DataSet {
     }
 
     public void calculateImportanceScores(List<Double> weights) {
+
         for (Topic t : this.topicMap.values()) {
+
             List<Document> totalSet = new ArrayList<Document>();
 
             totalSet.addAll(t.getDocuments());
