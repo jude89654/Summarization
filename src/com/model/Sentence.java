@@ -30,10 +30,6 @@ public class Sentence {
         freqMap = buildMap();
     }
 
-    public void setRefSentence(String refSentence) {
-        this.refSentence = refSentence;
-    }
-
     public boolean isPartOfHumanSummary() {
         return partOfHumanSummary;
     }
@@ -68,6 +64,10 @@ public class Sentence {
 
     public String getRefSentence() {
         return refSentence;
+    }
+
+    public void setRefSentence(String refSentence) {
+        this.refSentence = refSentence;
     }
 
     public boolean isPositiveSample() {

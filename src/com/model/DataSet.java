@@ -166,6 +166,7 @@ public class DataSet {
             List<Document> totalSet = new ArrayList<Document>();
 
             totalSet.addAll(t.getDocuments());
+
             totalSet.addAll(t.getSummaries());
 
             ImportanceModule impModule = new ImportanceModule(totalSet);

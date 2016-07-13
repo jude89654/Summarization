@@ -88,29 +88,30 @@ public class StackDecoder {
     //pagiwas din sa multiple prioritization, bale main logic to. basahin niyo din StackDecoder Algo
     public void runStackDecoder() {
         initializeStack();
-
         for (int i = 0; i < (Constants.SUMMARY_LENGTH + 1); i++) {
+
             System.out.println("StackDecoder:runStackDecoder:: Running stack: " + i);
             if (stacks[i].pq.size() == 0)
                 continue;
             SpecialPQ<List<Integer>> pqClone = stacks[i].pq.clone();
             while (pqClone.hasNext()) {
                 List<Integer> summary = pqClone.next();
-                for (int j = 0; j < sentences.size(); j++) {
-                    if (summary.contains(j))
+                for (int sentenceIndex = 0; sentenceIndex < sentences.size(); sentenceIndex++) {
+                    if (summary.contains(sentenceIndex))
                         continue;
-                    Sentence s = sentences.get(j);
+                    Sentence s = sentences.get(sentenceIndex);
                     int newIndex = Constants.SUMMARY_LENGTH + 1;
                     if (i + s.getSentenceLength() <= Constants.SUMMARY_LENGTH)
                         newIndex = i + s.getSentenceLength();
 
-                    if (isIncludeSentence(summary, s, j)) {
+                    if (isIncludeSentence(summary, s, sentenceIndex)) {
                         List<Integer> newSummary = new ArrayList<Integer>(summary);
-                        newSummary.add(j);
+                        newSummary.add(sentenceIndex);
                         double priority = getObjectiveFunction(newSummary);
                         //TODO: What happens if the priorities are equal? Use some other measure?
                         if (priority > stacks[newIndex].pq.getPriority())
                             stacks[newIndex].add(newSummary, priority);
+
                     }
                 }
             }

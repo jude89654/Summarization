@@ -7,7 +7,7 @@ import com.decoding.stackdecoder.StackDecoder;
 import com.model.DataSet;
 import com.model.Topic;
 import com.util.StopWords;
-import com.util.Tokenizer;
+import com.util.TextFileTokenizer;
 
 import javax.swing.*;
 
@@ -35,7 +35,7 @@ public class Start {
             String folderPath = chooser.getSelectedFile().getAbsolutePath();
 
             //tokenization
-            Tokenizer.tokenizeFiles(folderPath);
+            TextFileTokenizer.tokenizeFiles(folderPath);
 
             //Test dataset - Stack Decoder
             DataSet testDataSet = new DataSet(folderPath);
@@ -60,6 +60,7 @@ public class Start {
                 //output yung summary
                 String summaryPath = "summaries/" + testDataSet.getTopicName(currentTopic.getTopicId()).toUpperCase() + ".txt";
                 stackDecoder.dumpBestSummary(summaryPath);
+
             }
 
 

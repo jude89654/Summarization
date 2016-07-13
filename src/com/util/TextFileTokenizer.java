@@ -16,7 +16,7 @@ import java.util.Iterator;
  */
 
 
-public class Tokenizer {
+public class TextFileTokenizer {
 
     //for tokenizing the paragraphs into words
     static void tokenize(String filename) throws IOException {
@@ -50,21 +50,20 @@ public class Tokenizer {
 
         TokenizerModel modelforToken = new TokenizerModel(is);
 
-        opennlp.tools.tokenize.Tokenizer tokenizer = new TokenizerME(modelforToken);
+        Tokenizer tokenizer = new TokenizerME(modelforToken);
 
-        
+
         int sentenceNumber =1;
 
         for (String sentence : sentences) {
 
-            fileWriter.append("Sentence: ");
+            fileWriter.append("Sentence:\n");
             String[] tokens= tokenizer.tokenize(sentence);
 
-
             for(String token : tokens){
-
                 if(token.equals("#")){
-                    fileWriter.append("\tS: #\n\tSentence: \n");
+                    fileWriter.append("\tS: #\n");
+                    fileWriter.append("Sentence:\n");
                 }
                 else{
                     fileWriter.append("\tS: "+token+"\n");
