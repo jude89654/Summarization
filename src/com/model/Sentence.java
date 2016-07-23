@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.constants.Constants;
+import com.util.StopWords;
 
 public class Sentence {
     long position;
@@ -88,12 +89,13 @@ public class Sentence {
         for (int i = 0; i < content.size(); i++) {
             String word = content.get(i);
             //sw
-            //if(StopWords.isStopWord(word))
-            //	continue;
+          //  StopWords.initializeStopWords("StopWords.txt");
+          //  if(StopWords.isStopWord(word))
+           // continue;
             //ps
             String stemmedWord = word;
             try {
-                stemmedWord = Constants.porterStemmer.stem(word);
+              stemmedWord = Constants.porterStemmer.stem(word);
             } catch (Exception e) {
                 System.out.println("Sentence:preProcess:: " + word);
             }

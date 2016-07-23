@@ -981,6 +981,7 @@ Sentence:
 	S: graf
 	S: pvs
 	S: #
+Sentence:
 	S: Hurricane
 	S: Mitch
 	S: cut
@@ -1879,6 +1880,7 @@ Sentence:
 	S: graf
 	S: pvs
 	S: #
+Sentence:
 	S: In
 	S: Honduras
 	S: ,
@@ -4168,3 +4170,4 @@ Sentence:
 	S: .
 Sentence:
 	S: #
+Sentence:

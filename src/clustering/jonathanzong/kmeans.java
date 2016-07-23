@@ -16,53 +16,23 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-
-package clustering.jonathanzong;
-
-import com.decoding.stackdecoder.StackDecoder;
-import com.model.Document;
-import com.model.Sentence;
-
 import java.util.*;
 import java.io.*;
 
-
 public class kmeans {
-//CODES NI JUDE
-    List<Document> documents;
-    List<Sentence> sentences;
-    int clusterSize=0;
-
-    public kmeans(List<Document> documents){
-        this.documents=documents;
-        sentences = new StackDecoder(documents).buildSentenceList();
-    }
-
-    public List<List<Sentence>> cluster(Document document){
-        for(Sentence currentSentence : document.getSentences()){
-
-        }
-
-    }
-
-
-//END CODES NI JUDE
-
     public static void main(String[] args) throws IOException {
         //read in documents from all .txt files in same folder as kmeans.java
         //save parallel lists of documents (String[]) and their filenames, and create global set list of words
         ArrayList<String[]> docs = new ArrayList<String[]>();
         ArrayList<String> filenames = new ArrayList<String>();
         ArrayList<String> global = new ArrayList<String>();
-        //yung folder kung saan nakalagay yung java file o ng project ata.
         File folder = new File(".");
-
         List<File> files = Arrays.asList(folder.listFiles(new FileFilter() {
-            //txt files lang yung tinatanggap
             public boolean accept(File f) {
                 return f.isFile() && f.getName().endsWith(".txt");
             }
         }));
+
         BufferedReader in = null;
         for (File f : files) {
             in = new BufferedReader(new FileReader(f));
@@ -72,7 +42,6 @@ public class kmeans {
                 sb.append(s);
             }
             //input cleaning regex
-            // yung mga sentences hinahati niya sa words. kaya array siya ng string.
             String[] d = sb.toString().replaceAll("[\\W&&[^\\s]]", "").split("\\W+");
             for (String u : d)
                 if (!global.contains(u))
@@ -86,8 +55,10 @@ public class kmeans {
         ArrayList<double[]> vecspace = new ArrayList<double[]>();
         for (String[] s : docs) {
             double[] d = new double[global.size()];
-            for (int i = 0; i < global.size(); i++)
+            for (int i = 0; i < global.size(); i++) {
+                System.out.println(tf(s, global.get(i)) * idf(docs, global.get(i)));
                 d[i] = tf(s, global.get(i)) * idf(docs, global.get(i));
+            }
             vecspace.add(d);
         }
 
@@ -96,16 +67,16 @@ public class kmeans {
         HashMap<double[], TreeSet<Integer>> step = new HashMap<double[], TreeSet<Integer>>();
         HashSet<Integer> rand = new HashSet<Integer>();
         TreeMap<Double, HashMap<double[], TreeSet<Integer>>> errorsums = new TreeMap<Double, HashMap<double[], TreeSet<Integer>>>();
-        int k = 3;
+        int k = 2;
         int maxiter = 500;
         for (int init = 0; init < 100; init++) {
             clusters.clear();
             step.clear();
             rand.clear();
-
             //randomly initialize cluster centers
             while (rand.size() < k)
                 rand.add((int) (Math.random() * vecspace.size()));
+
             for (int r : rand) {
                 double[] temp = new double[vecspace.get(r).length];
                 System.arraycopy(vecspace.get(r), 0, temp, 0, temp.length);
@@ -115,10 +86,8 @@ public class kmeans {
             int iter = 0;
 
             while (go) {
-
                 clusters = new HashMap<double[], TreeSet<Integer>>(step);
                 //cluster assignment step
-
                 for (int i = 0; i < vecspace.size(); i++) {
                     double[] cent = null;
                     double sim = 0;
@@ -132,7 +101,6 @@ public class kmeans {
                     clusters.get(cent).add(i);
                 }
                 //centroid update step
-
                 step.clear();
                 for (double[] cent : clusters.keySet()) {
                     double[] updatec = new double[cent.length];
@@ -145,27 +113,16 @@ public class kmeans {
                         updatec[i] /= clusters.get(cent).size();
                     step.put(updatec, new TreeSet<Integer>());
                 }
-
                 //check break conditions
                 String oldcent = "", newcent = "";
-
-                for (double[] x : clusters.keySet()) {
+                for (double[] x : clusters.keySet())
                     oldcent += Arrays.toString(x);
-                }
-
-                for (double[] x : step.keySet()) {
+                for (double[] x : step.keySet())
                     newcent += Arrays.toString(x);
-                }
-
-                //pag hindi nagbago yung cent
                 if (oldcent.equals(newcent)) go = false;
-
-                //pag lalagpas na siya sa number of iteration
                 if (++iter >= maxiter) go = false;
-
             }
             System.out.println(clusters.toString().replaceAll("\\[[\\w@]+=", ""));
-
             if (iter < maxiter)
                 System.out.println("Converged in " + iter + " steps.");
             else System.out.println("Stopped after " + maxiter + " iterations.");
@@ -193,7 +150,7 @@ public class kmeans {
             }
             System.out.print("\b\b], ");
         }
-        System.out.println("\b\b}");
+        System.out.println("}");
     }
 
     static double cosSim(double[] a, double[] b) {

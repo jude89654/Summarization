@@ -1245,6 +1245,7 @@ Sentence:
 	S: surfaced
 	S: ,
 	S: #
+Sentence:
 	S: PrayforChristina
 	S: was
 	S: the
@@ -1262,6 +1263,7 @@ Sentence:
 	S: confirmed
 	S: ,
 	S: #
+Sentence:
 	S: RIPChristina
 	S: became
 	S: the

@@ -692,6 +692,7 @@ Sentence:
 	S: ,
 	S: Balikbayan
 	S: #
+Sentence:
 	S: 1
 	S: ,
 	S: Bambanti
@@ -1173,6 +1174,7 @@ Sentence:
 	S: ,
 	S: Balikbayan
 	S: #
+Sentence:
 	S: 1
 	S: ,
 	S: Bambanti
@@ -1499,3 +1501,4 @@ Sentence:
 	S: (NCCA/RJB/JEG/PIA-NCR
 	S: )
 	S: #
+Sentence:
