@@ -70,6 +70,7 @@ public class kmeans {
         int k = 2;
         int maxiter = 500;
         for (int init = 0; init < 100; init++) {
+
             clusters.clear();
             step.clear();
             rand.clear();
@@ -104,6 +105,7 @@ public class kmeans {
                 step.clear();
                 for (double[] cent : clusters.keySet()) {
                     double[] updatec = new double[cent.length];
+
                     for (int d : clusters.get(cent)) {
                         double[] doc = vecspace.get(d);
                         for (int i = 0; i < updatec.length; i++)

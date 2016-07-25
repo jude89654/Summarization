@@ -2,108 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1bce966-458c-445a-9139-1164e2c12326" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d30001.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d30002.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/d30003.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clustering/sKunwar/DocumentVector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clustering/sKunwar/JudesClusterer.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/model/DataSet$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/com/util/Tokenizers.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/del/DATASET-BADJAOGIRLVIRAL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/del/DATASET-COMELECWEBSITEHACKED" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/del/DATASET-CURFEW" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/del/DATASET-DUTERTEELECTION" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/del/DATASET-FHMNADINELUSTRESEXIEST" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/del/DATASET-KIKOMATOSBARONGEISLER" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/del/DATASET-MIRIAMSANTIAGOOUTOFHOSPITAL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/del/DATASET-MOUNTBULUSAN" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/del/DATASET-NAIA3BROWNOUT" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/del/DATASET-NORAAUNORANINGDANGAL" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/del/DATASET-SHARONTHEVOICE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/del/d30000.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/clustering/KMeans.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/clustering/jonathanzong/clustering/Cluster.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-ABALOS.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-ATHLETEOFTHEYEAR.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-BADJAOGIRLVIRAL.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-CANADIANABUSAYAFF.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-CHED.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-CHRISTINAGRIMMIE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-COMELECWEBSITEHACKED.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-CORONA.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-DONALDTRUMP.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-DUTERTEROBREDO.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-FHMNADINELUSTRESEXIEST.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-HENRYSYRICHESTFORBES.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-JACLYNJOSECANNES.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-KIKOMATOSBARONGEISLER.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-KUYAGERMS.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-LTFRB.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-MIRIAMSANTIAGOOUTOFHOSPITAL.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-MOUNTBULUSAN.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-MUHAMMADALI.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-NAIA3BROWNOUT.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-NORAAUNORANINGDANGAL.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-ORLANDOSHOOTINGS.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-PLDTANDSMARTNEWLOGO.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-SHARONTHEVOICE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-UAAPVOLLEYBALL.txt" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-DUTERTEELECTION.txt" afterPath="$PROJECT_DIR$/DATASET-DUTERTEELECTION.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/decoding/stackdecoder/StackDecoder$Stack.class" afterPath="$PROJECT_DIR$/bin/com/decoding/stackdecoder/StackDecoder$Stack.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/decoding/stackdecoder/StackDecoder.class" afterPath="$PROJECT_DIR$/bin/com/decoding/stackdecoder/StackDecoder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/main/Start.class" afterPath="$PROJECT_DIR$/bin/com/main/Start.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/model/DataSet$Filter.class" afterPath="$PROJECT_DIR$/bin/com/model/DataSet$Filter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/model/DataSet.class" afterPath="$PROJECT_DIR$/bin/com/model/DataSet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/model/Sentence.class" afterPath="$PROJECT_DIR$/bin/com/model/Sentence.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/model/Topic.class" afterPath="$PROJECT_DIR$/bin/com/model/Topic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/processor/SentenceProcessor.class" afterPath="$PROJECT_DIR$/bin/com/processor/SentenceProcessor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testTokenize/d30006.txt" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d30001.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d30002.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/d30003.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/clustering/jonathanzong/kmeansClusterer.class" afterPath="$PROJECT_DIR$/bin/clustering/jonathanzong/kmeansClusterer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/kmeans.class" afterPath="$PROJECT_DIR$/bin/kmeans.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-BADJAOGIRLVIRAL.txt" afterPath="$PROJECT_DIR$/del/DATASET-BADJAOGIRLVIRAL.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-CANADIANABUSAYAFF.txt" afterPath="$PROJECT_DIR$/del/DATASET-CANADIANABUSAYAFF.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-CHRISTINAGRIMMIE.txt" afterPath="$PROJECT_DIR$/del/DATASET-CHRISTINAGRIMMIE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-COMELECWEBSITEHACKED.txt" afterPath="$PROJECT_DIR$/del/DATASET-COMELECWEBSITEHACKED.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-CURFEW.txt" afterPath="$PROJECT_DIR$/del/DATASET-CURFEW.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-DUTERTEELECTION.txt" afterPath="$PROJECT_DIR$/del/DATASET-DUTERTEELECTION.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-DUTERTEROBREDO.txt" afterPath="$PROJECT_DIR$/del/DATASET-DUTERTEROBREDO.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-FHMNADINELUSTRESEXIEST.txt" afterPath="$PROJECT_DIR$/del/DATASET-FHMNADINELUSTRESEXIEST.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-HENRYSYRICHESTFORBES.txt" afterPath="$PROJECT_DIR$/del/DATASET-HENRYSYRICHESTFORBES.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-JACLYNJOSECANNES.txt" afterPath="$PROJECT_DIR$/del/DATASET-JACLYNJOSECANNES.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-KIKOMATOSBARONGEISLER.txt" afterPath="$PROJECT_DIR$/del/DATASET-KIKOMATOSBARONGEISLER.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-MIRIAMSANTIAGOOUTOFHOSPITAL.txt" afterPath="$PROJECT_DIR$/del/DATASET-MIRIAMSANTIAGOOUTOFHOSPITAL.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-MOUNTBULUSAN.txt" afterPath="$PROJECT_DIR$/del/DATASET-MOUNTBULUSAN.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-NAIA3BROWNOUT.txt" afterPath="$PROJECT_DIR$/del/DATASET-NAIA3BROWNOUT.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-NORAAUNORANINGDANGAL.txt" afterPath="$PROJECT_DIR$/del/DATASET-NORAAUNORANINGDANGAL.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-ORLANDOSHOOTINGS.txt" afterPath="$PROJECT_DIR$/del/DATASET-ORLANDOSHOOTINGS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-PLDTANDSMARTNEWLOGO.txt" afterPath="$PROJECT_DIR$/del/DATASET-PLDTANDSMARTNEWLOGO.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-SHARONTHEVOICE.txt" afterPath="$PROJECT_DIR$/del/DATASET-SHARONTHEVOICE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-UAAPVOLLEYBALL.txt" afterPath="$PROJECT_DIR$/del/DATASET-UAAPVOLLEYBALL.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30001.m.100.t.a.sum" afterPath="$PROJECT_DIR$/del/d30001.m.100.t.a.sum" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30001.m.100.t.b.sum" afterPath="$PROJECT_DIR$/del/d30001.m.100.t.b.sum" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30001.m.100.t.c.sum" afterPath="$PROJECT_DIR$/del/d30001.m.100.t.c.sum" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30001.m.100.t.d.sum" afterPath="$PROJECT_DIR$/del/d30001.m.100.t.d.sum" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30001.txt" afterPath="$PROJECT_DIR$/del/d30001.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30002.txt" afterPath="$PROJECT_DIR$/del/d30002.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30003.txt" afterPath="$PROJECT_DIR$/del/d30003.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30005.txt" afterPath="$PROJECT_DIR$/del/d30005.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30006.txt" afterPath="$PROJECT_DIR$/del/d30006.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clustering/jonathanzong/kmeans.java" afterPath="$PROJECT_DIR$/src/clustering/jonathanzong/kmeans.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clustering/jonathanzong/kmeansClusterer.java" afterPath="$PROJECT_DIR$/src/clustering/jonathanzong/kmeansClusterer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/model/Sentence.java" afterPath="$PROJECT_DIR$/src/com/model/Sentence.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/score/importance/TfIDFCalculator.java" afterPath="$PROJECT_DIR$/src/com/score/importance/TfIDFCalculator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summaries/D30005.txt" afterPath="$PROJECT_DIR$/summaries/D30005.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summaries/DATASET-ABALOS.txt" afterPath="$PROJECT_DIR$/summaries/DATASET-ABALOS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summaries/DATASET-CHED.txt" afterPath="$PROJECT_DIR$/summaries/DATASET-CHED.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summaries/DATASET-COMELECWEBSITEHACKED.txt" afterPath="$PROJECT_DIR$/summaries/DATASET-COMELECWEBSITEHACKED.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summaries/DATASET-CORONA.txt" afterPath="$PROJECT_DIR$/summaries/DATASET-CORONA.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summaries/DATASET-DONALDTRUMP.txt" afterPath="$PROJECT_DIR$/summaries/DATASET-DONALDTRUMP.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summaries/DATASET-FHMNADINELUSTRESEXIEST.txt" afterPath="$PROJECT_DIR$/summaries/DATASET-FHMNADINELUSTRESEXIEST.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summaries/DATASET-JACLYNJOSECANNES.txt" afterPath="$PROJECT_DIR$/summaries/DATASET-JACLYNJOSECANNES.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summaries/DATASET-KIKOMATOSBARONGEISLER.txt" afterPath="$PROJECT_DIR$/summaries/DATASET-KIKOMATOSBARONGEISLER.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summaries/DATASET-MIRIAMSANTIAGOOUTOFHOSPITAL.txt" afterPath="$PROJECT_DIR$/summaries/DATASET-MIRIAMSANTIAGOOUTOFHOSPITAL.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summaries/DATASET-MOUNTBULUSAN.txt" afterPath="$PROJECT_DIR$/summaries/DATASET-MOUNTBULUSAN.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summaries/DATASET-NORAAUNORANINGDANGAL.txt" afterPath="$PROJECT_DIR$/summaries/DATASET-NORAAUNORANINGDANGAL.txt" />
     </list>
     <ignored path="Summarization.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -117,7 +24,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Summarization$kmeansClusterer.coverage" NAME="kmeansClusterer Coverage Results" MODIFIED="1469029466793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/Summarization$kmeansClusterer.coverage" NAME="kmeansClusterer Coverage Results" MODIFIED="1469354161293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>clustering.jonathanzong.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Summarization$Start.coverage" NAME="Start Coverage Results" MODIFIED="1468295089389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -140,58 +47,90 @@
     <favorites_list name="Summarization" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="kmeansClusterer.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/clustering/jonathanzong/kmeansClusterer.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2475">
-                  <caret line="316" column="14" selection-start-line="316" selection-start-column="14" selection-end-line="316" selection-end-column="14" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="kmeans.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/clustering/jonathanzong/kmeans.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="380">
-                  <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="JudesClusterer.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/clustering/sKunwar/JudesClusterer.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="kmeans.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/clustering/jonathanzong/kmeans.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="59" column="39" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="kmeansClusterer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/clustering/jonathanzong/kmeansClusterer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="653">
+              <caret line="81" column="38" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="d30001.m.100.t.d.sum" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/d30001.m.100.t.d.sum">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="d30001.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/d30001.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="d30002.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/d30002.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="d30006.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testTokenize/d30006.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TreeMap.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/TreeMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3645">
+              <caret line="277" column="0" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kmeans.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/clustering/jonathanzong/kmeans.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1650">
+              <caret line="129" column="71" selection-start-line="129" selection-start-column="67" selection-end-line="129" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JudesClusterer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/clustering/sKunwar/JudesClusterer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -237,8 +176,8 @@
         <option value="$PROJECT_DIR$/src/clustering/sKunwar/Cluster.java" />
         <option value="$PROJECT_DIR$/src/clustering/sKunwar/DocumentVector.java" />
         <option value="$PROJECT_DIR$/src/clustering/sKunwar/SKunwar.java" />
-        <option value="$PROJECT_DIR$/src/clustering/jonathanzong/kmeans.java" />
         <option value="$PROJECT_DIR$/src/clustering/sKunwar/JudesClusterer.java" />
+        <option value="$PROJECT_DIR$/src/clustering/jonathanzong/kmeans.java" />
         <option value="$PROJECT_DIR$/src/clustering/jonathanzong/kmeansClusterer.java" />
       </list>
     </option>
@@ -290,18 +229,63 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Summarization" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Summarization" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Summarization" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Summarization" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Summarization" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testTokenize" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Summarization" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Summarization" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/opennlp-uima-1.6.0.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -309,6 +293,9 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jude8\Documents\GitHub\Summarization\testTokenize" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jude8\Documents\GitHub\Summarization\testTokenize" />
       <recent name="C:\Users\jude8\Documents\GitHub\Summarization" />
@@ -848,11 +835,16 @@
       <workItem from="1469196497910" duration="1990000" />
       <workItem from="1469201036996" duration="609000" />
       <workItem from="1469201702425" duration="4115000" />
+      <workItem from="1469285320799" duration="5477000" />
+      <workItem from="1469337604651" duration="2502000" />
+      <workItem from="1469340174633" duration="1994000" />
+      <workItem from="1469342220842" duration="22336000" />
+      <workItem from="1469413028494" duration="190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141079000" />
+    <option name="totallyTimeSpent" value="173578000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -868,31 +860,32 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23895253" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3895899" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2831424" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1354009" sideWeight="0.47463176" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21558245" sideWeight="0.48772505" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1354009" sideWeight="0.47463176" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12859304" sideWeight="0.48772505" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25040916" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5744681" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11649016" sideWeight="0.5253683" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23895253" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="92" y="518" width="1182" height="134" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5908347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22422259" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -905,21 +898,22 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21558245" sideWeight="0.48772505" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12859304" sideWeight="0.48772505" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25040916" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34042552" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24222586" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23895253" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="92" y="518" width="1182" height="134" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29459903" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19742814" sideWeight="0.47463176" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5908347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1354009" sideWeight="0.47463176" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22422259" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11649016" sideWeight="0.5253683" order="4" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -945,65 +939,47 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/clustering/jonathanzong/kmeans.java</url>
-          <line>100</line>
+          <line>101</line>
           <properties />
           <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/clustering/jonathanzong/kmeansClusterer.java</url>
+          <line>180</line>
+          <properties />
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/clustering/jonathanzong/kmeansClusterer.java</url>
+          <line>172</line>
+          <properties />
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/clustering/jonathanzong/kmeansClusterer.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="45" />
+      <option name="time" value="69" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="errorsums.get(errorsums.lastKey()).values()" language="JAVA" />
+        <watch expression="errorsums.get(errorsums.lastKey())" language="JAVA" />
+        <watch expression="errorsums.remove(errorsums.lastKey())" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/summaries/DATASET-COMELECWEBSITEHACKED.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summaries/DATASET-COMELECWEBSITEHACKED.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summaries/DATASET-COMELECWEBSITEHACKED.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/d30002.m.100.t.a.sum">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/d30003.m.100.t.a.sum">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/d30003.m.100.t.b.sum">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/decoding/stackdecoder/SpecialPQ.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -1143,20 +1119,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/d30001.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/d30002.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/testTokenize/d30002.txt" />
     <entry file="file://$PROJECT_DIR$/DATASET-DUTERTEELECTION.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1197,13 +1160,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testTokenize/DATASET-CURFEW.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1259,18 +1215,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testTokenize/DATASET-CURFEW.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/util/TreeMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3645">
+          <caret line="277" column="0" selection-start-line="277" selection-start-column="0" selection-end-line="277" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testTokenize/d30001.txt" />
+    <entry file="file://$PROJECT_DIR$/testTokenize/d30003.txt" />
     <entry file="file://$PROJECT_DIR$/src/clustering/jonathanzong/kmeans.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+        <state relative-caret-position="1650">
+          <caret line="129" column="71" selection-start-line="129" selection-start-column="67" selection-end-line="129" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/d30001.m.100.t.d.sum">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/d30001.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/d30002.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testTokenize/d30006.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clustering/jonathanzong/kmeansClusterer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2475">
-          <caret line="316" column="14" selection-start-line="316" selection-start-column="14" selection-end-line="316" selection-end-column="14" />
+        <state relative-caret-position="653">
+          <caret line="81" column="38" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
