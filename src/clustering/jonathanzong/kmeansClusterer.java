@@ -48,10 +48,10 @@ public class kmeansClusterer {
                 double d[] = new double[global.size()];
                 for (int index = 0; index < global.size(); index++) {
                     //System.out.println(termFrequency(document, global.get(index)) * inverseDocumentFrequency(sentences
-                     d[index] = ((termFrequency(sentence.getContent().toArray(new String[sentence.getContent().size()]), global.get(index))
-                        * inverseDocumentFrequency(sentences, global.get(index))))*Math.log(((document.getNumberOfSentences()+3)/(sentence.getPosition()+1)));// * (sentence.getContent().size());
+                    d[index] = ((termFrequency(sentence.getContent().toArray(new String[sentence.getContent().size()]), global.get(index))
+                            * inverseDocumentFrequency(sentences, global.get(index)))) * Math.log(((document.getNumberOfSentences() + 5) / (sentence.getPosition() + 1)));// * (sentence.getContent().size());
                     NumberFormat n = new DecimalFormat("0.00");
-                    System.out.print(n.format(d[index])+" ");
+                    System.out.print(n.format(d[index]) + " ");
 
                 }
                 System.out.println("");
@@ -125,7 +125,7 @@ public class kmeansClusterer {
                     for (double[] c : clusters.keySet()) {
                         double newCosineSimilarity = cosineSimilarity(vectorSpace.get(index), c);
 
-                        if (newCosineSimilarity >=currentSimilarity) {
+                        if (newCosineSimilarity >= currentSimilarity) {
                             currentSimilarity = newCosineSimilarity;
                             centroid = c;
                             //System.out.println(newCosineSimilarity);
@@ -172,19 +172,21 @@ public class kmeansClusterer {
 
                 if (oldCentroid.equals(newCentroid)) go = false;
 
-                if (++iterations >= maxIterations){ go = false;
-                break;}
-               // System.out.println("ITER:"+iterations);
+                if (++iterations >= maxIterations) {
+                    go = false;
+                    break;
+                }
+                // System.out.println("ITER:"+iterations);
 
-                if(errorsums.size()>=1) {
+                if (errorsums.size() >= 1) {
                     int isEmpty = 0;
                     for (TreeSet<Integer> x : errorsums.get(errorsums.lastKey()).values()) {
-                        if(x.isEmpty()){
+                        if (x.isEmpty()) {
                             isEmpty++;
                         }
                     }
-                    int mayLaman=k-isEmpty;
-                    System.out.println("MGA MAY LAMAN:"+(mayLaman));
+                    int mayLaman = k - isEmpty;
+                    //System.out.println("MGA MAY LAMAN:"+(mayLaman));
 
 
                 }
@@ -208,10 +210,9 @@ public class kmeansClusterer {
 
             for (double[] c : clusters.keySet()) {
                 TreeSet<Integer> cl = clusters.get(c);
-               // if(cl.isEmpty())continue;
+                // if(cl.isEmpty())continue;
                 for (int vi : cl) {
                     sumsim += cosineSimilarity(c, vectorSpace.get(vi));
-
                 }
             }
             System.out.println("SUMSIM:" + sumsim);
@@ -228,7 +229,7 @@ public class kmeansClusterer {
         System.out.println("{");
         for (double[] cent : errorsums.get(errorsums.lastKey()).keySet()) {
             System.out.print("[");
-            if(errorsums.get(errorsums.lastKey()).get(cent).isEmpty()){
+            if (errorsums.get(errorsums.lastKey()).get(cent).isEmpty()) {
                 System.out.print("\b");
                 continue;
             }
@@ -262,7 +263,7 @@ public class kmeansClusterer {
                 sentences.add(sentence);
                 for (String word : sentence.getContent()) {
                     if (!words.contains(word)
-                         & !StopWords.isStopWord(word)
+                            & !StopWords.isStopWord(word)
                             ) {
                         words.add(word);
                     }
@@ -282,7 +283,7 @@ public class kmeansClusterer {
         magb = Math.sqrt(magb);
         double d = ((dotp / (maga * magb)));
 
-        return d == Double.NaN ? 0 : d ;
+        return d == Double.NaN ? 0 : d;
     }
 
     static double termFrequency(Document document, String term) {
@@ -333,13 +334,14 @@ public class kmeansClusterer {
         double count = 0;
         double total = 0;
         for (Sentence sentence : document.getSentences()) {
-           a: for (String word : sentence.getContent())
+            a:
+            for (String word : sentence.getContent())
                 if (word.equalsIgnoreCase(term)) {
                     count++;
                     break a;
                 }
         }
-        return Math.log(document.getNumberOfSentences()/count);
+        return Math.log(document.getNumberOfSentences() / count);
     }
 
     static double inverseDocumentFrequency(String[] words, String term) {
