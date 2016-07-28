@@ -11,7 +11,7 @@ import com.util.TextFileTokenizer;
 
 import javax.swing.*;
 
-public class Start {
+public class SandeepStart {
     private static String STOP_WORDS_FILE_PATH = "StopWords.txt";
 
     JFileChooser chooser = new JFileChooser();
@@ -42,7 +42,7 @@ public class Start {
 
             testDataSet.calculateImportanceScores(getWeights());
 
-            System.out.println("Start:main:: Running stack decoder .. ");
+            System.out.println("SandeepStart:main:: Running stack decoder .. ");
 
             //initial time
             long initialTime = System.currentTimeMillis();
@@ -66,7 +66,7 @@ public class Start {
 
             //final time
             long finalTime = System.currentTimeMillis();
-            System.out.println("Start:main:: Time taken by Stack decoder (s): " + ((finalTime - initialTime) / 1000));
+            System.out.println("SandeepStart:main:: Time taken by Stack decoder (s): " + ((finalTime - initialTime) / 1000));
         }
 
     }
