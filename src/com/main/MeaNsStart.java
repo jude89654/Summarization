@@ -33,7 +33,8 @@ public class MeaNsStart {
                 ArrayList<ArrayList<Sentence>> clusters = new ArrayList<>();
                 clusters = kmeansClusterer.cluster(currentTopic);
 
-                /*INSERT TEXT CLUSTERING ALGO HERE*/
+                /*INSERT TEXTRANK ALGO HERE*/
+
 
             }
         }else{
