@@ -30,7 +30,7 @@ public class kmeansClusterer {
     }
 
 
-    public static void cluster(Topic topic) {
+    public static ArrayList<ArrayList<Sentence>> cluster(Topic topic) {
         ArrayList<String[]> sentences = getAllSentences(topic);
         ArrayList<Sentence> SentenceID = new ArrayList<>();
 
@@ -224,6 +224,8 @@ public class kmeansClusterer {
         //Hindi ko na gets kung ano na nangyayari sa code na ito
         System.out.println("Best Convergence");
 
+        ArrayList<ArrayList<Sentence>> clusterArrayList = new ArrayList<>();
+
         String x = errorsums.lastKey().toString().replaceAll("\\[[\\w@]+=", "");
         System.out.println(x);
         System.out.println("{");
@@ -233,15 +235,20 @@ public class kmeansClusterer {
                 System.out.print("\b");
                 continue;
             }
+            ArrayList<Sentence> cluster = new ArrayList<>();
             for (int pts : errorsums.get(errorsums.lastKey()).get(cent)) {
                 Sentence sentence = SentenceID.get(pts);
+                cluster.add(sentence);
                 System.out.print(sentence.getId() + ", ");
             }
+            clusterArrayList.add(cluster);
             System.out.println("], ");
         }
         System.out.println("}");
+        return  clusterArrayList;
 
     }
+
 
 
     static ArrayList<String[]> getAllSentences(Topic topic) {

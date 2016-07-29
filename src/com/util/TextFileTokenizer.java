@@ -53,7 +53,7 @@ public class TextFileTokenizer {
         Tokenizer tokenizer = new TokenizerME(modelforToken);
 
 
-        int sentenceNumber =1;
+        //int sentenceNumber =1;
 
         for (String sentence : sentences) {
 
