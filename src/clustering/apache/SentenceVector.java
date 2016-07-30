@@ -5,6 +5,7 @@ import com.model.Sentence;
 import org.apache.commons.math3.ml.clustering.Clusterable;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by jude8 on 7/29/2016.
@@ -12,33 +13,48 @@ import java.util.ArrayList;
 public class SentenceVector implements Clusterable {
 
      Sentence sentence;
-     //Document document;
-    // ArrayList<String> global;
      double[] point;
 
 
-    public SentenceVector(Sentence sentence, ArrayList<String> global, ArrayList<String[]> sentences){
+    public SentenceVector(Sentence sentence, ArrayList<String> global, ArrayList<List<String>> sentences){
+
         this.sentence = sentence;
+
+        //initializing point
         point=new double[global.size()];
 
+        //Populating the vector values based on tf-idf
         for(int x=0;x<global.size();x++){
-            point[x]= termFrequency(sentence.getContent().toArray(new String[sentence.getContent().size()]),global.get(x))*inverseDocumentFrequency(sentences,global.get(x));
+            point[x]= termFrequency(sentence.getContent(),global.get(x))*inverseDocumentFrequency(sentences,global.get(x));
         }
+
     }
+
+
     public Sentence getSentence(){
         return sentence;
     }
 
+
+    /*
+     *implemented abstract method for clustering.
+     *@return
+     */
     @Override
     public double[] getPoint() {
         return point;
     }
 
-    static double inverseDocumentFrequency(ArrayList<String[]> sentences, String term) {
+    /*
+     * method that calculates the inverse document frequency based on a term given by the vector space
+     * @param sentences The list of all sentences of the topic
+     * @param term The term that will be used to compute the inverse - document frequency
+     */
+    static double inverseDocumentFrequency(ArrayList<List<String>> sentences, String term) {
         double count = 0;
         double total = 0;
 
-        for (String words[] : sentences)
+        for (List<String> words : sentences)
             a:for (String word : words) {
                 if (word.equalsIgnoreCase(term.toUpperCase())) {
                     count++;
@@ -49,17 +65,25 @@ public class SentenceVector implements Clusterable {
         return Math.log(sentences.size() / count);
     }
 
-    static double termFrequency(String[] words, String term) {
+
+    /*
+     *method that will compute the term frequency among the document
+     *@param sentenceContent the List that contains the stemmed words of the sentences
+     *@param term, the term that will compute the term frequency
+     *@return for normalization it will return a double that is equal to freuqncy divided by the length of the sentence.
+     */
+
+    static double termFrequency(List<String> sentenceContent, String term) {
         double count = 0;
         double total = 0;
 
-        for (String word : words) {
+        for (String word : sentenceContent) {
             if (word.equalsIgnoreCase(term)) {
 
                 count++;
             }
         }
-        return count / words.length;
+        return count / sentenceContent.size();
     }
 
 

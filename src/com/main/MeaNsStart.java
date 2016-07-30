@@ -7,6 +7,7 @@ import com.model.Document;
 import com.model.Sentence;
 import com.model.Topic;
 import com.util.StopWords;
+import com.util.TextFileTokenizer;
 import org.apache.commons.math3.ml.clustering.CentroidCluster;
 import org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer;
 import sun.nio.ch.DatagramSocketAdaptor;
@@ -22,38 +23,67 @@ public class MeaNsStart {
     private static String STOPWORDSPATH = "StopWords.txt";
 
 
-
     public static void main(String args[]) {
 
         StopWords.initializeStopWords(STOPWORDSPATH);
 
-        JFileChooser chooser = new JFileChooser();
-        chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-        chooser.setAcceptAllFileFilterUsed(false);
+        String folderPath = getFolderPath();
 
-        if (chooser.showDialog(new JFrame(), "SELECT FOLDER") == JFileChooser.APPROVE_OPTION) {
-            DataSet dataSet = new DataSet(chooser.getSelectedFile().getPath());
-            for (Topic currentTopic : dataSet.getTopics()) {
-                ArrayList<ArrayList<Sentence>> clusters = clusterize(currentTopic);
-                
-                /*INSERT TEXTRANK ALGO HERE*/
+        if(folderPath.equals(""))stopProgram();
+
+        tokenizeFiles(folderPath);
+
+        DataSet dataSet = new DataSet(folderPath);
 
 
-            }
-        } else {
-            System.out.println("YOU MUST SELECT A FOLDER WHERE THE SOURCE DATA COMES FROM");
-            JOptionPane.showConfirmDialog(new JFrame(), "YOU MUST SELECT A FOLDER");
+        for(Topic topic:dataSet.getTopics()){
+            ArrayList<ArrayList<Sentence>> clusterList = clusterize(topic);
+
         }
+
+
 
     }
 
-/*
- *method that will return a list of Clusters based on the K-Means Clustering Algorithm.
- * @param topic the topic that will have its documents clustered by sentences.
- */
+    public static void tokenizeFiles(String folder){
+        try {
+            TextFileTokenizer.tokenizeFiles(folder);
+        }catch (Exception e){
+            e.printStackTrace();
+            System.out.println("MeanNsStart:ERROR IN TOKENIZING FILES=============");
+            System.exit(0);
+        }
+    }
+
+    public static void stopProgram(){
+        System.out.println("MEANS SUMMARIZATION PROGRAM ENDED");
+        System.exit(0);
+    }
+
+
+
+    /*
+     *
+     */
+    public static String getFolderPath(){
+        JFileChooser chooser = new JFileChooser();
+        chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+        chooser.setAcceptAllFileFilterUsed(false);
+         if (chooser.showDialog(new JFrame(), "SELECT FOLDER") == JFileChooser.APPROVE_OPTION) {
+             return chooser.getSelectedFile().getPath();
+         }else{
+             System.out.println("YOU MUST SELECT A FOLDER WHERE THE SOURCE DATA COMES FROM");
+             JOptionPane.showConfirmDialog(new JFrame(), "YOU MUST SELECT A FOLDER");
+             return "";
+         }
+    }
+
+
+    /*
+     *method that will return a list of Clusters based on the K-Means Clustering Algorithm.
+     * @param topic the topic that will have its documents clustered by sentences.
+     */
     public static ArrayList<ArrayList<Sentence>> clusterize(Topic topic) {
-
-
 
         //all of the unique stemmed words
         ArrayList<String> global = new ArrayList<>();
@@ -63,18 +93,18 @@ public class MeaNsStart {
 
         preProcess(topic, sentences, global);
 
-        ArrayList<SentenceVector> sentenceVectors = createSentenceVectorList(topic,global,sentences);
+        ArrayList<SentenceVector> sentenceVectors = createSentenceVectorList(topic, global, sentences);
 
 
         //Rule of thumb ng k
-        int k = (int) (Math.sqrt(sentences.size()/2));
+        int k = (int) (Math.sqrt(sentences.size() / 2));
 
-        KMeansPlusPlusClusterer<SentenceVector> kMeansClusterer = new KMeansPlusPlusClusterer<SentenceVector>(k,1000);
+        KMeansPlusPlusClusterer<SentenceVector> kMeansClusterer = new KMeansPlusPlusClusterer<SentenceVector>(k, 1000);
 
-        ArrayList<ArrayList<Sentence>>clusterList= new ArrayList<>();
-        for(CentroidCluster<SentenceVector> centroid : kMeansClusterer.cluster(sentenceVectors)){
+        ArrayList<ArrayList<Sentence>> clusterList = new ArrayList<>();
+        for (CentroidCluster<SentenceVector> centroid : kMeansClusterer.cluster(sentenceVectors)) {
             ArrayList<Sentence> cluster = new ArrayList<>();
-            for (SentenceVector vector : centroid.getPoints()){
+            for (SentenceVector vector : centroid.getPoints()) {
                 cluster.add(vector.getSentence());
             }
             clusterList.add(cluster);
@@ -91,12 +121,14 @@ public class MeaNsStart {
      * @param sentences
      * @return an ArrayList of SentenceVectors based on a given topic
      */
-    public static ArrayList<SentenceVector> createSentenceVectorList(Topic topic,ArrayList<String> global,ArrayList<String[]> sentences){
+    public static ArrayList<SentenceVector> createSentenceVectorList(Topic topic, ArrayList<String> global
+            , ArrayList<List<String>> sentences) {
+
         ArrayList<SentenceVector> sentenceVectors = new ArrayList<>();
 
-        for(Document document:topic.getDocuments()){
-            for(Sentence sentence : document.getSentences()){
-                sentenceVectors.add(new SentenceVector(sentence,global,sentences));
+        for (Document document : topic.getDocuments()) {
+            for (Sentence sentence : document.getSentences()) {
+                sentenceVectors.add(new SentenceVector(sentence, global, sentences));
             }
         }
         return sentenceVectors;
@@ -119,10 +151,10 @@ public class MeaNsStart {
 
                 sentences.add(sentence.getContent());
 
-                for(String word :
-                        sentence.getContent()){
+                for (String word :
+                        sentence.getContent()) {
 
-                    if(!global.contains(word)){
+                    if (!global.contains(word)) {
                         global.add(word);
                     }
 
