@@ -1,7 +1,6 @@
 package com.main;
 
-import com.ust.CosineSimilarity;
-import com.ust.comparator.SentencePositionComparator;
+import com.ust.similarity.CosineSimilarity;
 import com.ust.vector.SentenceVector;
 import com.model.DataSet;
 import com.model.Document;
@@ -11,7 +10,6 @@ import com.util.StopWords;
 import com.ust.tokenizer.TextFileTokenizer;
 import org.apache.commons.math3.ml.clustering.CentroidCluster;
 import org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer;
-import org.apache.commons.math3.random.RandomGenerator;
 
 
 import javax.swing.*;
@@ -140,7 +138,9 @@ public class MeaNsStart {
                 cluster.add(vector.getSentence());
                // System.out.println(vector.getSentence().getRefSentence());
             }
-          //  cluster.sort(SentencePositionComparator );
+            //kung gusto isort by position
+            cluster.sort((a,b)->a.getPosition()>b.getPosition()?1:0);
+
             clusterList.add(cluster);
         }
         //clusterList.sort(new SentencePositionComparator<>);

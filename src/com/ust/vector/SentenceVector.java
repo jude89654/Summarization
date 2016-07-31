@@ -27,7 +27,7 @@ public class SentenceVector implements Clusterable {
         //Populating the vector values based on tf-idf
         for(int x=0;x<global.size();x++){
             point[x]= termFrequency(sentence.getContent(),global.get(x))
-                    * inverseDocumentFrequency(topic,global.get(x));
+                    * inverseDocumentFrequency(sentences,global.get(x));
         }
 
     }
