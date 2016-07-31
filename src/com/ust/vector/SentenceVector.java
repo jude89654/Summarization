@@ -1,7 +1,8 @@
-package clustering.apache;
+package com.ust.vector;
 
 import com.model.Document;
 import com.model.Sentence;
+import com.model.Topic;
 import org.apache.commons.math3.ml.clustering.Clusterable;
 
 import java.util.ArrayList;
@@ -16,7 +17,7 @@ public class SentenceVector implements Clusterable {
      double[] point;
 
 
-    public SentenceVector(Sentence sentence, ArrayList<String> global, ArrayList<List<String>> sentences){
+    public SentenceVector(Sentence sentence, ArrayList<String> global, Topic topic, Document document, ArrayList<List<String>> sentences){
 
         this.sentence = sentence;
 
@@ -25,7 +26,8 @@ public class SentenceVector implements Clusterable {
 
         //Populating the vector values based on tf-idf
         for(int x=0;x<global.size();x++){
-            point[x]= termFrequency(sentence.getContent(),global.get(x))*inverseDocumentFrequency(sentences,global.get(x));
+            point[x]= termFrequency(sentence.getContent(),global.get(x))
+                    * inverseDocumentFrequency(topic,global.get(x));
         }
 
     }
@@ -62,7 +64,23 @@ public class SentenceVector implements Clusterable {
                 }
             }
 
+        //for normalization of scores.
         return Math.log(sentences.size() / count);
+    }
+
+    static double inverseDocumentFrequency(Topic topic,String term){
+        int count=0;
+        for(Document document:topic.getDocuments()){
+           z: for(Sentence sentence: document.getSentences()){
+                for(String word:sentence.getContent()){
+                    if(word.equals(term)) {
+                        count++;
+                        break z;
+                    }
+                }
+            }
+        }
+        return Math.log(topic.getDocuments().size()/count);
     }
 
 
@@ -75,9 +93,7 @@ public class SentenceVector implements Clusterable {
 
     static double termFrequency(List<String> sentenceContent, String term) {
         double count = 0;
-        double total = 0;
-
-        for (String word : sentenceContent) {
+        double total = 0;for (String word : sentenceContent) {
             if (word.equalsIgnoreCase(term)) {
 
                 count++;
@@ -86,5 +102,22 @@ public class SentenceVector implements Clusterable {
         return count / sentenceContent.size();
     }
 
+    static double termFrequency(Document document,String term){
+        int count =0;
+        int docLength=0;
+        for(Sentence sentence:document.getSentences()){
+            for(String word:sentence.getContent()){
+                if(word.equalsIgnoreCase(term)){
+                   count++;
+                }
+                docLength++;
+            }
+        }
+        return count/docLength;
+    }
+
+
 
 }
+
+

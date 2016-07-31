@@ -1,20 +1,21 @@
 package com.main;
 
-import clustering.apache.SentenceVector;
-import clustering.jonathanzong.kmeansClusterer;
+import com.ust.CosineSimilarity;
+import com.ust.comparator.SentencePositionComparator;
+import com.ust.vector.SentenceVector;
 import com.model.DataSet;
 import com.model.Document;
 import com.model.Sentence;
 import com.model.Topic;
 import com.util.StopWords;
-import com.util.TextFileTokenizer;
+import com.ust.tokenizer.TextFileTokenizer;
 import org.apache.commons.math3.ml.clustering.CentroidCluster;
 import org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer;
-import sun.nio.ch.DatagramSocketAdaptor;
+import org.apache.commons.math3.random.RandomGenerator;
+
 
 import javax.swing.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by jude8 on 7/28/2016.
@@ -25,63 +26,84 @@ public class MeaNsStart {
 
     public static void main(String args[]) {
 
+        //initialize StopWords Class
         StopWords.initializeStopWords(STOPWORDSPATH);
 
-        String folderPath = getFolderPath();
+        //path where the text files will be found.
+        String folderPath ="testTokenize"; //getFolderPath();
 
-        if(folderPath.equals(""))stopProgram();
+        //if no folder is selected.
+        if (folderPath.equals("")) stopProgram();
 
+        //for tokenization
         tokenizeFiles(folderPath);
 
+        //initialize dataset
         DataSet dataSet = new DataSet(folderPath);
 
 
-        for(Topic topic:dataSet.getTopics()){
+        for (Topic topic : dataSet.getTopics()) {
+            //Map<String, Double> importantTerms = getImportantTerms(topic);
             ArrayList<ArrayList<Sentence>> clusterList = clusterize(topic);
-
+                stopProgram();
+            //TEXTRANK ALGORITHM HERE
         }
-
 
 
     }
 
-    public static void tokenizeFiles(String folder){
+    public static HashMap<String, Double> getImportantTerms(Topic topic){
+       for(Document document: topic.getDocuments()){
+           for(Sentence sentence: document.getSentences()){
+               for(String word: sentence.getRefSentence().split(" ")){
+
+               }
+           }
+       }
+    return null;
+    }
+
+
+    public static void tokenizeFiles(String folder) {
         try {
+
             TextFileTokenizer.tokenizeFiles(folder);
-        }catch (Exception e){
+
+        } catch (Exception e) {
+
             e.printStackTrace();
             System.out.println("MeanNsStart:ERROR IN TOKENIZING FILES=============");
             System.exit(0);
         }
     }
 
-    public static void stopProgram(){
+    public static void stopProgram() {
         System.out.println("MEANS SUMMARIZATION PROGRAM ENDED");
         System.exit(0);
     }
 
 
-
     /*
      *
      */
-    public static String getFolderPath(){
+    public static String getFolderPath() {
         JFileChooser chooser = new JFileChooser();
         chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
         chooser.setAcceptAllFileFilterUsed(false);
-         if (chooser.showDialog(new JFrame(), "SELECT FOLDER") == JFileChooser.APPROVE_OPTION) {
-             return chooser.getSelectedFile().getPath();
-         }else{
-             System.out.println("YOU MUST SELECT A FOLDER WHERE THE SOURCE DATA COMES FROM");
-             JOptionPane.showConfirmDialog(new JFrame(), "YOU MUST SELECT A FOLDER");
-             return "";
-         }
+        if (chooser.showDialog(new JFrame(), "SELECT FOLDER") == JFileChooser.APPROVE_OPTION) {
+            return chooser.getSelectedFile().getPath();
+        } else {
+            System.out.println("YOU MUST SELECT A FOLDER WHERE THE SOURCE DATA COMES FROM");
+            JOptionPane.showConfirmDialog(new JFrame(), "YOU MUST SELECT A FOLDER");
+            return "";
+        }
     }
 
 
     /*
      *method that will return a list of Clusters based on the K-Means Clustering Algorithm.
      * @param topic the topic that will have its documents clustered by sentences.
+     * @returns a list that contains k clusters including the sentences.
      */
     public static ArrayList<ArrayList<Sentence>> clusterize(Topic topic) {
 
@@ -95,21 +117,33 @@ public class MeaNsStart {
 
         ArrayList<SentenceVector> sentenceVectors = createSentenceVectorList(topic, global, sentences);
 
-
-        //Rule of thumb ng k
+        //Rule of thumb for k
         int k = (int) (Math.sqrt(sentences.size() / 2));
 
-        KMeansPlusPlusClusterer<SentenceVector> kMeansClusterer = new KMeansPlusPlusClusterer<SentenceVector>(k, 1000);
+        //Similarity measure used for distance in the clusterer
+        CosineSimilarity sim=new CosineSimilarity();
+        //initializing the clusterer
+        KMeansPlusPlusClusterer<SentenceVector> kMeansClusterer = new KMeansPlusPlusClusterer<SentenceVector>(k,900,sim);
 
         ArrayList<ArrayList<Sentence>> clusterList = new ArrayList<>();
+
+
+
+        int clusterCount=0;
         for (CentroidCluster<SentenceVector> centroid : kMeansClusterer.cluster(sentenceVectors)) {
+            //System.out.println(centroid.getCenter());
             ArrayList<Sentence> cluster = new ArrayList<>();
+
+            System.out.println("================CLUSTER NO."+(++clusterCount)+"================");
+            System.out.println("CLUSTER SIZE:"+(centroid.getPoints().size()));
             for (SentenceVector vector : centroid.getPoints()) {
                 cluster.add(vector.getSentence());
+               // System.out.println(vector.getSentence().getRefSentence());
             }
+          //  cluster.sort(SentencePositionComparator );
             clusterList.add(cluster);
         }
-
+        //clusterList.sort(new SentencePositionComparator<>);
         return clusterList;
     }
 
@@ -126,9 +160,13 @@ public class MeaNsStart {
 
         ArrayList<SentenceVector> sentenceVectors = new ArrayList<>();
 
+        int docNo=0;
         for (Document document : topic.getDocuments()) {
+            System.out.println("CREATING SENTENCE VECTORS FOR DOCUMENT NO."+(++docNo));
+            int sentenceNumber=0;
             for (Sentence sentence : document.getSentences()) {
-                sentenceVectors.add(new SentenceVector(sentence, global, sentences));
+                System.out.println("PROCESSING SENTENCE NO"+(++sentenceNumber));
+                sentenceVectors.add(new SentenceVector(sentence, global,topic,document, sentences));
             }
         }
         return sentenceVectors;

@@ -15,6 +15,7 @@ public class Document
 		this.filename = filename;
 		this.documentId = documentId;
 	}
+
 	
 	public Document(){
 		this.sentences = new ArrayList<Sentence>();

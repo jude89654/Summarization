@@ -1,4 +1,4 @@
-package com.util;
+package com.ust.tokenizer;
 
 import opennlp.tools.sentdetect.SentenceDetectorME;
 import opennlp.tools.sentdetect.SentenceModel;
@@ -34,6 +34,7 @@ public class TextFileTokenizer {
 
 
         //mga pinaghahatian ng mga sentences
+
         String[] sentences = sdetector.sentDetect(flattenedText);
 
 
@@ -51,6 +52,7 @@ public class TextFileTokenizer {
         TokenizerModel modelforToken = new TokenizerModel(is);
 
         Tokenizer tokenizer = new TokenizerME(modelforToken);
+
 
 
         //int sentenceNumber =1;
@@ -97,7 +99,6 @@ public class TextFileTokenizer {
         File[] mgaDocuments = new File(folder).listFiles();
 
         for(File file: mgaDocuments){
-
             System.out.println("NOW TOKENIZING FILE: "+file.getName());
             tokenize(file.getPath());
 

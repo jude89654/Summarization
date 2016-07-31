@@ -7,7 +7,7 @@ import com.decoding.stackdecoder.StackDecoder;
 import com.model.DataSet;
 import com.model.Topic;
 import com.util.StopWords;
-import com.util.TextFileTokenizer;
+import com.ust.tokenizer.TextFileTokenizer;
 
 import javax.swing.*;
 
