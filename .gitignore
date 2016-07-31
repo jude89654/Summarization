@@ -1,2 +1,6 @@
 *.class
 *.class
+bin/com/main/MeaNsStart.class
+*.xml
+.idea/workspace.xml
+*.class
