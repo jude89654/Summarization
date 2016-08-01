@@ -1,5 +1,5 @@
 Aim:
-The project takes in documents and output an extraction based summary i.e. selects sentences from the given set that satisfy the length constraint and also maximize the overall score of the summary. (Importance Score of a summary is the sum of scores of individual sentences.)
+The project takes in document and output an extraction based summary i.e. selects sentences from the given set that satisfy the length constraint and also maximize the overall score of the summary. (Importance Score of a summary is the sum of scores of individual sentences.)
 
 Main class:
 Expects one argument - path to the directory containing the data.
@@ -28,7 +28,7 @@ com.decoding.stackdecoder:
 	SpecialPQ
 	
 Contributions:
-I have written the framework code for loading the dataset and segregating it into topics, documents, summaries and sentences, also designed the structure.
+I have written the framework code for loading the dataset and segregating it into topics, document, summaries and sentences, also designed the structure.
 I have also implemented the 'Stackdecoder' algorithm using the above framework.
 The common platform also made it easy for others to plugin their code and implement other methods.
 

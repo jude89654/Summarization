@@ -3798,7 +3798,7 @@ Sentence:
 	S: .
 Sentence:
 	S: The
-	S: documents
+	S: document
 	S: did
 	S: not
 	S: make
@@ -4331,7 +4331,7 @@ Sentence:
 	S: a
 	S: package
 	S: of
-	S: documents
+	S: document
 	S: American
 	S: prosecutors
 	S: have
@@ -4372,7 +4372,7 @@ Sentence:
 	S: .
 Sentence:
 	S: The
-	S: documents
+	S: document
 	S: ,
 	S: which
 	S: were

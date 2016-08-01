@@ -520,7 +520,7 @@ Sentence:
 	S: of
 	S: the
 	S: two
-	S: documents
+	S: document
 	S: went
 	S: without
 	S: a

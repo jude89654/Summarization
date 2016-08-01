@@ -43,23 +43,14 @@ public class MeaNsStart {
         for (Topic topic : dataSet.getTopics()) {
             //Map<String, Double> importantTerms = getImportantTerms(topic);
             ArrayList<ArrayList<Sentence>> clusterList = clusterize(topic);
-                stopProgram();
+
+
             //TEXTRANK ALGORITHM HERE
         }
 
 
     }
 
-    public static HashMap<String, Double> getImportantTerms(Topic topic){
-       for(Document document: topic.getDocuments()){
-           for(Sentence sentence: document.getSentences()){
-               for(String word: sentence.getRefSentence().split(" ")){
-
-               }
-           }
-       }
-    return null;
-    }
 
 
     public static void tokenizeFiles(String folder) {
@@ -116,7 +107,8 @@ public class MeaNsStart {
         ArrayList<SentenceVector> sentenceVectors = createSentenceVectorList(topic, global, sentences);
 
         //Rule of thumb for k
-        int k = (int) (Math.sqrt(sentences.size() / 2));
+        int k = (int) (Math.sqrt(sentences.size() /2));
+        System.out.println("NUMBER OF K:"+k);
 
         //Similarity measure used for distance in the clusterer
         CosineSimilarity sim=new CosineSimilarity();
@@ -160,14 +152,16 @@ public class MeaNsStart {
 
         ArrayList<SentenceVector> sentenceVectors = new ArrayList<>();
 
-        int docNo=0;
+        ///int docNo=0;
         for (Document document : topic.getDocuments()) {
-            System.out.println("CREATING SENTENCE VECTORS FOR DOCUMENT NO."+(++docNo));
-            int sentenceNumber=0;
+            System.out.println("CREATING SENTENCE VECTORS FOR DOCUMENT NO."+document.getDocumentId());
+           // int sentenceNumber=0;
+            System.out.print("CREATING VECTOR FOR SENTENCE NO.");
             for (Sentence sentence : document.getSentences()) {
-                System.out.println("PROCESSING SENTENCE NO"+(++sentenceNumber));
+                System.out.print(sentence.getId()+", ");
                 sentenceVectors.add(new SentenceVector(sentence, global,topic,document, sentences));
             }
+            System.out.println("");
         }
         return sentenceVectors;
     }
