@@ -13,46 +13,92 @@ import org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer;
 
 
 import javax.swing.*;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.*;
 
+
 /**
- * Created by jude8 on 7/28/2016.
+ * @author Jude Bismonte
+ *
  */
 public class MeaNsStart {
+
+    //lol
     private static String STOPWORDSPATH = "StopWords.txt";
 
-
+    /**
+     * eto na yung main method ng thesis namin.
+     * @param args not used
+     */
     public static void main(String args[]) {
 
         //initialize StopWords Class
         StopWords.initializeStopWords(STOPWORDSPATH);
 
         //path where the text files will be found.
-        String folderPath ="testTokenize"; //getFolderPath();
+        String folderPath = "testTokenize"; //getFolderPath();
 
         //if no folder is selected.
         if (folderPath.equals("")) stopProgram();
 
         //for tokenization
         tokenizeFiles(folderPath);
+        File[] file = new File(folderPath).listFiles();
 
         //initialize dataset
         DataSet dataSet = new DataSet(folderPath);
 
 
+        //COUNTER FOR DOCUMENT CONSOLE
+        int fileIndex = 0;
+
+        //CREATING SUMMARIZATION FOR EACH TOPIC
         for (Topic topic : dataSet.getTopics()) {
-            //Map<String, Double> importantTerms = getImportantTerms(topic);
+            System.out.println("NOW CREATING SUMMARY FOR:" + file[fileIndex].getName());
+
+            //cluster the topics
             ArrayList<ArrayList<Sentence>> clusterList = clusterize(topic);
 
-
-            //TEXTRANK ALGORITHM HERE
+            ArrayList<Sentence> summary = null;//method(rank)
+            //method for printing the summary
+            try {
+                createSummaryFile(summary, file[fileIndex]);
+            } catch (IOException ioException) {
+                System.out.println("IOEXCEPTION-ERROR IN CREATING FILE:" + file[fileIndex].getName());
+                ioException.printStackTrace();
+            }
+            fileIndex++;
         }
-
 
     }
 
+    /**
+     * @param sentences the final summary created by the Bm25
+     * @param file      the source text document where the summary came from
+     * @throws IOException
+     */
+    public static void createSummaryFile(ArrayList<Sentence> sentences, File file) throws IOException {
+        String directory = "MeansOutput" + File.separator + file.getName();
+        FileWriter fileWriter = new FileWriter(directory);
+        String finalSummary = "";
+
+        for (Sentence sentence : sentences) {
+            finalSummary += sentence.getRefSentence() + " ";
+        }
+        fileWriter.write(finalSummary);
+        fileWriter.close();
+
+        System.out.println("CREATED SUMMARY FOR " + file.getName());
+    }
 
 
+    /**
+     * method that will tokenize text to documents and sentences
+     *
+     * @param folder the folder that contains a
+     */
     public static void tokenizeFiles(String folder) {
         try {
 
@@ -66,14 +112,18 @@ public class MeaNsStart {
         }
     }
 
+    /**
+     * a method that will end the program immediately
+     */
     public static void stopProgram() {
         System.out.println("MEANS SUMMARIZATION PROGRAM ENDED");
         System.exit(0);
     }
 
 
-    /*
-     *
+    /**
+     * method that will return a folder path where the text documents are.
+     * @return a String of the folder Directory chosen by the JFileChooser
      */
     public static String getFolderPath() {
         JFileChooser chooser = new JFileChooser();
@@ -89,10 +139,11 @@ public class MeaNsStart {
     }
 
 
-    /*
-     *method that will return a list of Clusters based on the K-Means Clustering Algorithm.
-     * @param topic the topic that will have its documents clustered by sentences.
-     * @returns a list that contains k clusters including the sentences.
+    /**
+     * method that will clusterize sentences and will return k clusters with size k
+     *
+     * @param topic the topic that contains documents
+     * @return
      */
     public static ArrayList<ArrayList<Sentence>> clusterize(Topic topic) {
 
@@ -102,37 +153,36 @@ public class MeaNsStart {
         //all of the sentences among the documents
         ArrayList<List<String>> sentences = new ArrayList<>();
 
-        preProcess(topic, sentences, global);
+        preProcess(topic
+                , sentences
+                , global);
 
         ArrayList<SentenceVector> sentenceVectors = createSentenceVectorList(topic, global, sentences);
 
         //Rule of thumb for k
-        int k = (int) (Math.sqrt(sentences.size() /2));
-        System.out.println("NUMBER OF K:"+k);
+        int k = (int) (Math.sqrt(sentences.size() / 2));
+        System.out.println("NUMBER OF K:" + k);
 
         //Similarity measure used for distance in the clusterer
-        CosineSimilarity sim=new CosineSimilarity();
+        CosineSimilarity sim = new CosineSimilarity();
         //initializing the clusterer
-        KMeansPlusPlusClusterer<SentenceVector> kMeansClusterer = new KMeansPlusPlusClusterer<SentenceVector>(k,900,sim);
+        KMeansPlusPlusClusterer<SentenceVector> kMeansClusterer = new KMeansPlusPlusClusterer<SentenceVector>(k, 900, sim);
 
         ArrayList<ArrayList<Sentence>> clusterList = new ArrayList<>();
 
-
-
-        int clusterCount=0;
+        int clusterCount = 0;
         for (CentroidCluster<SentenceVector> centroid : kMeansClusterer.cluster(sentenceVectors)) {
             //System.out.println(centroid.getCenter());
             ArrayList<Sentence> cluster = new ArrayList<>();
 
-            System.out.println("================CLUSTER NO."+(++clusterCount)+"================");
-            System.out.println("CLUSTER SIZE:"+(centroid.getPoints().size()));
+            System.out.println("================CLUSTER NO." + (++clusterCount) + "================");
+            System.out.println("CLUSTER SIZE:" + (centroid.getPoints().size()));
             for (SentenceVector vector : centroid.getPoints()) {
                 cluster.add(vector.getSentence());
-               // System.out.println(vector.getSentence().getRefSentence());
+                // System.out.println(vector.getSentence().getRefSentence());
             }
             //kung gusto isort by position
-            cluster.sort((a,b)->a.getPosition()>b.getPosition()?1:0);
-
+            cluster.sort((a, b) -> a.getPosition() > b.getPosition() ? 1 : 0);
             clusterList.add(cluster);
         }
         //clusterList.sort(new SentencePositionComparator<>);
@@ -140,8 +190,9 @@ public class MeaNsStart {
     }
 
 
-    /*
+    /**
      * A function that will return an ArrayList of SentenceVectors based on a given Topic
+     *
      * @param topic
      * @param global
      * @param sentences
@@ -154,12 +205,12 @@ public class MeaNsStart {
 
         ///int docNo=0;
         for (Document document : topic.getDocuments()) {
-            System.out.println("CREATING SENTENCE VECTORS FOR DOCUMENT NO."+document.getDocumentId());
-           // int sentenceNumber=0;
+            System.out.println("CREATING SENTENCE VECTORS FOR DOCUMENT NO." + document.getDocumentId());
+            // int sentenceNumber=0;
             System.out.print("CREATING VECTOR FOR SENTENCE NO.");
             for (Sentence sentence : document.getSentences()) {
-                System.out.print(sentence.getId()+", ");
-                sentenceVectors.add(new SentenceVector(sentence, global,topic,document, sentences));
+                System.out.print(sentence.getId() + ", ");
+                sentenceVectors.add(new SentenceVector(sentence, global, topic, document, sentences));
             }
             System.out.println("");
         }
@@ -167,35 +218,29 @@ public class MeaNsStart {
     }
 
 
-    /*
+    /**
      * The subroutine that will populate the sentence list and global list.
-     * @param topic the topic containing the related documents to be processed
-     * @param sentences the ArrayList that contains a List that contains the contents of the sentences that will be updated with the topics document
-     * @param global the ArrayList that would be the list containing all the unique stemmed words
-     * @param sentenceVectors
+     *
+     * @param topic           the topic containing the related documents to be processed
+     * @param sentences       the ArrayList that contains a List that contains the contents of the sentences that will be updated with the topics document
+     * @param global          the ArrayList that would be the list containing all the unique stemmed words
      */
     public static void preProcess(Topic topic, ArrayList<List<String>> sentences, ArrayList<String> global) {
         for (Document document :
                 topic.getDocuments()) {
-
-            for (Sentence sentence :
-                    document.getSentences()) {
+            for (Sentence sentence : document.getSentences()) {
 
                 sentences.add(sentence.getContent());
+                for (String word : sentence.getContent()) {
 
-                for (String word :
-                        sentence.getContent()) {
-
-                    if (!global.contains(word)) {
+                    if (!global.contains(word) & !StopWords.isStopWord(word)) {
                         global.add(word);
                     }
 
                 }
-
             }
-
         }
-
     }
+
 
 }
