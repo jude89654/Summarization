@@ -1,5 +1,6 @@
 package com.main;
 
+import com.ust.BM25Modified.BM25TextRankSummaryModified;
 import com.ust.similarity.CosineSimilarity;
 import com.ust.vector.SentenceVector;
 import com.model.DataSet;
@@ -28,6 +29,8 @@ public class MeaNsStart {
     //lol
     private static String STOPWORDSPATH = "StopWords.txt";
 
+    static int numOfSentences;
+
     /**
      * eto na yung main method ng thesis namin.
      * @param args not used
@@ -40,7 +43,7 @@ public class MeaNsStart {
         //path where the text files will be found.
         String folderPath = "testTokenize"; //getFolderPath();
 
-        //if no folder is selected.
+        //Stop the program if no folder is selected
         if (folderPath.equals("")) stopProgram();
 
         //for tokenization
@@ -61,17 +64,31 @@ public class MeaNsStart {
             //cluster the topics
             ArrayList<ArrayList<Sentence>> clusterList = clusterize(topic);
 
-            ArrayList<Sentence> summary = null;//method(rank)
-            //method for printing the summary
+            ArrayList<ArrayList<Sentence>> summary = null;//method(rank)
+
+
             try {
-                createSummaryFile(summary, file[fileIndex]);
-            } catch (IOException ioException) {
+                    createSummaryFile(summary, file[fileIndex]);
+            }catch (IOException ioException) {
                 System.out.println("IOEXCEPTION-ERROR IN CREATING FILE:" + file[fileIndex].getName());
                 ioException.printStackTrace();
             }
             fileIndex++;
+
         }
 
+    }
+
+    public static ArrayList<ArrayList<Sentence>> buildSummary(ArrayList<ArrayList<Sentence>> clusters){
+        int sentencesPerCluster= numOfSentences/clusters.size();
+
+        ArrayList<ArrayList<Sentence>> summary = new ArrayList<>();
+        for(ArrayList<Sentence> cluster:clusters){
+            ArrayList<Sentence> temp = new ArrayList(BM25TextRankSummaryModified.getTopSentenceList(cluster,sentencesPerCluster);
+
+            summary.add(temp);
+        }
+        return summary;
     }
 
     /**
@@ -79,13 +96,16 @@ public class MeaNsStart {
      * @param file      the source text document where the summary came from
      * @throws IOException
      */
-    public static void createSummaryFile(ArrayList<Sentence> sentences, File file) throws IOException {
+    public static void createSummaryFile(ArrayList<ArrayList<Sentence>> sentences, File file) throws IOException {
         String directory = "MeansOutput" + File.separator + file.getName();
         FileWriter fileWriter = new FileWriter(directory);
         String finalSummary = "";
 
-        for (Sentence sentence : sentences) {
-            finalSummary += sentence.getRefSentence() + " ";
+        for(ArrayList<Sentence> arraylist : sentences){
+            for(Sentence sentence: arraylist){
+                finalSummary+=sentence.getRefSentence()+" ";
+            }
+            finalSummary+="\n";
         }
         fileWriter.write(finalSummary);
         fileWriter.close();
@@ -123,7 +143,7 @@ public class MeaNsStart {
 
     /**
      * method that will return a folder path where the text documents are.
-     * @return a String of the folder Directory chosen by the JFileChooser
+     * @return a String of the folder Directory chosen by the JFileChooser or null if nothing
      */
     public static String getFolderPath() {
         JFileChooser chooser = new JFileChooser();
@@ -182,7 +202,7 @@ public class MeaNsStart {
                 // System.out.println(vector.getSentence().getRefSentence());
             }
             //kung gusto isort by position
-            cluster.sort((a, b) -> a.getPosition() > b.getPosition() ? 1 : 0);
+            //cluster.sort((a, b) -> a.getPosition() > b.getPosition() ? 1 : 0);
             clusterList.add(cluster);
         }
         //clusterList.sort(new SentencePositionComparator<>);
