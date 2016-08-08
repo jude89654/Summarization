@@ -29,6 +29,8 @@ public class MeaNsStart {
     //lol
     private static String STOPWORDSPATH = "StopWords.txt";
 
+    final static String outputFolderName="MeansSummary";
+
     static int numOfSentences;
 
     /**
@@ -64,7 +66,7 @@ public class MeaNsStart {
             //cluster the topics
             ArrayList<ArrayList<Sentence>> clusterList = clusterize(topic);
 
-            ArrayList<ArrayList<Sentence>> summary = null;//method(rank)
+            ArrayList<ArrayList<Sentence>> summary =buildSummary(clusterList);//method(rank)
 
 
             try {
@@ -97,7 +99,7 @@ public class MeaNsStart {
      * @throws IOException
      */
     public static void createSummaryFile(ArrayList<ArrayList<Sentence>> sentences, File file) throws IOException {
-        String directory = "MeansOutput" + File.separator + file.getName();
+        String directory = outputFolderName + File.separator + file.getName();
         FileWriter fileWriter = new FileWriter(directory);
         String finalSummary = "";
 
