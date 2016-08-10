@@ -18,6 +18,8 @@ import java.util.Iterator;
 
 public class TextFileTokenizer {
 
+
+    static final String outputFolder = "TOKENIZEDTEXT";
     /**
      * method to create a tokenization of words that will be put on the /del directory
      * @param filename the name o the text document to be tokenized
@@ -42,7 +44,7 @@ public class TextFileTokenizer {
         String[] sentences = sdetector.sentDetect(flattenedText);
 
 
-        File folder=new File("testTokenize");
+        File folder=new File(outputFolder);
         folder.mkdir();
 
         //kung saan pumupunta ang mga tokenized na sentences at words
@@ -92,16 +94,12 @@ public class TextFileTokenizer {
     static String flattenText(String filename) throws IOException {
         String flattenedText = "";
         FileInputStream fileInputStream = new FileInputStream(filename);
-
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(fileInputStream));
-
         String line;
         while ((line = bufferedReader.readLine()) != null) {
             flattenedText += line + "\n";
         }
-
         return flattenedText;
-
     }
 
     /**
