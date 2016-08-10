@@ -11,6 +11,7 @@ import com.util.StopWords;
 import com.ust.tokenizer.TextFileTokenizer;
 import org.apache.commons.math3.ml.clustering.CentroidCluster;
 import org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer;
+import org.apache.commons.math3.random.RandomGenerator;
 
 
 import javax.swing.*;
@@ -71,6 +72,7 @@ public class MeaNsStart {
 
 
             try {
+                System.out.println("CREATING FILE" +file[fileIndex].getName());
                     createSummaryFile(summary, file[fileIndex]);
             }catch (IOException ioException) {
                 System.out.println("IOEXCEPTION-ERROR IN CREATING FILE:" + file[fileIndex].getName());
@@ -84,7 +86,7 @@ public class MeaNsStart {
 
     public static ArrayList<ArrayList<Sentence>> buildSummary(ArrayList<ArrayList<Sentence>> clusters){
 
-        int sentencesPerCluster= numOfSentences/clusters.size();
+        int sentencesPerCluster= 2;
 
         ArrayList<ArrayList<Sentence>> summary = new ArrayList<>();
         for(ArrayList<Sentence> cluster:clusters){
@@ -115,6 +117,7 @@ public class MeaNsStart {
             }
             finalSummary+="\n";
         }
+        System.out.println("FINAL SUMMARY\n"+finalSummary);
         fileWriter.write(finalSummary);
         fileWriter.close();
 
@@ -193,8 +196,9 @@ public class MeaNsStart {
 
         //Similarity measure used for distance in the clusterer
         CosineSimilarity sim = new CosineSimilarity();
+        Random rand= new Random();
         //initializing the clusterer
-        KMeansPlusPlusClusterer<SentenceVector> kMeansClusterer = new KMeansPlusPlusClusterer<SentenceVector>(k, 900, sim);
+        KMeansPlusPlusClusterer<SentenceVector> kMeansClusterer = new KMeansPlusPlusClusterer<SentenceVector>(k, 500, sim);
 
         ArrayList<ArrayList<Sentence>> clusterList = new ArrayList<>();
 
