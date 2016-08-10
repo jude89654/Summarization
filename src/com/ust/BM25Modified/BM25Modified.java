@@ -83,7 +83,7 @@ public class BM25Modified {
         double score=0;
 
         for(String word:sentence.getContent()){
-            if(frequency[index].containsKey(word))continue;
+            if(!frequency[index].containsKey(word))continue;
             int documentSize = document.get(index).getSentenceLength();
             Integer wordFrequency = frequency[index].get(word);
             score+=(inverseDocumentFrequency.get(word)*wordFrequency*(k1+1)

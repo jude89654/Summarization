@@ -48,7 +48,7 @@ public class BM25TextRankSummaryModified {
         int sentenceIndex=0;
         for(Sentence sentence : document){
             double[] scores = bm25Modified.similarityOfAllSentences(sentence);
-            System.out.println(Arrays.toString(scores));
+            //System.out.println(Arrays.toString(scores));
 
             weight[sentenceIndex] = scores;
 
@@ -56,7 +56,7 @@ public class BM25TextRankSummaryModified {
 
             vertex[sentenceIndex]=1.0;
 
-            sentenceIndex++;
+            ++sentenceIndex;
         }
 
         for(int index =0; index<maxIterations; index++ ){
@@ -64,7 +64,7 @@ public class BM25TextRankSummaryModified {
             double maxDifference = 0;
 
             for(int innerLoopIndex=0; innerLoopIndex<numberOfSentences;innerLoopIndex++){
-                m[index]= 1-dampingFactor;
+                m[innerLoopIndex]= 1-dampingFactor;
 
                 for(int innerInnerLoopIndex =0 ; innerInnerLoopIndex<numberOfSentences;innerInnerLoopIndex++){
                     if(innerLoopIndex==innerInnerLoopIndex||weightSum[innerInnerLoopIndex]==0)continue;

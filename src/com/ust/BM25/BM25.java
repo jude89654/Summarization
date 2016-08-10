@@ -76,6 +76,7 @@ public class BM25 {
                 termFrequency.put(word, freq);
             }
             frequency[index] = termFrequency;
+
             for (Map.Entry<String, Integer> entry : termFrequency.entrySet()) {
                 String word = entry.getKey();
                 Integer freq = documentFrequency.get(word);
