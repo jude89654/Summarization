@@ -17,6 +17,14 @@ public class SentenceVector implements Clusterable {
      double[] point;
 
 
+    /**
+     * method to initialize the SentenceVector
+     * @param sentence the Sentence
+     * @param global  ArrayList of Stingtotal unique words without stop words in all of the documents.
+     * @param topic The topic of where the sentence came from
+     * @param document The Document where the sentence came from
+     * @param sentences The ArrayList of all sentences.
+     */
     public SentenceVector(Sentence sentence, ArrayList<String> global, Topic topic, Document document, ArrayList<List<String>> sentences){
 
         this.sentence = sentence;
@@ -33,24 +41,29 @@ public class SentenceVector implements Clusterable {
     }
 
 
+    /**
+     * method that returns the sentence
+     * @return returns the Sentence
+     */
     public Sentence getSentence(){
         return sentence;
     }
 
 
-    /*
+    /**
      *implemented abstract method for clustering.
-     *@return
+     *@return the point
      */
     @Override
     public double[] getPoint() {
         return point;
     }
 
-    /*
+    /**
      * method that calculates the inverse document frequency based on a term given by the vector space
      * @param sentences The list of all sentences of the topic
      * @param term The term that will be used to compute the inverse - document frequency
+     * @return the idf between the sentences and term
      */
     static double inverseDocumentFrequency(ArrayList<List<String>> sentences, String term) {
         double count = 0;
@@ -84,7 +97,7 @@ public class SentenceVector implements Clusterable {
     }
 
 
-    /*
+    /**
      *method that will compute the term frequency among the document
      *@param sentenceContent the List that contains the stemmed words of the sentences
      *@param term, the term that will compute the term frequency

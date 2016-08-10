@@ -11,18 +11,23 @@ import org.apache.commons.math3.ml.distance.DistanceMeasure;
 public class CosineSimilarity implements DistanceMeasure{
 
 
-    /*
-     * a method implemented to create a similarity measure in the K-Means clusterer.
+    /**
+     * a method implemented to create a Cosine Similarity measure in the K-Means clusterer.
      * @param a , the first vector
      * @param b , the second vector
      * @return a double that is the distance between the two vectors.
      */
     @Override
     public double compute(double[] a, double[] b) throws DimensionMismatchException {
-
         return cosSim(a,b);
     }
 
+    /**
+     * method to compute the cosine similarity of the two vectors.
+     * @param a first vector
+     * @param b the second vector
+     * @return returns a double that will have the cosine similarity
+     */
     static double cosSim(double[] a, double[] b) {
         double dotp = 0, maga = 0, magb = 0;
         for (int i = 0; i < a.length; i++) {

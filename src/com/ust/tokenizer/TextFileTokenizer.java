@@ -18,7 +18,11 @@ import java.util.Iterator;
 
 public class TextFileTokenizer {
 
-    //for tokenizing the paragraphs into words
+    /**
+     * method to create a tokenization of words that will be put on the /del directory
+     * @param filename the name o the text document to be tokenized
+     * @throws IOException if the file does not exist or the file cannot be used
+     */
     static void tokenize(String filename) throws IOException {
 
         InputStream inputStream = new FileInputStream("en-sent.bin");
@@ -79,7 +83,12 @@ public class TextFileTokenizer {
     }
 
 
-    //convert a text file into a long String
+    /**
+     * a method that will be used to create the text document into a STring
+     * @param filename the text file.
+     * @return a String that is the contents of the text document
+     * @throws IOException
+     */
     static String flattenText(String filename) throws IOException {
         String flattenedText = "";
         FileInputStream fileInputStream = new FileInputStream(filename);
@@ -94,7 +103,12 @@ public class TextFileTokenizer {
         return flattenedText;
 
     }
-    //for tokenizing files of each folder
+
+    /**
+     * a method that will tokenize text documents at the selected directory
+     * @param folder the folder that contains the text documents
+     * @throws IOException
+     */
     public static void tokenizeFiles(String folder)throws IOException{
         File[] mgaDocuments = new File(folder).listFiles();
 
@@ -105,7 +119,11 @@ public class TextFileTokenizer {
         }
 
     }
-    //test
+
+    /**
+     * test method
+     * @param args not used
+     */
     public static void main(String args[]) {
         try {
 

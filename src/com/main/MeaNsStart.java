@@ -117,9 +117,8 @@ public class MeaNsStart {
 
 
     /**
-     * method that will tokenize text to documents and sentences
-     *
-     * @param folder the folder that contains a
+     * method that will tokenize text to documents and sentences.
+     * @param folder the folder that contains all the text documents.
      */
     public static void tokenizeFiles(String folder) {
         try {
@@ -135,7 +134,7 @@ public class MeaNsStart {
     }
 
     /**
-     * a method that will end the program immediately
+     * a method that will end the program immediately/
      */
     public static void stopProgram() {
         System.out.println("MEANS SUMMARIZATION PROGRAM ENDED");
@@ -144,7 +143,7 @@ public class MeaNsStart {
 
 
     /**
-     * method that will return a folder path where the text documents are.
+     * a method that will open a JFileChooser and will let the user pick and will return a folder path where the text documents are.
      * @return a String of the folder Directory chosen by the JFileChooser or null if nothing
      */
     public static String getFolderPath() {
@@ -183,6 +182,7 @@ public class MeaNsStart {
 
         //Rule of thumb for k
         int k = (int) (Math.sqrt(sentences.size() / 2));
+
         System.out.println("NUMBER OF K:" + k);
 
         //Similarity measure used for distance in the clusterer
@@ -215,9 +215,9 @@ public class MeaNsStart {
     /**
      * A function that will return an ArrayList of SentenceVectors based on a given Topic
      *
-     * @param topic
-     * @param global
-     * @param sentences
+     * @param topic the topic that will be used to create an populate the vectors
+     * @param global The ArrayList of words that will be the Sentences.
+     * @param sentences this will be the ArrayList that will be populated
      * @return an ArrayList of SentenceVectors based on a given topic
      */
     public static ArrayList<SentenceVector> createSentenceVectorList(Topic topic, ArrayList<String> global
@@ -248,13 +248,15 @@ public class MeaNsStart {
      * @param global          the ArrayList that would be the list containing all the unique stemmed words
      */
     public static void preProcess(Topic topic, ArrayList<List<String>> sentences, ArrayList<String> global) {
-        for (Document document :
-                topic.getDocuments()) {
+
+        //for each document
+        for (Document document : topic.getDocuments()) {
+            //for each sentence
             for (Sentence sentence : document.getSentences()) {
-
                 sentences.add(sentence.getContent());
+                //for each word
                 for (String word : sentence.getContent()) {
-
+                    //if the word is not a stop word and is not within the global
                     if (!global.contains(word) & !StopWords.isStopWord(word)) {
                         global.add(word);
                     }
