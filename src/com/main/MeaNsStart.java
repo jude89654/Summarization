@@ -15,6 +15,7 @@ import org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer;
 
 import javax.swing.*;
 import java.io.File;
+import java.io.FileDescriptor;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
@@ -31,7 +32,7 @@ public class MeaNsStart {
 
     final static String outputFolderName="MeansSummary";
 
-    static int numOfSentences;
+    static int numOfSentences=5;
 
     /**
      * eto na yung main method ng thesis namin.
@@ -82,11 +83,12 @@ public class MeaNsStart {
     }
 
     public static ArrayList<ArrayList<Sentence>> buildSummary(ArrayList<ArrayList<Sentence>> clusters){
+
         int sentencesPerCluster= numOfSentences/clusters.size();
 
         ArrayList<ArrayList<Sentence>> summary = new ArrayList<>();
         for(ArrayList<Sentence> cluster:clusters){
-            ArrayList<Sentence> temp = new ArrayList(BM25TextRankSummaryModified.getTopSentenceList(cluster,sentencesPerCluster);
+            ArrayList<Sentence> temp = new ArrayList(BM25TextRankSummaryModified.getTopSentenceList(cluster,sentencesPerCluster));
 
             summary.add(temp);
         }
@@ -99,8 +101,12 @@ public class MeaNsStart {
      * @throws IOException
      */
     public static void createSummaryFile(ArrayList<ArrayList<Sentence>> sentences, File file) throws IOException {
+        File outputFolder= new File(outputFolderName);
+        outputFolder.mkdir();
         String directory = outputFolderName + File.separator + file.getName();
-        FileWriter fileWriter = new FileWriter(directory);
+        File outputFile= new File(directory);
+        //outputFile.createNewFile();
+        FileWriter fileWriter = new FileWriter(outputFile);
         String finalSummary = "";
 
         for(ArrayList<Sentence> arraylist : sentences){
