@@ -1,25 +1,24 @@
 package com.main;
 
-import com.ust.BM25Modified.BM25TextRankSummaryModified;
-import com.ust.similarity.CosineSimilarity;
-import com.ust.vector.SentenceVector;
 import com.model.DataSet;
 import com.model.Document;
 import com.model.Sentence;
 import com.model.Topic;
-import com.util.StopWords;
+import com.ust.BM25Modified.BM25TextRankSummaryModified;
+import com.ust.similarity.CosineSimilarity;
 import com.ust.tokenizer.TextFileTokenizer;
+import com.ust.vector.SentenceVector;
+import com.util.StopWords;
 import org.apache.commons.math3.ml.clustering.CentroidCluster;
 import org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer;
-import org.apache.commons.math3.random.RandomGenerator;
-
 
 import javax.swing.*;
 import java.io.File;
-import java.io.FileDescriptor;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 
 /**
@@ -28,7 +27,6 @@ import java.util.*;
  */
 public class MeaNsStart {
 
-    //lol
     private static String STOPWORDSPATH = "StopWords.txt";
 
     final static String outputFolderName="MeansSummary";
@@ -45,7 +43,7 @@ public class MeaNsStart {
         StopWords.initializeStopWords(STOPWORDSPATH);
 
         //path where the text files will be found.
-        String folderPath = "testTokenize"; //getFolderPath();
+        String folderPath = getFolderPath();
 
         //Stop the program if no folder is selected
         if (folderPath.equals("")) stopProgram();
@@ -58,12 +56,13 @@ public class MeaNsStart {
         DataSet dataSet = new DataSet(folderPath);
 
 
-        //COUNTER FOR DOCUMENT CONSOLE
-        int fileIndex = 0;
 
         //CREATING SUMMARIZATION FOR EACH TOPIC
         for (Topic topic : dataSet.getTopics()) {
-            System.out.println("NOW CREATING SUMMARY FOR:" + file[fileIndex].getName());
+
+            String fileName=dataSet.getTopicName(topic.getTopicId());
+
+            System.out.println("NOW CREATING SUMMARY FOR:" + fileName);
 
             //cluster the topics
             ArrayList<ArrayList<Sentence>> clusterList = clusterize(topic);
@@ -72,21 +71,28 @@ public class MeaNsStart {
 
 
             try {
-                System.out.println("CREATING FILE" +file[fileIndex].getName());
-                    createSummaryFile(summary, file[fileIndex]);
+                System.out.println("CREATING FILE " +fileName);
+                createSummaryFile(summary,new File(fileName+".txt") );
+                System.out.println("CREATED FILE:"+fileName+"\n\n");
             }catch (IOException ioException) {
-                System.out.println("IOEXCEPTION-ERROR IN CREATING FILE:" + file[fileIndex].getName());
+                System.out.println("IOEXCEPTION-ERROR IN CREATING FILE:" + fileName);
                 ioException.printStackTrace();
             }
-            fileIndex++;
+
 
         }
+        stopProgram();
 
     }
 
+    /**
+     * method used to get the top Sentences in each cluster.
+     * @param clusters ArrayList that contains the sentences.
+     * @return
+     */
     public static ArrayList<ArrayList<Sentence>> buildSummary(ArrayList<ArrayList<Sentence>> clusters){
 
-        int sentencesPerCluster= 2;
+        int sentencesPerCluster= 1;
 
         ArrayList<ArrayList<Sentence>> summary = new ArrayList<>();
         for(ArrayList<Sentence> cluster:clusters){
@@ -111,19 +117,32 @@ public class MeaNsStart {
         FileWriter fileWriter = new FileWriter(outputFile);
         String finalSummary = "";
 
+        System.out.println("TOP SENTENCES:");
         for(ArrayList<Sentence> arraylist : sentences){
             for(Sentence sentence: arraylist){
+                System.out.println("DOC ID: "+sentence.getDocumentId()+" SENTENCE ID:"+sentence.getId());
+                System.out.println("SENTENCE:"+sentence.getRefSentence()+"\n");
                 finalSummary+=sentence.getRefSentence()+" ";
             }
             finalSummary+="\n";
         }
-        System.out.println("FINAL SUMMARY\n"+finalSummary);
+       // System.out.println("FINAL SUMMARY\n"+finalSummary);
         fileWriter.write(finalSummary);
         fileWriter.close();
 
         System.out.println("CREATED SUMMARY FOR " + file.getName());
     }
 
+    /**
+     * method for creating a summary file for 0\\
+     * @param sentences
+     * @param file
+     * @throws IOException
+     */
+    public static void createSummaryFile(ArrayList<ArrayList<Sentence>> sentences, String file) throws IOException{
+        createSummaryFile(sentences,new File(file));
+
+    }
 
     /**
      * method that will tokenize text to documents and sentences.
@@ -198,7 +217,7 @@ public class MeaNsStart {
         CosineSimilarity sim = new CosineSimilarity();
         Random rand= new Random();
         //initializing the clusterer
-        KMeansPlusPlusClusterer<SentenceVector> kMeansClusterer = new KMeansPlusPlusClusterer<SentenceVector>(k, 500, sim);
+        KMeansPlusPlusClusterer<SentenceVector> kMeansClusterer = new KMeansPlusPlusClusterer<SentenceVector>(k, 1500, sim);
 
         ArrayList<ArrayList<Sentence>> clusterList = new ArrayList<>();
 
