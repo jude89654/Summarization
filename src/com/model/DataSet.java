@@ -21,7 +21,7 @@ public class DataSet {
     Map<String, Topic> topicMap = new HashMap<String, Topic>();
     Map<Long, String> nameMap = new HashMap<Long, String>();
     SimilarityScorer simScorer = new CosineSimilarityScorer();
-    ;
+
 
 
     String EXT_SUMMARY = "sum";
@@ -31,9 +31,9 @@ public class DataSet {
     public DataSet() {
         //do nothing
     }
-/*
+/**
  *Gumagawa ng documents at sentences after natokenize na yung dataset
- * @param dirPath String ng path kung saan papunta sa data mo.
+ *@param dirPath String ng path kung saan papunta sa data mo.
  */
     public DataSet(String dirPath) {
         long topicId = 0;
@@ -77,8 +77,9 @@ public class DataSet {
     }
 
 
-    /*method na na gumagawa ng list ng mga files na nandun sa ininput na path
-     *@path yun yung directory kung saan makikita ang mga files.
+    /**
+     *method na na gumagawa ng list ng mga files na nandun sa ininput na path
+     *@param path yun yung directory kung saan makikita ang mga files.
      *@return yung list ng mga Files na nakalagay dun sa path na yun.
      */
     private List<File> getFiles(File path) {
@@ -133,7 +134,9 @@ public class DataSet {
     }
 
 
-    //Filter na nagrereturn ng true kung yung naspecify na file ay may tamang extension.
+    /**
+     * Filter na kinukuha lang yung mga files na nageend sa txt
+     */
     class Filter implements FilenameFilter {
         private List<String> extensions;
 
