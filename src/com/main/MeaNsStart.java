@@ -45,6 +45,9 @@ public class MeaNsStart {
         //path where the text files will be found.
         String folderPath = getFolderPath();
 
+        //numOfSentences
+        numOfSentences=inputNumberOfSentences();
+
         //Stop the program if no folder is selected
         if (folderPath.equals("")) stopProgram();
 
@@ -69,10 +72,12 @@ public class MeaNsStart {
 
             ArrayList<ArrayList<Sentence>> summary =buildSummary(clusterList);//method(rank)
 
+            // TODO: 8/11/2016  kailangan mo irank ang mga top sentences kada cluster :D
 
             try {
                 System.out.println("CREATING FILE " +fileName);
                 createSummaryFile(summary,new File(fileName+".txt") );
+
                 System.out.println("CREATED FILE:"+fileName+"\n\n");
             }catch (IOException ioException) {
                 System.out.println("IOEXCEPTION-ERROR IN CREATING FILE:" + fileName);
@@ -85,14 +90,36 @@ public class MeaNsStart {
 
     }
 
+
+    /**
+     * method to let the user pick a numberOfSentences that will be extracted to create a summary
+     * @return an int
+     */
+    public static int inputNumberOfSentences(){
+
+        String[] noOfSentences = {"5","6","7","8","9","10"};
+        JFrame jFrame = new JFrame("MEANS SUMMARIZER");
+
+        String number=""+JOptionPane.showInputDialog(jFrame,"PICK NUMBER OF SENTENCES"
+                ,"NO. OF SENTENCES"
+                ,JOptionPane.QUESTION_MESSAGE
+                ,null
+                ,noOfSentences
+                ,noOfSentences[0]);
+
+        return Integer.parseInt(number);
+    }
+
     /**
      * method used to get the top Sentences in each cluster.
      * @param clusters ArrayList that contains the sentences.
-     * @return
+     * @return An ArrayList of ArrayList of sentences.
      */
     public static ArrayList<ArrayList<Sentence>> buildSummary(ArrayList<ArrayList<Sentence>> clusters){
 
-        int sentencesPerCluster= 1;
+
+        int computedNumber =(int)Math.ceil(numOfSentences/clusters.size());
+        int sentencesPerCluster=(computedNumber==0)?1:computedNumber;
 
         ArrayList<ArrayList<Sentence>> summary = new ArrayList<>();
         for(ArrayList<Sentence> cluster:clusters){
@@ -141,7 +168,6 @@ public class MeaNsStart {
      */
     public static void createSummaryFile(ArrayList<ArrayList<Sentence>> sentences, String file) throws IOException{
         createSummaryFile(sentences,new File(file));
-
     }
 
     /**
@@ -154,10 +180,9 @@ public class MeaNsStart {
             TextFileTokenizer.tokenizeFiles(folder);
 
         } catch (Exception e) {
-
             e.printStackTrace();
-            System.out.println("MeanNsStart:ERROR IN TOKENIZING FILES=============");
-            System.exit(0);
+            System.out.println("MeanNsStart:ERROR IN TOKENIZING FILES");
+            stopProgram();
         }
     }
 
