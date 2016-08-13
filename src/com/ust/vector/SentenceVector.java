@@ -13,10 +13,26 @@ import java.util.List;
  */
 public class SentenceVector implements Clusterable {
 
-     Sentence sentence;
+    public void setSentence(Sentence sentence) {
+        this.sentence = sentence;
+    }
+
+    /**
+     *
+     * @param point
+     */
+    public void setPoint(double[] point) {
+        this.point = point;
+    }
+
+    Sentence sentence;
      double[] point;
 
 
+    /**
+     * empty constructor para sa SentenceVector Factory
+     */
+    public SentenceVector(){}
     /**
      * method to initialize the SentenceVector
      * @param sentence the Sentence
