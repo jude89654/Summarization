@@ -18,8 +18,8 @@ import java.util.Iterator;
 
 public class TextFileTokenizer {
 
-
-    static final String outputFolder = "TOKENIZEDTEXT";
+    //
+    static final String outputFolder = "del";
     /**
      * method to create a tokenization of words that will be put on the /del directory
      * @param filename the name o the text document to be tokenized
@@ -48,7 +48,7 @@ public class TextFileTokenizer {
         folder.mkdir();
 
         //kung saan pumupunta ang mga tokenized na sentences at words
-        File outputFile = new File("del/" + new File(filename).getName());
+        File outputFile = new File(outputFolder+ File.separator + new File(filename).getName());
 
         FileWriter fileWriter = new FileWriter(outputFile);
 
@@ -59,10 +59,7 @@ public class TextFileTokenizer {
 
         Tokenizer tokenizer = new TokenizerME(modelforToken);
 
-
-
         //int sentenceNumber =1;
-
         for (String sentence : sentences) {
 
             fileWriter.append("Sentence:\n");
@@ -112,6 +109,7 @@ public class TextFileTokenizer {
 
         for(File file: mgaDocuments){
             System.out.println("NOW TOKENIZING FILE: "+file.getName());
+
             tokenize(file.getPath());
 
         }
@@ -125,6 +123,7 @@ public class TextFileTokenizer {
     public static void main(String args[]) {
         try {
 
+            System.out.println("PLEASE PICK A FOLDER");
             String folderName= JOptionPane.showInputDialog("INPUT FOLDER NAME");
             tokenizeFiles(folderName);
 
