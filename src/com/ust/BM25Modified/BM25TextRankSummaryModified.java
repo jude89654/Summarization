@@ -117,6 +117,7 @@ public class BM25TextRankSummaryModified {
 
         BM25TextRankSummaryModified textRankSummaryModified = new BM25TextRankSummaryModified(document);
         int[] topSentence = textRankSummaryModified.getTopSentence(size);
+        System.out.println(Arrays.toString(topSentence));
         List<Sentence> finalResults = new LinkedList();
         for(int index:topSentence){
             finalResults.add(document.get(index));
