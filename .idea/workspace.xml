@@ -2,74 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1bce966-458c-445a-9139-1164e2c12326" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/gui/MenuGUI.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/gui/MenuGUI.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MeansSummary/d30005.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MeansSummary/d30006.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30001.m.100.t.a.sum" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30001.m.100.t.b.sum" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30001.m.100.t.c.sum" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30001.m.100.t.d.sum" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30001.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30002.m.100.t.a.sum" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30002.m.100.t.b.sum" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30002.m.100.t.c.sum" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30002.m.100.t.e.sum" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30002.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30003.m.100.t.a.sum" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30003.m.100.t.b.sum" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30003.m.100.t.c.sum" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30003.m.100.t.f.sum" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30003.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30005.m.100.t.a.sum" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30005.m.100.t.b.sum" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30005.m.100.t.c.sum" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30005.m.100.t.g.sum" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30005.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30006.m.100.t.a.sum" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30006.m.100.t.b.sum" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30006.m.100.t.c.sum" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30006.m.100.t.h.sum" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/d30006.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ust/BM25/BM25.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ust/BM25/TextRankKeyword.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/ust/BM25/TextRankSummary.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testTokenize/DATASET-CURFEW.txt" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/main/MeaNsStart.java" afterPath="$PROJECT_DIR$/src/com/main/MEANSStart.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/main/MeaNsStart.class" afterPath="$PROJECT_DIR$/bin/com/main/MeaNsStart.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/model/DataSet$Filter.class" afterPath="$PROJECT_DIR$/bin/com/model/DataSet$Filter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/model/DataSet.class" afterPath="$PROJECT_DIR$/bin/com/model/DataSet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/model/Sentence.class" afterPath="$PROJECT_DIR$/bin/com/model/Sentence.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/model/Topic.class" afterPath="$PROJECT_DIR$/bin/com/model/Topic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/processor/SentenceProcessor.class" afterPath="$PROJECT_DIR$/bin/com/processor/SentenceProcessor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-BADJAOGIRLVIRAL.txt" afterPath="$PROJECT_DIR$/del/DATASET-BADJAOGIRLVIRAL.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-CANADIANABUSAYAFF.txt" afterPath="$PROJECT_DIR$/del/DATASET-CANADIANABUSAYAFF.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-CHED.txt" afterPath="$PROJECT_DIR$/del/DATASET-CHED.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-CHRISTINAGRIMMIE.txt" afterPath="$PROJECT_DIR$/del/DATASET-CHRISTINAGRIMMIE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-COMELECWEBSITEHACKED.txt" afterPath="$PROJECT_DIR$/del/DATASET-COMELECWEBSITEHACKED.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-CORONA.txt" afterPath="$PROJECT_DIR$/del/DATASET-CORONA.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-CURFEW.txt" afterPath="$PROJECT_DIR$/del/DATASET-CURFEW.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-DONALDTRUMP.txt" afterPath="$PROJECT_DIR$/del/DATASET-DONALDTRUMP.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-DUTERTEELECTION.txt" afterPath="$PROJECT_DIR$/del/DATASET-DUTERTEELECTION.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-DUTERTEROBREDO.txt" afterPath="$PROJECT_DIR$/del/DATASET-DUTERTEROBREDO.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-JACLYNJOSECANNES.txt" afterPath="$PROJECT_DIR$/del/DATASET-JACLYNJOSECANNES.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-KUYAGERMS.txt" afterPath="$PROJECT_DIR$/del/DATASET-KUYAGERMS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-LTFRB.txt" afterPath="$PROJECT_DIR$/del/DATASET-LTFRB.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-MIRIAMSANTIAGOOUTOFHOSPITAL.txt" afterPath="$PROJECT_DIR$/del/DATASET-MIRIAMSANTIAGOOUTOFHOSPITAL.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-MUHAMMADALI.txt" afterPath="$PROJECT_DIR$/del/DATASET-MUHAMMADALI.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-NAIA3BROWNOUT.txt" afterPath="$PROJECT_DIR$/del/DATASET-NAIA3BROWNOUT.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-NORAAUNORANINGDANGAL.txt" afterPath="$PROJECT_DIR$/del/DATASET-NORAAUNORANINGDANGAL.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-SHARONTHEVOICE.txt" afterPath="$PROJECT_DIR$/del/DATASET-SHARONTHEVOICE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30001.txt" afterPath="$PROJECT_DIR$/del/d30001.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30005.txt" afterPath="$PROJECT_DIR$/del/d30005.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/model/Sentence.java" afterPath="$PROJECT_DIR$/src/com/model/Sentence.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/model/Topic.java" afterPath="$PROJECT_DIR$/src/com/model/Topic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/processor/SentenceProcessor.java" afterPath="$PROJECT_DIR$/src/com/processor/SentenceProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ust/BM25Modified/BM25Modified.java" afterPath="$PROJECT_DIR$/src/com/ust/BM25Modified/BM25Modified.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ust/BM25Modified/BM25TextRankSummaryModified.java" afterPath="$PROJECT_DIR$/src/com/ust/BM25Modified/BM25TextRankSummaryModified.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ust/similarity/CosineSimilarity.java" afterPath="$PROJECT_DIR$/src/com/ust/similarity/CosineSimilarity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/main/MeaNsStart.java" afterPath="$PROJECT_DIR$/src/com/main/MeaNsStart.java" />
     </list>
     <ignored path="Summarization.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -153,7 +86,7 @@
       <file leaf-file-name="MEANSStart.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/main/MEANSStart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
+            <state relative-caret-position="930">
               <caret line="85" column="48" selection-start-line="85" selection-start-column="48" selection-end-line="85" selection-end-column="48" />
               <folding />
             </state>
@@ -163,7 +96,7 @@
       <file leaf-file-name="BM25Modified.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ust/BM25Modified/BM25Modified.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
+            <state relative-caret-position="1350">
               <caret line="94" column="36" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
               <folding />
             </state>
@@ -173,7 +106,7 @@
       <file leaf-file-name="BM25TextRankSummaryModified.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ust/BM25Modified/BM25TextRankSummaryModified.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
+            <state relative-caret-position="1860">
               <caret line="129" column="52" selection-start-line="129" selection-start-column="52" selection-end-line="129" selection-end-column="52" />
               <folding />
             </state>
@@ -312,7 +245,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -407,8 +340,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -561,6 +492,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -1165,11 +1098,12 @@
       <workItem from="1472980355479" duration="3442000" />
       <workItem from="1473087819672" duration="1842000" />
       <workItem from="1473342738795" duration="5564000" />
+      <workItem from="1473429194390" duration="234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="347180000" />
+    <option name="totallyTimeSpent" value="347414000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1181,33 +1115,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15698586" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30769232" sideWeight="0.5045386" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="127" y="526" width="1182" height="128" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34042552" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.396072" sideWeight="0.49546143" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34042552" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24605678" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25642964" sideWeight="0.47463176" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25569043" sideWeight="0.47463176" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17754173" sideWeight="0.4882353" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29210925" sideWeight="0.48772505" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11649016" sideWeight="0.5253683" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4942717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11649016" sideWeight="0.5253683" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23731588" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="127" y="526" width="1182" height="128" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19742814" sideWeight="0.5117647" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30932897" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1627,24 +1561,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gui/MenuGUI.form">
+      <provider editor-type-id="ui-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="ui-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/main/MEANSStart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
+        <state relative-caret-position="930">
           <caret line="85" column="48" selection-start-line="85" selection-start-column="48" selection-end-line="85" selection-end-column="48" />
           <folding />
         </state>
@@ -1652,7 +1584,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ust/BM25Modified/BM25TextRankSummaryModified.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
+        <state relative-caret-position="1860">
           <caret line="129" column="52" selection-start-line="129" selection-start-column="52" selection-end-line="129" selection-end-column="52" />
           <folding />
         </state>
@@ -1660,7 +1592,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ust/BM25Modified/BM25Modified.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
+        <state relative-caret-position="1350">
           <caret line="94" column="36" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
           <folding />
         </state>

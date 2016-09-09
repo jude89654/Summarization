@@ -12,6 +12,7 @@ import com.ust.vector.SentenceVectorFactory;
 import com.util.StopWords;
 import org.apache.commons.math3.ml.clustering.CentroidCluster;
 import org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer;
+import org.apache.commons.math3.random.JDKRandomGenerator;
 
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
@@ -20,6 +21,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -27,17 +29,25 @@ import java.util.Random;
 /**
  * @author Jude Bismonte
  */
-public class MeaNsStart {
+public class MEANSStart {
 
+    /**
+     * Path of the text file containing the stopwords
+     */
     private static String STOPWORDSPATH = "StopWords.txt";
 
+    /**
+     * String that will be the name of the output directory of the summaries
+     */
     final static String outputFolderName = "MeansSummary";
 
-    static int numOfSentences = 5;
+    /**
+     * the number of sentences selected by the user
+     */
+    static int numOfSentences;
 
     /**
      * eto na yung main method ng thesis namin.
-     *
      * @param args not used
      */
     public static void main(String args[]) {
@@ -45,14 +55,15 @@ public class MeaNsStart {
         //initialize StopWords Class
         StopWords.initializeStopWords(STOPWORDSPATH);
 
-        //path where the text files will be found.
-        String folderPath =getFolderPath();
+        //get the path
+        String folderPath = getFolderPath();
+        if(folderPath.equals(""))stopProgram();
 
         //numOfSentences
         numOfSentences = inputNumberOfSentences();
 
         //Stop the program if no folder is selected
-        if (folderPath.equals("")) stopProgram();
+
 
         //for tokenization
         tokenizeFiles(folderPath);
@@ -71,21 +82,18 @@ public class MeaNsStart {
 
             //cluster the topics
             ArrayList<ArrayList<Sentence>> clusterList = clusterize(topic);
-            /*
-            ArrayList<ArrayList<Sentence>> topSentenceFromEachCluster = buildSummary(clusterList);//method(rank)
 
-            ArrayList<Sentence> reorderedSentences = reRankSentences(topSentenceFromEachCluster);
-            */
-//TESTING
+            //get top Sentence from each cluster
             ArrayList<Sentence> topSentenceFromEachCluster = getTopSentencesFromEachCluster(clusterList);
 
             ArrayList<Sentence> reorderedSentences = reRankTopSentences(topSentenceFromEachCluster);
 
             try {
-                System.out.println("CREATING FILE " + fileName);
-                createSummaryFile(reorderedSentences, new File(fileName + ".txt"));
+                System.out.println("CREATING FILE: Means_ " + fileName);
 
-                System.out.println("CREATED FILE:" + fileName + "\n\n");
+                createSummaryFile(reorderedSentences, new File(fileName + "_Means.txt"));
+
+                System.out.println("CREATED FILE: Means_" + fileName + "\n\n");
             } catch (IOException ioException) {
                 System.out.println("IOEXCEPTION-ERROR IN CREATING FILE:" + fileName);
                 ioException.printStackTrace();
@@ -99,42 +107,23 @@ public class MeaNsStart {
 
 
     /**
-     * after getting the top Sentences from each cluster, we will reorder all the sentences again using the BM25 Algorithm
-     *
-     * @param topSentencesFromEachCluster An ArrayList of an ArrayList containing the sentences
-     * @return
-     */
-    public static ArrayList<Sentence> reRankSentences(ArrayList<ArrayList<Sentence>> topSentencesFromEachCluster) {
-        ArrayList<Sentence> topSentences = new ArrayList<>();
-
-        for (ArrayList<Sentence> arrayList : topSentencesFromEachCluster) {
-            for (Sentence sentence : arrayList) {
-                topSentences.add(sentence);
-            }
-        }
-
-        List<Sentence> rerankedSummary = new ArrayList<>(BM25TextRankSummaryModified.getTopSentenceList(new ArrayList(topSentences), topSentences.size()));
-        return new ArrayList(rerankedSummary);
-    }
-
-    /**
      * method used to reorder sentences based on the ranking used by the bm25 algorithm
      * @param topSentences the top sentences extracted
      * @return reordered sentences
      */
     public static ArrayList<Sentence> reRankTopSentences(ArrayList<Sentence> topSentences){
-        return new ArrayList<Sentence>(BM25TextRankSummaryModified.getTopSentenceList(new ArrayList(topSentences),topSentences.size()));
+        return new ArrayList<Sentence>(BM25TextRankSummaryModified.getTopSentenceList(new ArrayList(topSentences),numOfSentences));
     }
 
 
     /**
      * method to let the user pick a numberOfSentences that will be extracted to create a summary
      *
-     * @return an int of what the user has chosen
+     * @return an int of what the user has chosen. default is 5 if none is chosen.
      */
     public static int inputNumberOfSentences() {
 
-        String[] noOfSentences = {"5", "6", "7", "8", "9", "10"};
+        String[] noOfSentences = { "5", "6", "7", "8", "9", "10"};
         JFrame jFrame = new JFrame("MEANS SUMMARIZER");
 
 
@@ -150,88 +139,84 @@ public class MeaNsStart {
         return Integer.parseInt(number);
     }
 
-    /**
-     * method used to get the top Sentences in each cluster.
-     *
-     * @param clusters ArrayList that contains the sentences.
-     * @return An ArrayList of ArrayList of sentences.
-     */
-    public static ArrayList<ArrayList<Sentence>> buildSummary(ArrayList<ArrayList<Sentence>> clusters) {
-
-
-        int computedNumber = (int) Math.ceil(numOfSentences / clusters.size());
-        int sentencesPerCluster = (computedNumber == 0) ? 1 : computedNumber;
-
-        ArrayList<ArrayList<Sentence>> summary = new ArrayList<>();
-        for (ArrayList<Sentence> cluster : clusters) {
-            ArrayList<Sentence> temp = new ArrayList(BM25TextRankSummaryModified.getTopSentenceList(cluster, sentencesPerCluster));
-
-            summary.add(temp);
-        }
-        return summary;
-    }
 
     /**
-     * Method used to extract top sentences from the cluster inputted
+     * Method used to extract top sentences from the clusters.
      * @param clusters the clusters.
      * @return topSentences extracted using the bm25 algorithm
      */
     public static ArrayList<Sentence> getTopSentencesFromEachCluster(ArrayList<ArrayList<Sentence>> clusters) {
 
-        int computedNumber = (int) Math.ceil(numOfSentences / clusters.size());
-        //int sentencesPerCluster = computedNumber==0 ? 1 : computedNumber;
-
         ArrayList<Sentence> topSentenceFromAllClusters = new ArrayList<>();
 
-        while (topSentenceFromAllClusters.size() <=numOfSentences) {
+        while (true) {
+
             for (ArrayList<Sentence> cluster : clusters) {
                 //if the cluster is empty, skip
                 if(cluster.isEmpty())continue;
 
                 //else get the top sentence from each cluster a
-                ArrayList<Sentence> tempList  =new ArrayList<>(BM25TextRankSummaryModified.getTopSentenceList(cluster, 1));
+                ArrayList<Sentence> tempList  =new ArrayList<>(BM25TextRankSummaryModified.getTopSentenceList(cluster, 2));
+
                 Sentence tempSentence = tempList.get(0);
+                Sentence tempSentence2;
+                if(tempList.size()==2) {
+                    tempSentence2 = tempList.get(1);
+                    topSentenceFromAllClusters.add(tempSentence2);
+                    cluster.remove(tempSentence2);
+                }
 
-                //and remove it from the cluster.
-                cluster.remove(tempSentence);
-                System.out.println("D:"+tempSentence.getDocumentId()+"S:"+tempSentence.getId());
+                    //System.out.println("D:"+tempSentence.getDocumentId()+"S:"+tempSentence.getId()+": "+tempSentence.getRefSentence());
 
-                //add to the final list of sentences
-                topSentenceFromAllClusters.add(tempSentence);
+                    //add to the final list of sentences
+                    topSentenceFromAllClusters.add(tempSentence);
+
+                    //and remove it from the cluster.
+                    cluster.remove(tempSentence);
 
                 //end the extraction if the number of extracted is equal to the number of sentences specified by the user
                 //if (topSentenceFromAllClusters.size() >= numOfSentences) break;
             }
+            if(topSentenceFromAllClusters.size()>numOfSentences)break;
+
         }
 
         return topSentenceFromAllClusters;
     }
 
 
+
+
     /**
+     * method to create the summary using the top sentences in the parameter
      * @param topSentences the final summary created by the Bm25
      * @param file         the source text document where the summary came from
-     * @throws IOException
+     * @throws IOException if there is no permission.
      */
     public static void createSummaryFile(ArrayList<Sentence> topSentences, File file) throws IOException {
+
         File outputFolder = new File(outputFolderName);
+        //making sure that directory exists.
         outputFolder.mkdir();
-        File outputFileDirectory = new File(outputFolder + File.separator + file.getName());
+
+        File outputFileDirectory = new File(outputFolder + File.separator +"Means_"+ file.getName());
 
         FileWriter fileWriter = new FileWriter(outputFileDirectory, false);
 
         String finalSummary = "";
-        for (Sentence sentence :
-                topSentences) {
+
+        for (Sentence sentence : topSentences) {
             finalSummary += sentence.getRefSentence() + "\n";
         }
+        System.out.println("FINAL SUMMARY:\n"+finalSummary);
         fileWriter.write(finalSummary);
         fileWriter.close();
     }
 
 
     /**
-     * method that will tokenize text to documents and sentences.
+     * method that will tokenize text to documents and sentences, and the tokenized and segmented sentences will be put at
+     * the /del directory for processing
      *
      * @param folder the folder that contains all the text documents.
      */
@@ -258,7 +243,6 @@ public class MeaNsStart {
 
     /**
      * a method that will open a JFileChooser and will let the user pick and will return a folder path where the text documents are.
-     *
      * @return a String of the folder Directory chosen by the JFileChooser or null if nothing
      */
     public static String getFolderPath() {
@@ -276,8 +260,7 @@ public class MeaNsStart {
 
 
     /**
-     * method that will clusterize sentences and will return k clusters with size k
-     *
+     * method that will clusterize sentences and will return k number of clusters
      * @param topic the topic that contains documents
      * @return
      */
@@ -302,13 +285,17 @@ public class MeaNsStart {
 
         //Similarity measure used for distance in the clusterer
         CosineSimilarity sim = new CosineSimilarity();
-        Random rand = new Random();
+
+
+        JDKRandomGenerator jdkRandomGenerator = new JDKRandomGenerator();
+
         //initializing the clusterer
-        KMeansPlusPlusClusterer<SentenceVector> kMeansClusterer = new KMeansPlusPlusClusterer<SentenceVector>(k, 1500, sim);
+        KMeansPlusPlusClusterer<SentenceVector> kMeansClusterer = new KMeansPlusPlusClusterer<SentenceVector>(k, 1500, sim,jdkRandomGenerator, KMeansPlusPlusClusterer.EmptyClusterStrategy.LARGEST_POINTS_NUMBER);
 
         ArrayList<ArrayList<Sentence>> clusterList = new ArrayList<>();
 
         int clusterCount = 0;
+
         for (CentroidCluster<SentenceVector> centroid : kMeansClusterer.cluster(sentenceVectors)) {
             //System.out.println(centroid.getCenter());
             ArrayList<Sentence> cluster = new ArrayList<>();
@@ -319,11 +306,12 @@ public class MeaNsStart {
                 cluster.add(vector.getSentence());
                 // System.out.println(vector.getSentence().getRefSentence());
             }
-            //kung gusto isort by position
-            //cluster.sort((a, b) -> a.getPosition() > b.getPosition() ? 1 : 0);
+
+            //sort the sentences by their position
+            Collections.sort(cluster,(a,b)->Long.compare(a.getPosition(),b.getPosition()));
+
             clusterList.add(cluster);
         }
-        //clusterList.sort(new SentencePositionComparator<>);
         return clusterList;
     }
 
