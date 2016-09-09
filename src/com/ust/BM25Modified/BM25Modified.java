@@ -16,6 +16,7 @@ public class BM25Modified {
 
     List<Sentence> document;
 
+
     Map<String, Integer>[] frequency;
 
     Map<String, Integer> documentFrequency;
@@ -24,6 +25,7 @@ public class BM25Modified {
 
     //regulators
     final static float k1=1.5f;
+
     final static float b=0.75f;
 
     public BM25Modified(List<Sentence> document){
@@ -41,7 +43,6 @@ public class BM25Modified {
 
         documentFrequency = new TreeMap<String, Integer>();
         inverseDocumentFrequency = new TreeMap<String,Double>();
-
 
         initialize();
     }
@@ -79,13 +80,17 @@ public class BM25Modified {
         }
     }
 
-    public double similarity(Sentence sentence, int index){
+    public double sim(Sentence sentence, int index){
         double score=0;
 
         for(String word:sentence.getContent()){
-            if(!frequency[index].containsKey(word))continue;
+            if(!frequency[index].containsKey(word)){
+                continue;
+            }
             int documentSize = document.get(index).getSentenceLength();
+
             Integer wordFrequency = frequency[index].get(word);
+
             score+=(inverseDocumentFrequency.get(word)*wordFrequency*(k1+1)
             /(wordFrequency+k1*(1-b+b*documentSize/ averageLengthOfSentences)));
         }
@@ -93,11 +98,11 @@ public class BM25Modified {
         return score;
     }
 
-    public double[] similarityOfAllSentences(Sentence sentence){
+    public double[] simAll(Sentence sentence){
         double[] scores = new double[numberOfSentences];
 
         for(int index = 0; index < numberOfSentences ; ++index){
-            scores[index] = similarity(sentence,index);
+            scores[index] = sim(sentence,index);
         }
         return scores;
     }

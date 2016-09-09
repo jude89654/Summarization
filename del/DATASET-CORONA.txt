@@ -638,8 +638,8 @@ Sentence:
 	S: and
 	S: civil
 	S: liabilities
-	S: .
 	S: "
+	S: .
 Sentence:
 	S: While
 	S: thankful

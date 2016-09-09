@@ -89,9 +89,9 @@ public class Sentence {
         for (int i = 0; i < content.size(); i++) {
             String word = content.get(i);
             //sw
-          //  StopWords.initializeStopWords("StopWords.txt");
-          //  if(StopWords.isStopWord(word))
-           // continue;
+          //StopWords.initializeStopWords("StopWords.txt");
+            if(StopWords.isStopWord(word))
+           continue;
             //ps
             String stemmedWord = word;
             try {

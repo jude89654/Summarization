@@ -210,8 +210,8 @@ Sentence:
 	S: and
 	S: suffered
 	S: complication
-	S: .
 	S: "
+	S: .
 Sentence:
 	S: Two
 	S: days

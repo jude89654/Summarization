@@ -23,10 +23,10 @@ public class CosineSimilarity implements DistanceMeasure{
     }
 
     /**
-     * method to compute the cosine similarity of the two vectors.
+     * method to compute the cosine sim of the two vectors.
      * @param a first vector
      * @param b the second vector
-     * @return returns a double that will have the cosine similarity
+     * @return returns a double that will have the cosine sim
      */
     static double cosSim(double[] a, double[] b) {
         double dotp = 0, maga = 0, magb = 0;

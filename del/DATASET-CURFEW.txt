@@ -60,9 +60,8 @@ Sentence:
 	S: drinking
 	S: beyond
 	S: 1
-	S: o’clock
+	S: o’clock"
 	S: .
-	S: "
 Sentence:
 	S: "
 	S: I’ll
@@ -74,8 +73,7 @@ Sentence:
 	S: a
 	S: national
 	S: law
-	S: .
-Sentence:
+	S: ;
 	S: If
 	S: I
 	S: have
@@ -97,8 +95,7 @@ Sentence:
 	S: implement
 	S: them
 	S: )
-	S: .
-Sentence:
+	S: ,
 	S: But
 	S: if
 	S: it
@@ -136,8 +133,8 @@ Sentence:
 	S: drink
 	S: until
 	S: 2
-	S: a.m.
-	S: ?
+	S: am
+	S: ,
 	S: Is
 	S: this
 	S: a
@@ -198,8 +195,7 @@ Sentence:
 	S: for
 	S: the
 	S: cigarettes
-	S: .
-Sentence:
+	S: ,
 	S: Look
 	S: ,
 	S: if
@@ -243,8 +239,7 @@ Sentence:
 	S: to
 	S: distribute
 	S: cancer
-	S: .
-Sentence:
+	S: ,
 	S: It
 	S: is
 	S: scientifically
@@ -402,9 +397,8 @@ Sentence:
 	S: for
 	S: "neglect
 	S: of
-	S: duty
+	S: duty"
 	S: .
-	S: "
 Sentence:
 	S: Duterte
 	S: ,
@@ -478,8 +472,8 @@ Sentence:
 	S: "protect
 	S: the
 	S: children
-	S: .
 	S: "
+	S: .
 Sentence:
 	S: He
 	S: would
@@ -544,8 +538,7 @@ Sentence:
 	S: public
 	S: ,
 	S: alcoholic
-	S: .
-Sentence:
+	S: ,
 	S: Do
 	S: not
 	S: occupy
@@ -677,8 +670,7 @@ Sentence:
 	S: is
 	S: a
 	S: nuisance
-	S: .
-Sentence:
+	S: ,
 	S: A
 	S: barangay
 	S: captain
@@ -856,8 +848,8 @@ Sentence:
 	S: in
 	S: the
 	S: Philippines
-	S: .
 	S: "
+	S: .
 Sentence:
 	S: The
 	S: resolution
@@ -891,8 +883,8 @@ Sentence:
 	S: for
 	S: certain
 	S: occasion
-	S: .
 	S: "
+	S: .
 Sentence:
 	S: The
 	S: resolution
@@ -930,8 +922,8 @@ Sentence:
 	S: other
 	S: illegal
 	S: substances
-	S: .
 	S: "
+	S: .
 Sentence:
 	S: Sun
 	S: Shimura

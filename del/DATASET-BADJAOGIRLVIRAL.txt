@@ -799,9 +799,8 @@ Sentence:
 	S: na
 	S: may
 	S: angkin
-	S: ganda
+	S: ganda"
 	S: .
-	S: "
 Sentence:
 	S: It
 	S: was
@@ -1012,8 +1011,8 @@ Sentence:
 	S: to
 	S: "escape
 	S: poverty
-	S: .
 	S: "
+	S: .
 Sentence:
 	S: #
 Sentence:

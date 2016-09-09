@@ -677,8 +677,8 @@ Sentence:
 	S: stakeholders
 	S: occurred
 	S: ,
-	S: .
 	S: "
+	S: .
 Sentence:
 	S: Only
 	S: 12.2

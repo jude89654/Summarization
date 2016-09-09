@@ -183,9 +183,8 @@ Sentence:
 	S: you
 	S: liked
 	S: our
-	S: film
+	S: film"
 	S: .
-	S: "
 Sentence:
 	S: She
 	S: said
@@ -615,9 +614,8 @@ Sentence:
 	S: have
 	S: a
 	S: good
-	S: film
+	S: film"
 	S: .
-	S: "
 Sentence:
 	S: #
 Sentence:
@@ -990,8 +988,8 @@ Sentence:
 	S: the
 	S: Manila
 	S: streets
-	S: .
 	S: "
+	S: .
 Sentence:
 	S: Manila-based
 	S: movie
@@ -1094,8 +1092,8 @@ Sentence:
 	S: a
 	S: wider
 	S: audience
-	S: .
 	S: "
+	S: .
 Sentence:
 	S: Social
 	S: media
@@ -1149,8 +1147,8 @@ Sentence:
 	S: been
 	S: world
 	S: class
-	S: .
 	S: "
+	S: .
 Sentence:
 	S: Atom
 	S: Araullo

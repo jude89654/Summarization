@@ -520,7 +520,7 @@ Sentence:
 	S: of
 	S: the
 	S: two
-	S: document
+	S: documents
 	S: went
 	S: without
 	S: a
@@ -1297,8 +1297,8 @@ Sentence:
 	S: indifferent
 	S: or
 	S: disinterested
-	S: .
 	S: "
+	S: .
 Sentence:
 	S: Duterte
 	S: topped
@@ -1562,8 +1562,8 @@ Sentence:
 	S: ,
 	S: 2016
 	S: Elections
-	S: .
 	S: "
+	S: .
 Sentence:
 	S: The
 	S: joint
@@ -2005,8 +2005,8 @@ Sentence:
 	S: "vulnerable
 	S: to
 	S: manipulation
-	S: .
 	S: "
+	S: .
 Sentence:
 	S: He
 	S: also

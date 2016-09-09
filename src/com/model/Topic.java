@@ -27,15 +27,14 @@ public class Topic {
             splitDocuments();
         }
         //initialize na yung summary
-        summaries = new ArrayList<Summary>();
+        summaries = new ArrayList<>();
 
         this.topicId = topicId;
     }
 
-    /*
-    * pagsplit ng documents into kanikanilang topics, ewan ko puta
-	*
-	*/
+    /**
+     * Splits the textfile into documents.
+     */
     private void splitDocuments() {
         //kukuhain ang pinakaunang document
         Document document = documents.remove(0);
@@ -43,7 +42,6 @@ public class Topic {
         //kukunin yung mga sentences sa document na yun
         List<Sentence> sentenceList = document.getSentences();
 
-        //what the fuck!? bakit dinivide!?
         int size = sentenceList.size() / 10;
 
         //constant siya bale, dumadagdag siya kada call, kaya ibang topic id kada documents
@@ -72,7 +70,7 @@ public class Topic {
                 sentenceList.get(sentenceIndex).setPosition(lineNumber);
                 list.add(sentenceList.get(sentenceIndex));
                 added++;
-                    //da fuck!? anong klaseng condition to?
+
                 if ((added == size && i != Constants.DOCUMENTS_PER_TOPIC - 1)
                             //ang alam ko ito pag yung sentence size ay equal na sa added
                         || (i == Constants.DOCUMENTS_PER_TOPIC - 1 && sentenceIndex == sentenceList.size() - 1)) {

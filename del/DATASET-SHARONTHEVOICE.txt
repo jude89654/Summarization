@@ -20,8 +20,8 @@ Sentence:
 	S: The
 	S: Voice
 	S: Kids
-	S: .
 	S: "
+	S: .
 Sentence:
 	S: Cuneta
 	S: will
@@ -237,9 +237,8 @@ Sentence:
 	S: for
 	S: something
 	S: really
-	S: big
+	S: big"
 	S: .
-	S: "
 Sentence:
 	S: When
 	S: asked
@@ -266,8 +265,7 @@ Sentence:
 	S: talagang
 	S: puwedeng
 	S: i-announce
-	S: .
-Sentence:
+	S: ,
 	S: Pero
 	S: ang
 	S: masasabi
@@ -304,8 +302,8 @@ Sentence:
 	S: Voice
 	S: Kids
 	S: Philippines
+	S: "
 	S: .
-	S: ”
 Sentence:
 	S: As
 	S: Sarah
@@ -334,7 +332,8 @@ Sentence:
 Sentence:
 	S: “Sobrang
 	S: excited
-	S: ako!
+	S: ako
+	S: ,
 	S: ”
 	S: said
 	S: the
@@ -345,19 +344,19 @@ Sentence:
 	S: with
 	S: ABS-CBN
 	S: News
-	S: .
-Sentence:
-	S: “
+	S: ,
+	S: "
 	S: I
 	S: will
 	S: be
 	S: part
 	S: of
-	S: ‘The
+	S: '
+	S: The
 	S: Voice
 	S: Kids
 	S: ,
-	S: ’
+	S: '
 	S: of
 	S: course
 	S: [with
@@ -365,9 +364,8 @@ Sentence:
 	S: Bamboo
 	S: and
 	S: Lea
-	S: Salonga
+	S: Salonga"
 	S: .
-	S: "
 Sentence:
 	S: Before
 	S: being
@@ -388,21 +386,22 @@ Sentence:
 	S: two
 	S: seasons
 	S: of
-	S: “Your
+	S: Your
 	S: Face
 	S: Sounds
 	S: Familiar
+	S: "
 	S: .
-	S: ”
 Sentence:
 	S: Aside
 	S: from
-	S: “The
+	S: "
+	S: The
 	S: Voice
 	S: Kids
 	S: Philippines
 	S: ,
-	S: ”
+	S: "
 	S: the
 	S: Megastar
 	S: also
@@ -413,12 +412,13 @@ Sentence:
 	S: up
 	S: for
 	S: a
-	S: “really
-	S: big”
+	S: "really
+	S: big
+	S: "
 	S: project
 	S: .
 Sentence:
-	S: “
+	S: "
 	S: I
 	S: have
 	S: been
@@ -429,12 +429,13 @@ Sentence:
 	S: i-surprise
 	S: kayo
 	S: ,
-	S: ”
+	S: "
 	S: she
 	S: said
 	S: .
 Sentence:
-	S: “Hindi
+	S: "
+	S: Hindi
 	S: pa
 	S: ako
 	S: tapos
@@ -451,16 +452,15 @@ Sentence:
 	S: for
 	S: something
 	S: really
-	S: big
+	S: big"
 	S: .
-	S: ”
+Sentence:
 	S: #
 Sentence:
 	S: It
 	S: 's
 	S: official
-	S: .
-Sentence:
+	S: ,
 	S: Megastar
 	S: Sharon
 	S: Cuneta
@@ -582,9 +582,9 @@ Sentence:
 	S: been
 	S: "working
 	S: on
-	S: [herself]
+	S: [herself
+	S: ]"
 	S: .
-	S: "
 Sentence:
 	S: "
 	S: To
@@ -630,7 +630,8 @@ Sentence:
 	S: wrote
 	S: .
 Sentence:
-	S: “Sadya
+	S: "
+	S: Sadya
 	S: po
 	S: yun
 	S: (
@@ -640,14 +641,12 @@ Sentence:
 	S: on
 	S: purpose
 	S: )
-	S: .
-Sentence:
+	S: ,
 	S: I
 	S: have
 	S: been
 	S: hibernating
-	S: .
-Sentence:
+	S: ,
 	S: I
 	S: 've
 	S: been
@@ -662,9 +661,8 @@ Sentence:
 	S: myself
 	S: para
 	S: i-surprise
-	S: kayo
+	S: kayo"
 	S: .
-	S: "
 Sentence:
 	S: She
 	S: added
@@ -695,9 +693,9 @@ Sentence:
 	S: for
 	S: something
 	S: really
-	S: big
+	S: big"
 	S: .
-	S: "
+Sentence:
 	S: Sharon
 	S: is
 	S: replacing

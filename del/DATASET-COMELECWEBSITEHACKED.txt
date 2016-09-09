@@ -230,8 +230,8 @@ Sentence:
 	S: to
 	S: remain
 	S: silent
-	S: .
 	S: "
+	S: .
 Sentence:
 	S: Now
 	S: ,
@@ -252,9 +252,8 @@ Sentence:
 	S: of
 	S: helping
 	S: the
-	S: agency
+	S: agency"
 	S: .
-	S: "
 Sentence:
 	S: The
 	S: NBI
@@ -289,9 +288,8 @@ Sentence:
 	S: no
 	S: intention
 	S: to
-	S: harm
+	S: harm"
 	S: .
-	S: "
 Sentence:
 	S: The
 	S: suspect
@@ -612,9 +610,8 @@ Sentence:
 	S: yung
 	S: public
 	S: information
-	S: website
+	S: website"
 	S: .
-	S: "
 Sentence:
 	S: Bautista
 	S: assured
@@ -796,8 +793,8 @@ Sentence:
 	S: breach
 	S: in
 	S: history
-	S: .
 	S: "
+	S: .
 Sentence:
 	S: "
 	S: Based
@@ -898,8 +895,9 @@ Sentence:
 	S: with
 	S: the
 	S: filename
-	S: VOTESOBTAINED.
-	S: "
+	S: VOTESOBTAINED"
+	S: .
+Sentence:
 	S: "
 	S: Based
 	S: on
@@ -993,9 +991,8 @@ Sentence:
 	S: affect
 	S: the
 	S: ballot
-	S: count
+	S: count"
 	S: .
-	S: "
 Sentence:
 	S: It
 	S: warned
@@ -1312,8 +1309,8 @@ Sentence:
 	S: the
 	S: election
 	S: period
-	S: .
 	S: "
+	S: .
 Sentence:
 	S: The
 	S: report

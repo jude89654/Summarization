@@ -1,6 +1,5 @@
 package com.ust.BM25Modified;
 
-import com.hankcs.hanlp.HanLP;
 import com.hankcs.hanlp.dictionary.stopword.CoreStopWordDictionary;
 import com.hankcs.hanlp.seg.common.Term;
 import com.model.Sentence;
@@ -16,6 +15,7 @@ public class BM25TextRankSummaryModified {
     final double dampingFactor = 0.85f;
 
     final int maxIterations = 200;
+
     final double minimumDifference = 0.001f;
 
     int numberOfSentences;
@@ -43,11 +43,10 @@ public class BM25TextRankSummaryModified {
         solve();
     }
 
-
     private void solve(){
         int sentenceIndex=0;
         for(Sentence sentence : document){
-            double[] scores = bm25Modified.similarityOfAllSentences(sentence);
+            double[] scores = bm25Modified.simAll(sentence);
             //System.out.println(Arrays.toString(scores));
 
             weight[sentenceIndex] = scores;
@@ -68,6 +67,7 @@ public class BM25TextRankSummaryModified {
 
                 for(int innerInnerLoopIndex =0 ; innerInnerLoopIndex<numberOfSentences;innerInnerLoopIndex++){
                     if(innerLoopIndex==innerInnerLoopIndex||weightSum[innerInnerLoopIndex]==0)continue;
+
                     m[innerInnerLoopIndex]+=(dampingFactor*weight[innerInnerLoopIndex][innerLoopIndex]
                             /weightSum[innerInnerLoopIndex]*vertex[innerInnerLoopIndex]);
                 }
@@ -98,7 +98,7 @@ public class BM25TextRankSummaryModified {
         Iterator<Integer> iterator = values.iterator();
 
         for(int index =0; index<size ; index++){
-            array[index]= iterator.next();
+            array[index] = iterator.next();
         }
 
         return array;
@@ -117,7 +117,7 @@ public class BM25TextRankSummaryModified {
 
         BM25TextRankSummaryModified textRankSummaryModified = new BM25TextRankSummaryModified(document);
         int[] topSentence = textRankSummaryModified.getTopSentence(size);
-        System.out.println(Arrays.toString(topSentence));
+        //System.out.println(Arrays.toString(topSentence));
         List<Sentence> finalResults = new LinkedList();
         for(int index:topSentence){
             finalResults.add(document.get(index));
@@ -128,7 +128,6 @@ public class BM25TextRankSummaryModified {
 
 
     public static boolean shouldInclude(Term term) {
-
         return CoreStopWordDictionary.shouldInclude(term);
 
     }
