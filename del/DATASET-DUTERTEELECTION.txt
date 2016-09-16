@@ -405,8 +405,9 @@ Sentence:
 	S: is
 	S: a
 	S: major
-	S: step"
+	S: step
 	S: .
+	S: "
 Sentence:
 	S: She
 	S: said

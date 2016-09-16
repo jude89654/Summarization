@@ -552,8 +552,8 @@ Sentence:
 	S: his
 	S: eternal
 	S: repose
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: Manila
 	S: Vice
@@ -655,8 +655,8 @@ Sentence:
 	S: ko
 	S: sa
 	S: kahirapan
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: (
 	S: There

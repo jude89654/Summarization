@@ -214,8 +214,8 @@ Sentence:
 	S: limited
 	S: their
 	S: movements
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: "
 	S: This
@@ -272,8 +272,9 @@ Sentence:
 	S: end
 	S: this
 	S: decades-old
-	S: problem"
+	S: problem
 	S: .
+	S: "
 Sentence:
 	S: "
 	S: We

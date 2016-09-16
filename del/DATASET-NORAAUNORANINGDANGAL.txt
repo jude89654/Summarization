@@ -6,8 +6,8 @@ Sentence:
 	S: funding
 	S: for
 	S: filmmakers
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: This
 	S: is
@@ -516,8 +516,9 @@ Sentence:
 	S: make
 	S: every
 	S: Filipino
-	S: proud"
+	S: proud
 	S: .
+	S: "
 Sentence:
 	S: #
 Sentence:

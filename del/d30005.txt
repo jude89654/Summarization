@@ -286,8 +286,9 @@ Sentence:
 	S: looking
 	S: for
 	S: an
-	S: "excuse
-	S: "
+	S: ``
+	S: excuse
+	S: ''
 	S: to
 	S: launch
 	S: another
@@ -389,7 +390,7 @@ Sentence:
 	S: group
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: America
 	S: is
 	S: looking
@@ -411,7 +412,7 @@ Sentence:
 	S: bin
 	S: Laden
 	S: ,
-	S: "
+	S: ''
 	S: Saqib
 	S: said
 	S: .
@@ -471,11 +472,12 @@ Sentence:
 	S: insecure
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: America
 	S: fears
 	S: its
 	S: shadow
+	S: ...
 	S: in
 	S: every
 	S: part
@@ -494,7 +496,7 @@ Sentence:
 	S: bin
 	S: Laden
 	S: ,
-	S: "
+	S: ''
 	S: he
 	S: said
 	S: in
@@ -613,7 +615,7 @@ Sentence:
 	S: penalty
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: We
 	S: want
 	S: good
@@ -637,7 +639,7 @@ Sentence:
 	S: our
 	S: ways
 	S: ,
-	S: "
+	S: ''
 	S: he
 	S: said
 	S: .
@@ -674,7 +676,7 @@ Sentence:
 	S: Taliban
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Bin
 	S: Laden
 	S: is
@@ -682,22 +684,24 @@ Sentence:
 	S: a
 	S: sinful
 	S: man
+	S: ...
 	S: America
 	S: has
 	S: been
 	S: silent
+	S: ...
 	S: they
 	S: have
 	S: given
 	S: no
 	S: evidence
 	S: ,
-	S: "
+	S: ''
 	S: he
 	S: said
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: It
 	S: is
 	S: too
@@ -722,7 +726,7 @@ Sentence:
 	S: bin
 	S: Laden
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: #
 Sentence:
@@ -1061,17 +1065,17 @@ Sentence:
 	S: ,
 	S: editors
 	S: at
-	S: "
+	S: ``
 	S: Jago
 	S: Mujahid
-	S: "
+	S: ''
 	S: or
-	S: "
+	S: ``
 	S: Wake
 	S: Up
 	S: Mujahid
 	S: ,
-	S: "
+	S: ''
 	S: a
 	S: monthy
 	S: magazine
@@ -1339,7 +1343,7 @@ Sentence:
 	S: States
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: It
 	S: 's
 	S: over
@@ -1352,7 +1356,7 @@ Sentence:
 	S: any
 	S: evidence
 	S: ,
-	S: "
+	S: ''
 	S: Afghanistan
 	S: 's
 	S: chief
@@ -1382,7 +1386,7 @@ Sentence:
 	S: Kabul
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Without
 	S: any
 	S: evidence
@@ -1396,13 +1400,15 @@ Sentence:
 	S: sin
 	S: .
 Sentence:
+	S: ...
+Sentence:
 	S: He
 	S: is
 	S: a
 	S: free
 	S: man
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: The
 	S: Taliban
@@ -1558,7 +1564,8 @@ Sentence:
 	S: province
 	S: .
 Sentence:
-	S: "Egyptians
+	S: ``
+	S: Egyptians
 	S: ,
 	S: Saudi
 	S: Arabians
@@ -1578,7 +1585,7 @@ Sentence:
 	S: different
 	S: organizations
 	S: ,
-	S: "
+	S: ''
 	S: Klosi
 	S: was
 	S: quoted
@@ -1966,7 +1973,7 @@ Sentence:
 	S: Idris
 	S: said
 	S: :
-	S: "
+	S: ``
 	S: I
 	S: have
 	S: absolutely
@@ -2019,7 +2026,7 @@ Sentence:
 	S: his
 	S: agent
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: U.S.
 	S: officials
@@ -2389,7 +2396,7 @@ Sentence:
 	S: irrelevant
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: What
 	S: we
 	S: knew
@@ -2408,7 +2415,7 @@ Sentence:
 	S: reliably
 	S: established
 	S: ,
-	S: "
+	S: ''
 	S: said
 	S: one
 	S: senior
@@ -2791,8 +2798,9 @@ Sentence:
 	S: to
 	S: target
 	S: the
-	S: "infrastructure
-	S: "
+	S: ``
+	S: infrastructure
+	S: ''
 	S: of
 	S: terrorist
 	S: groups
@@ -2820,11 +2828,12 @@ Sentence:
 	S: group
 	S: is
 	S: mostly
-	S: "human
+	S: ``
+	S: human
 	S: .
-	S: "
+	S: ''
 Sentence:
-	S: "
+	S: ``
 	S: As
 	S: we
 	S: said
@@ -2859,7 +2868,7 @@ Sentence:
 	S: Khost
 	S: camps
 	S: ,
-	S: "
+	S: ''
 	S: said
 	S: David
 	S: C.
@@ -2896,7 +2905,7 @@ Sentence:
 	S: group
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Command
 	S: and
 	S: control
@@ -2908,7 +2917,7 @@ Sentence:
 	S: justifiable
 	S: target
 	S: ,
-	S: "
+	S: ''
 	S: Leavy
 	S: said
 	S: .
@@ -3130,9 +3139,10 @@ Sentence:
 	S: States
 	S: had
 	S: been
-	S: "going
+	S: ``
+	S: going
 	S: after
-	S: "
+	S: ''
 	S: bin
 	S: Laden
 	S: and
@@ -3140,25 +3150,25 @@ Sentence:
 	S: colleagues
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: We
 	S: were
 	S: n't
 	S: quite
 	S: successful
 	S: ,
-	S: "
+	S: ''
 	S: Cohen
 	S: continued
 	S: ,
-	S: "
+	S: ``
 	S: but
 	S: we
 	S: sent
 	S: a
 	S: message
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: Kenneth
 	S: Bacon
@@ -3370,7 +3380,7 @@ Sentence:
 	S: order
 	S: said
 	S: :
-	S: "
+	S: ``
 	S: No
 	S: person
 	S: employed
@@ -3397,7 +3407,7 @@ Sentence:
 	S: ,
 	S: assassination
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: While
 	S: it
@@ -3556,11 +3566,11 @@ Sentence:
 	S: security
 	S: of
 	S: the
-	S: "
+	S: ``
 	S: East
 	S: Africa
 	S: network
-	S: "
+	S: ''
 	S: of
 	S: bin
 	S: Laden
@@ -3668,14 +3678,14 @@ Sentence:
 	S: was
 	S: worried
 	S: that
-	S: "
+	S: ``
 	S: an
 	S: important
 	S: man
 	S: with
 	S: close
 	S: links
-	S: "
+	S: ''
 	S: to
 	S: bin
 	S: Laden
@@ -3683,14 +3693,15 @@ Sentence:
 	S: seemed
 	S: to
 	S: have
-	S: "fallen
+	S: ``
+	S: fallen
 	S: into
 	S: the
 	S: enemy
 	S: 's
 	S: hands
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: He
 	S: said
@@ -3715,7 +3726,7 @@ Sentence:
 	S: precautions
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: The
 	S: cell
 	S: is
@@ -3724,7 +3735,7 @@ Sentence:
 	S: percent
 	S: danger
 	S: ,
-	S: "
+	S: ''
 	S: the
 	S: operative
 	S: warned
@@ -4107,19 +4118,20 @@ Sentence:
 	S: referred
 	S: to
 	S: as
-	S: "
+	S: ``
 	S: the
 	S: sheik
 	S: ,
-	S: "
+	S: ''
 	S: had
-	S: "become
+	S: ``
+	S: become
 	S: America
 	S: 's
 	S: primary
 	S: target
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: He
 	S: said
@@ -4128,7 +4140,7 @@ Sentence:
 	S: in
 	S: East
 	S: Africa
-	S: "
+	S: ``
 	S: should
 	S: know
 	S: that
@@ -4184,9 +4196,9 @@ Sentence:
 	S: in
 	S: Somalia
 	S: .
-	S: "
+	S: ''
 Sentence:
-	S: "
+	S: ``
 	S: They
 	S: know
 	S: that
@@ -4208,20 +4220,20 @@ Sentence:
 	S: in
 	S: Kenya
 	S: ,
-	S: "
+	S: ''
 	S: he
 	S: wrote
 	S: ,
 	S: concluding
 	S: :
-	S: "
+	S: ``
 	S: We
 	S: are
 	S: really
 	S: in
 	S: danger
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: The
 	S: government
@@ -4266,16 +4278,17 @@ Sentence:
 	S: directed
 	S: Fazil
 	S: to
-	S: "report
+	S: ``
+	S: report
 	S: periodically
 	S: to
 	S: bin
 	S: Laden
 	S: about
 	S: the
-	S: "
+	S: ``
 	S: security
-	S: "
+	S: ''
 	S: situation
 	S: of
 	S: the
@@ -4452,7 +4465,7 @@ Sentence:
 	S: visit
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: What
 	S: do
 	S: you
@@ -4468,7 +4481,7 @@ Sentence:
 	S: $
 	S: 500
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: He
 	S: repeatedly
@@ -4498,7 +4511,7 @@ Sentence:
 	S: associates
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: There
 	S: is
 	S: a
@@ -4509,7 +4522,7 @@ Sentence:
 	S: is
 	S: dangerous
 	S: ,
-	S: "
+	S: ''
 	S: he
 	S: said
 	S: .
@@ -4658,7 +4671,8 @@ Sentence:
 	S: stood
 	S: ready
 	S: to
-	S: "fight
+	S: ``
+	S: fight
 	S: the
 	S: forces
 	S: of
@@ -4671,7 +4685,7 @@ Sentence:
 	S: on
 	S: earth
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: He
 	S: said
@@ -4699,11 +4713,12 @@ Sentence:
 	S: warning
 	S: to
 	S: go
-	S: "underground
+	S: ``
+	S: underground
 	S: for
 	S: a
 	S: while
-	S: "
+	S: ''
 	S: if
 	S: authorities
 	S: intensified
@@ -4713,7 +4728,7 @@ Sentence:
 	S: Nairobi
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: We
 	S: ,
 	S: the
@@ -4732,18 +4747,18 @@ Sentence:
 	S: operations
 	S: plans
 	S: ,
-	S: "
+	S: ''
 	S: he
 	S: wrote
 	S: ,
-	S: "
+	S: ``
 	S: since
 	S: we
 	S: are
 	S: just
 	S: implementers
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: #
 Sentence:
@@ -5060,11 +5075,11 @@ Sentence:
 	S: which
 	S: stands
 	S: for
-	S: "
+	S: ``
 	S: confidential
 	S: source
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: But
 	S: at
@@ -5197,13 +5212,14 @@ Sentence:
 	S: 's
 	S: commanders
 	S: ,
-	S: "almost
+	S: ``
+	S: almost
 	S: made
 	S: me
 	S: explode
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: An
 	S: important
 	S: man
@@ -5211,10 +5227,10 @@ Sentence:
 	S: close
 	S: links
 	S: to
-	S: "
+	S: ''
 	S: bin
 	S: Laden
-	S: "
+	S: ``
 	S: seems
 	S: to
 	S: have
@@ -5238,7 +5254,7 @@ Sentence:
 	S: against
 	S: that
 	S: ,
-	S: "
+	S: ''
 	S: the
 	S: operative
 	S: ,
@@ -5334,11 +5350,12 @@ Sentence:
 	S: in
 	S: part
 	S: be
-	S: "based
+	S: ``
+	S: based
 	S: on
 	S: the
 	S: testimony
-	S: "
+	S: ''
 	S: of
 	S: the
 	S: confidential
@@ -5458,12 +5475,12 @@ Sentence:
 	S: source
 	S: described
 	S: taking
-	S: "
+	S: ``
 	S: an
 	S: oath
 	S: of
 	S: allegiance
-	S: "
+	S: ''
 	S: to
 	S: follow
 	S: bin
@@ -5523,7 +5540,7 @@ Sentence:
 	S: Africa
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: I
 	S: either
 	S: heard
@@ -5531,12 +5548,13 @@ Sentence:
 	S: statements
 	S: myself
 	S: ,
-	S: "
+	S: ''
 	S: the
 	S: source
 	S: said
 	S: ,
-	S: "or
+	S: ``
+	S: or
 	S: I
 	S: read
 	S: them
@@ -5550,7 +5568,7 @@ Sentence:
 	S: Qaeda
 	S: members
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: The
 	S: government

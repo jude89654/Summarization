@@ -392,8 +392,8 @@ Sentence:
 	S: "
 	S: The
 	S: Voice
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: The
 	S: man
@@ -522,8 +522,8 @@ Sentence:
 	S: No
 	S: other
 	S: comments
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: Grimmie
 	S: was
@@ -683,8 +683,8 @@ Sentence:
 	S: my
 	S: baby
 	S: sister
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: The
 	S: shooter
@@ -777,8 +777,9 @@ Sentence:
 	S: where
 	S: he
 	S: came
-	S: from"
+	S: from
 	S: .
+	S: "
 Sentence:
 	S: It
 	S: 's
@@ -841,8 +842,8 @@ Sentence:
 	S: at
 	S: this
 	S: point
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: Security
 	S: measures
@@ -908,8 +909,8 @@ Sentence:
 	S: as
 	S: people
 	S: enter
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: The
 	S: Plaza
@@ -934,8 +935,8 @@ Sentence:
 	S: "until
 	S: further
 	S: notice
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: "
 	S: Our

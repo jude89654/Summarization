@@ -21,8 +21,9 @@ Sentence:
 	S: of
 	S: trying
 	S: to
-	S: "internationalize
-	S: "
+	S: ``
+	S: internationalize
+	S: ''
 	S: the
 	S: political
 	S: crisis
@@ -118,7 +119,7 @@ Sentence:
 	S: that
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: I
 	S: would
 	S: like
@@ -142,7 +143,7 @@ Sentence:
 	S: of
 	S: Cambodia
 	S: ,
-	S: "
+	S: ''
 	S: Hun
 	S: Sen
 	S: told
@@ -155,7 +156,7 @@ Sentence:
 	S: Friday
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: No-one
 	S: should
 	S: internationalize
@@ -172,7 +173,7 @@ Sentence:
 	S: of
 	S: Cambodia
 	S: ,
-	S: "
+	S: ''
 	S: he
 	S: said
 	S: .
@@ -275,7 +276,7 @@ Sentence:
 	S: the
 	S: country
 	S: was
-	S: "
+	S: ``
 	S: just
 	S: an
 	S: excuse
@@ -285,7 +286,7 @@ Sentence:
 	S: stay
 	S: abroad
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: Both
 	S: Ranariddh
@@ -378,12 +379,13 @@ Sentence:
 	S: Sen
 	S: of
 	S: being
-	S: "unwilling
+	S: ``
+	S: unwilling
 	S: to
 	S: make
 	S: any
 	S: compromise
-	S: "
+	S: ''
 	S: on
 	S: negotiations
 	S: to
@@ -392,7 +394,7 @@ Sentence:
 	S: deadlock
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: A
 	S: meeting
 	S: outside
@@ -413,13 +415,13 @@ Sentence:
 	S: equal
 	S: footing
 	S: ,
-	S: "
+	S: ''
 	S: said
 	S: the
 	S: statement
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: But
 	S: the
 	S: ruling
@@ -441,7 +443,7 @@ Sentence:
 	S: or
 	S: worse
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: #
 Sentence:
@@ -506,7 +508,7 @@ Sentence:
 	S: location
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Papa
 	S: will
 	S: not
@@ -540,7 +542,7 @@ Sentence:
 	S: no
 	S: result
 	S: ,
-	S: "
+	S: ''
 	S: Sihanouk
 	S: wrote
 	S: in
@@ -593,7 +595,7 @@ Sentence:
 	S: the
 	S: stalemate
 	S: :
-	S: "
+	S: ``
 	S: Papa
 	S: would
 	S: like
@@ -612,7 +614,7 @@ Sentence:
 	S: the
 	S: people
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: Hun
 	S: Sen
@@ -644,7 +646,7 @@ Sentence:
 	S: party
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Only
 	S: those
 	S: who
@@ -664,7 +666,7 @@ Sentence:
 	S: new
 	S: government
 	S: ,
-	S: "
+	S: ''
 	S: Hun
 	S: Sen
 	S: said
@@ -914,7 +916,7 @@ Sentence:
 	S: summit
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: If
 	S: those
 	S: results
@@ -931,7 +933,7 @@ Sentence:
 	S: another
 	S: summit
 	S: ,
-	S: "
+	S: ''
 	S: Hun
 	S: Sen
 	S: said
@@ -1260,7 +1262,7 @@ Sentence:
 	S: it
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: We
 	S: respectfully
 	S: advise
@@ -1281,7 +1283,7 @@ Sentence:
 	S: in
 	S: Cambodia
 	S: ,
-	S: "
+	S: ''
 	S: the
 	S: two
 	S: party
@@ -1289,7 +1291,7 @@ Sentence:
 	S: wrote
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: At
 	S: best
 	S: the
@@ -1312,7 +1314,7 @@ Sentence:
 	S: National
 	S: Assembly
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: After
 	S: a
@@ -1361,7 +1363,7 @@ Sentence:
 	S: guarantees
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: There
 	S: have
 	S: been
@@ -1387,13 +1389,13 @@ Sentence:
 	S: security
 	S: problems
 	S: ,
-	S: "
+	S: ''
 	S: Prak
 	S: Sokhonn
 	S: said
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Some
 	S: (
 	S: opposition
@@ -1413,7 +1415,7 @@ Sentence:
 	S: for
 	S: them
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: The
 	S: U.N.
@@ -1449,7 +1451,7 @@ Sentence:
 	S: 30
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Our
 	S: office
 	S: has
@@ -1467,7 +1469,7 @@ Sentence:
 	S: up
 	S: again
 	S: ,
-	S: "
+	S: ''
 	S: U.N.
 	S: diplomat
 	S: Jonathan
@@ -1582,10 +1584,10 @@ Sentence:
 	S: Sihanouk
 	S: is
 	S: now
-	S: "
+	S: ``
 	S: strongly
 	S: interested
-	S: "
+	S: ''
 	S: in
 	S: presiding
 	S: over
@@ -1718,7 +1720,7 @@ Sentence:
 	S: Relations
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: The
 	S: CPP
 	S: would
@@ -1756,7 +1758,7 @@ Sentence:
 	S: approving
 	S: it
 	S: ,
-	S: "
+	S: ''
 	S: the
 	S: party
 	S: said
@@ -2057,7 +2059,7 @@ Sentence:
 	S: crackdown
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: The
 	S: leaders
 	S: of
@@ -2078,7 +2080,7 @@ Sentence:
 	S: the
 	S: protest
 	S: ,
-	S: "
+	S: ''
 	S: the
 	S: CPP
 	S: said
@@ -2090,10 +2092,11 @@ Sentence:
 	S: deadly
 	S: violence
 	S: as
-	S: "minor
+	S: ``
+	S: minor
 	S: incidents
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: The
 	S: ruling
@@ -2201,7 +2204,7 @@ Sentence:
 	S: Rouge
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: They
 	S: must
 	S: not
@@ -2221,7 +2224,7 @@ Sentence:
 	S: from
 	S: genocide
 	S: ,
-	S: "
+	S: ''
 	S: it
 	S: added
 	S: .
@@ -2347,7 +2350,7 @@ Sentence:
 	S: unconstitutional
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Co-sharing
 	S: anything
 	S: with
@@ -2369,7 +2372,7 @@ Sentence:
 	S: is
 	S: unconstitutional
 	S: ,
-	S: "
+	S: ''
 	S: the
 	S: faxed
 	S: statement
@@ -2402,7 +2405,7 @@ Sentence:
 	S: included
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: No
 	S: party
 	S: with
@@ -2430,7 +2433,7 @@ Sentence:
 	S: in
 	S: government
 	S: ,
-	S: "
+	S: ''
 	S: the
 	S: statement
 	S: said
@@ -2602,9 +2605,10 @@ Sentence:
 	S: to
 	S: make
 	S: an
-	S: "appropriate
+	S: ``
+	S: appropriate
 	S: concession
-	S: "
+	S: ''
 	S: to
 	S: break
 	S: the
@@ -2798,7 +2802,7 @@ Sentence:
 	S: country
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: The
 	S: major
 	S: political
@@ -2823,7 +2827,7 @@ Sentence:
 	S: an
 	S: end
 	S: ,
-	S: "
+	S: ''
 	S: the
 	S: king
 	S: said
@@ -3093,10 +3097,11 @@ Sentence:
 	S: coalition
 	S: and
 	S: made
-	S: "important
+	S: ``
+	S: important
 	S: concessions
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: The
 	S: king
@@ -3496,7 +3501,7 @@ Sentence:
 	S: Assembly
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: This
 	S: will
 	S: not
@@ -3514,7 +3519,7 @@ Sentence:
 	S: prime
 	S: ministers
 	S: ,
-	S: "
+	S: ''
 	S: said
 	S: Hun
 	S: Sen
@@ -3530,7 +3535,7 @@ Sentence:
 	S: summit
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: When
 	S: we
 	S: had
@@ -3551,7 +3556,7 @@ Sentence:
 	S: than
 	S: technically
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: Ranariddh
 	S: said
@@ -3687,20 +3692,20 @@ Sentence:
 	S: coalition
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: I
 	S: consider
 	S: this
 	S: a
 	S: remarriage
 	S: ,
-	S: "
+	S: ''
 	S: Ahmad
 	S: Yahya
 	S: said
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: They
 	S: have
 	S: to
@@ -3726,7 +3731,7 @@ Sentence:
 	S: achieve
 	S: results
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: Ranariddh
 	S: 's
@@ -4145,7 +4150,7 @@ Sentence:
 	S: party
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: It
 	S: should
 	S: be
@@ -4175,8 +4180,7 @@ Sentence:
 	S: be
 	S: arrested
 	S: ,
-	S: "
-	S: '
+	S: '''
 	S: the
 	S: opposition
 	S: leader
@@ -4186,7 +4190,7 @@ Sentence:
 	S: statement
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: But
 	S: instead
 	S: they
@@ -4213,7 +4217,7 @@ Sentence:
 	S: their
 	S: control
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: Ranariddh
 	S: told
@@ -4339,7 +4343,7 @@ Sentence:
 	S: year
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: I
 	S: think
 	S: Hun
@@ -4386,7 +4390,7 @@ Sentence:
 	S: our
 	S: country
 	S: ,
-	S: "
+	S: ''
 	S: Ranariddh
 	S: said
 	S: .
@@ -4547,7 +4551,8 @@ Sentence:
 	S: conduct
 	S: political
 	S: activities
-	S: "in
+	S: ``
+	S: in
 	S: accordance
 	S: with
 	S: the
@@ -4555,7 +4560,7 @@ Sentence:
 	S: in
 	S: force
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: Sam
 	S: Rainsy
@@ -4566,11 +4571,12 @@ Sentence:
 	S: Hun
 	S: Sen's
 	S: statement
-	S: "full
+	S: ``
+	S: full
 	S: of
 	S: loopholes
 	S: ,
-	S: "
+	S: ''
 	S: asked
 	S: Sihanouk
 	S: for
@@ -4948,7 +4954,7 @@ Sentence:
 	S: government
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: The
 	S: protocol
 	S: on
@@ -4970,7 +4976,7 @@ Sentence:
 	S: and
 	S: people
 	S: ,
-	S: "
+	S: ''
 	S: Sihanouk
 	S: wrote
 	S: .

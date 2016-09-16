@@ -24,12 +24,13 @@ Sentence:
 	S: a
 	S: case
 	S: of
-	S: "international
+	S: ``
+	S: international
 	S: meddling
 	S: .
-	S: "
+	S: ''
 Sentence:
-	S: "
+	S: ``
 	S: It
 	S: seems
 	S: to
@@ -47,7 +48,7 @@ Sentence:
 	S: universal
 	S: meddling
 	S: ,
-	S: "
+	S: ''
 	S: Castro
 	S: told
 	S: reporters
@@ -85,11 +86,12 @@ Sentence:
 	S: seemed
 	S: to
 	S: be
-	S: "unprecedented
+	S: ``
+	S: unprecedented
 	S: and
 	S: unusual
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: Pinochet
 	S: ,
@@ -255,7 +257,7 @@ Sentence:
 	S: Council
 	S: ,
 	S: because
-	S: "
+	S: ``
 	S: we
 	S: already
 	S: know
@@ -263,7 +265,7 @@ Sentence:
 	S: commands
 	S: there
 	S: ,
-	S: "
+	S: ''
 	S: an
 	S: apparent
 	S: reference
@@ -290,7 +292,7 @@ Sentence:
 	S: court
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: The
 	S: (
 	S: Pinochet
@@ -298,11 +300,12 @@ Sentence:
 	S: case
 	S: is
 	S: serious
+	S: ...
 	S: the
 	S: problem
 	S: is
 	S: delicate
-	S: "
+	S: ''
 	S: and
 	S: the
 	S: reactions
@@ -399,7 +402,7 @@ Sentence:
 	S: here
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Now
 	S: they
 	S: are
@@ -414,7 +417,7 @@ Sentence:
 	S: the
 	S: summit
 	S: ,
-	S: "
+	S: ''
 	S: he
 	S: said
 	S: .
@@ -579,7 +582,8 @@ Sentence:
 	S: Oct.
 	S: 9
 	S: .
-	S: "
+Sentence:
+	S: ``
 	S: The
 	S: idea
 	S: that
@@ -608,7 +612,7 @@ Sentence:
 	S: gut-wrenching
 	S: stuff
 	S: ,
-	S: "
+	S: ''
 	S: Trade
 	S: Secretary
 	S: Peter
@@ -643,7 +647,7 @@ Sentence:
 	S: but
 	S: said
 	S: ,
-	S: "
+	S: ``
 	S: That
 	S: does
 	S: not
@@ -652,7 +656,7 @@ Sentence:
 	S: diplomatic
 	S: immunity
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: The
 	S: Foreign
@@ -721,8 +725,9 @@ Sentence:
 	S: and
 	S: promised
 	S: an
-	S: "ethical
-	S: "
+	S: ``
+	S: ethical
+	S: ''
 	S: foreign
 	S: policy
 	S: .
@@ -786,7 +791,7 @@ Sentence:
 	S: institutions
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Spain
 	S: also
 	S: lived
@@ -808,7 +813,7 @@ Sentence:
 	S: that
 	S: regime
 	S: ,
-	S: "
+	S: ''
 	S: Frei
 	S: said
 	S: in
@@ -825,7 +830,7 @@ Sentence:
 	S: Summit
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Would
 	S: a
 	S: Chilean
@@ -851,13 +856,13 @@ Sentence:
 	S: Franco
 	S: )
 	S: ?
-	S: "
+	S: ''
 Sentence:
 	S: Frei
 	S: asked
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: It
 	S: is
 	S: only
@@ -872,7 +877,7 @@ Sentence:
 	S: in
 	S: Chile
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: Franco
 	S: 's
@@ -892,10 +897,10 @@ Sentence:
 	S: calling
 	S: the
 	S: arrest
-	S: "
+	S: ``
 	S: an
 	S: insult
-	S: "
+	S: ''
 	S: and
 	S: thanking
 	S: the
@@ -960,12 +965,12 @@ Sentence:
 	S: with
 	S: the
 	S: caption
-	S: "
+	S: ``
 	S: Disappeared
 	S: in
 	S: Chile
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: Across
 	S: the
@@ -1090,7 +1095,7 @@ Sentence:
 	S: family
 	S: would
 	S: hire
-	S: "
+	S: ``
 	S: the
 	S: best
 	S: legal
@@ -1099,7 +1104,7 @@ Sentence:
 	S: in
 	S: London
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: Several
 	S: right-wing
@@ -1488,7 +1493,7 @@ Sentence:
 	S: Oct.
 	S: 9
 	S: .
-	S: "
+	S: ``
 	S: She
 	S: regarded
 	S: it
@@ -1497,7 +1502,7 @@ Sentence:
 	S: private
 	S: meeting
 	S: ,
-	S: "
+	S: ''
 	S: said
 	S: Mark
 	S: Worthington
@@ -1764,7 +1769,7 @@ Sentence:
 	S: status
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: We
 	S: are
 	S: not
@@ -1775,7 +1780,7 @@ Sentence:
 	S: the
 	S: '70s
 	S: ,
-	S: "
+	S: ''
 	S: Artaza
 	S: said
 	S: in
@@ -1788,7 +1793,7 @@ Sentence:
 	S: Tuesday
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: What
 	S: we
 	S: are
@@ -1825,9 +1830,9 @@ Sentence:
 	S: n't
 	S: like
 	S: .
-	S: "
+	S: ''
 Sentence:
-	S: "
+	S: ``
 	S: We
 	S: 're
 	S: not
@@ -1850,7 +1855,7 @@ Sentence:
 	S: at
 	S: all
 	S: ,
-	S: "
+	S: ''
 	S: added
 	S: the
 	S: ambassador
@@ -1931,8 +1936,9 @@ Sentence:
 	S: Labor
 	S: government
 	S: of
-	S: "gesture
-	S: "
+	S: ``
+	S: gesture
+	S: ''
 	S: politics
 	S: and
 	S: pandering
@@ -1975,7 +1981,7 @@ Sentence:
 	S: Spain
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Despite
 	S: everything
 	S: that
@@ -1997,7 +2003,7 @@ Sentence:
 	S: Spanish
 	S: government
 	S: ,
-	S: "
+	S: ''
 	S: British
 	S: Prime
 	S: Minister
@@ -2030,7 +2036,7 @@ Sentence:
 	S: said
 	S: Wednesday
 	S: :
-	S: "
+	S: ``
 	S: The
 	S: government
 	S: should
@@ -2042,7 +2048,7 @@ Sentence:
 	S: the
 	S: extradition
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: British
 	S: police
@@ -2196,7 +2202,7 @@ Sentence:
 	S: dictator
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: This
 	S: is
 	S: about
@@ -2215,7 +2221,7 @@ Sentence:
 	S: understand
 	S: this
 	S: ,
-	S: "
+	S: ''
 	S: he
 	S: said
 	S: .
@@ -2236,7 +2242,7 @@ Sentence:
 	S: criteria
 	S: and
 	S: act
-	S: "
+	S: ``
 	S: as
 	S: if
 	S: he
@@ -2244,7 +2250,7 @@ Sentence:
 	S: a
 	S: judge
 	S: ,
-	S: "
+	S: ''
 	S: should
 	S: he
 	S: be
@@ -2298,9 +2304,10 @@ Sentence:
 	S: immunity
 	S: for
 	S: Pinochet
-	S: "gut-wrenching
+	S: ``
+	S: gut-wrenching
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: The
 	S: European
@@ -2391,7 +2398,7 @@ Sentence:
 	S: warrant
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Depending
 	S: on
 	S: the
@@ -2426,7 +2433,7 @@ Sentence:
 	S: on
 	S: it
 	S: ,
-	S: "
+	S: ''
 	S: Aznar
 	S: was
 	S: quoted
@@ -2532,7 +2539,7 @@ Sentence:
 	S: turmoil
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: There
 	S: is
 	S: a
@@ -2546,7 +2553,7 @@ Sentence:
 	S: in
 	S: Chile
 	S: ,
-	S: "
+	S: ''
 	S: parliamentary
 	S: deputy
 	S: Alberto
@@ -2730,7 +2737,7 @@ Sentence:
 	S: representatives
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: All
 	S: we
 	S: ask
@@ -2744,7 +2751,7 @@ Sentence:
 	S: internal
 	S: affairs
 	S: ,
-	S: "
+	S: ''
 	S: Espina
 	S: said
 	S: ,
@@ -2761,7 +2768,7 @@ Sentence:
 	S: courts
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: We
 	S: stopped
 	S: being
@@ -2781,7 +2788,7 @@ Sentence:
 	S: one
 	S: again
 	S: ,
-	S: "
+	S: ''
 	S: he
 	S: added
 	S: .
@@ -3032,7 +3039,7 @@ Sentence:
 	S: rule
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Sometimes
 	S: it
 	S: should
@@ -3052,7 +3059,7 @@ Sentence:
 	S: left
 	S: unpunished
 	S: ,
-	S: "
+	S: ''
 	S: European
 	S: Commission
 	S: President
@@ -3094,7 +3101,7 @@ Sentence:
 	S: terrorism
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: The
 	S: dictatorship
 	S: caused
@@ -3107,7 +3114,7 @@ Sentence:
 	S: into
 	S: exile
 	S: ,
-	S: "
+	S: ''
 	S: Santer
 	S: said
 	S: ,
@@ -3266,7 +3273,7 @@ Sentence:
 	S: Veronica
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: If
 	S: Augusto
 	S: knew
@@ -3283,7 +3290,7 @@ Sentence:
 	S: and
 	S: die
 	S: ,
-	S: "
+	S: ''
 	S: El
 	S: Mundo
 	S: quoted
@@ -3453,14 +3460,14 @@ Sentence:
 	S: the
 	S: news
 	S: imparted
-	S: "
+	S: ``
 	S: as
 	S: one
 	S: soldier
 	S: to
 	S: another
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: #
 Sentence:
@@ -3494,7 +3501,7 @@ Sentence:
 	S: genocide
 	S: .
 Sentence:
-	S: "
+	S: ''
 	S: This
 	S: is
 	S: very
@@ -3503,7 +3510,7 @@ Sentence:
 	S: our
 	S: family
 	S: ,
-	S: "
+	S: ''
 	S: a
 	S: tearful
 	S: Lucia
@@ -3553,7 +3560,7 @@ Sentence:
 	S: ,
 	S: ill
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: Pinochet
 	S: ,
@@ -3810,7 +3817,7 @@ Sentence:
 	S: interfere
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Both
 	S: myself
 	S: and
@@ -3827,7 +3834,7 @@ Sentence:
 	S: to
 	S: discuss
 	S: ,
-	S: "
+	S: ''
 	S: British
 	S: Prime
 	S: Minister
@@ -3844,7 +3851,7 @@ Sentence:
 	S: Aznar
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: I
 	S: 've
 	S: avoided
@@ -3862,7 +3869,7 @@ Sentence:
 	S: do
 	S: so
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: Aznar
 	S: made
@@ -3979,7 +3986,7 @@ Sentence:
 	S: America
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: It
 	S: 's
 	S: important
@@ -3997,7 +4004,7 @@ Sentence:
 	S: is
 	S: stupid
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: #
 Sentence:
@@ -4445,7 +4452,7 @@ Sentence:
 	S: had
 	S: set
 	S: out
-	S: "
+	S: ``
 	S: to
 	S: destroy
 	S: a
@@ -4462,7 +4469,7 @@ Sentence:
 	S: ideological
 	S: values
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: After
 	S: hearing
@@ -4933,7 +4940,7 @@ Sentence:
 	S: sides
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: He
 	S: is
 	S: ill
@@ -4948,7 +4955,7 @@ Sentence:
 	S: be
 	S: 83
 	S: ,
-	S: "
+	S: ''
 	S: Mariano
 	S: Fernandez
 	S: ,
@@ -5033,10 +5040,10 @@ Sentence:
 	S: be
 	S: released
 	S: on
-	S: "
+	S: ``
 	S: compassionate
 	S: grounds
-	S: "
+	S: ''
 	S: because
 	S: of
 	S: his
@@ -5070,20 +5077,22 @@ Sentence:
 	S: are
 	S: of
 	S: a
-	S: "political
+	S: ``
+	S: political
 	S: character
-	S: "
+	S: ''
 	S: and
 	S: he
 	S: would
 	S: take
 	S: into
 	S: account
-	S: "any
+	S: ``
+	S: any
 	S: compassionate
 	S: circumstances
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: #
 Sentence:

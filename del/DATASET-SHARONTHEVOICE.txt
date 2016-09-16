@@ -661,8 +661,9 @@ Sentence:
 	S: myself
 	S: para
 	S: i-surprise
-	S: kayo"
+	S: kayo
 	S: .
+	S: "
 Sentence:
 	S: She
 	S: added

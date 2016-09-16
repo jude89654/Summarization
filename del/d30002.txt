@@ -135,13 +135,13 @@ Sentence:
 	S: )
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Mitch
 	S: is
 	S: closing
 	S: in
 	S: ,
-	S: "
+	S: ''
 	S: said
 	S: Monterrey
 	S: Cardenas
@@ -163,13 +163,13 @@ Sentence:
 	S: coast
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: And
 	S: God
 	S: help
 	S: us
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: Mitch
 	S: posed
@@ -217,7 +217,7 @@ Sentence:
 	S: would
 	S: still
 	S: remain
-	S: "
+	S: ``
 	S: a
 	S: very
 	S: dangerous
@@ -228,7 +228,7 @@ Sentence:
 	S: catastrophic
 	S: damage
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: The
 	S: entire
@@ -339,7 +339,7 @@ Sentence:
 	S: everyone
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: For
 	S: that
 	S: humanitarian
@@ -355,19 +355,19 @@ Sentence:
 	S: C-137
 	S: planes
 	S: ,
-	S: "
+	S: ''
 	S: he
 	S: said
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Honduras
 	S: does
 	S: n't
 	S: have
 	S: them
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: A
 	S: hurricane
@@ -578,7 +578,7 @@ Sentence:
 	S: afford
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: I
 	S: have
 	S: six
@@ -591,12 +591,12 @@ Sentence:
 	S: a
 	S: riverbed
 	S: ,
-	S: "
+	S: ''
 	S: she
 	S: said
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: If
 	S: it
 	S: gets
@@ -623,7 +623,7 @@ Sentence:
 	S: for
 	S: us
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: Swinwick
 	S: Jackson
@@ -678,7 +678,7 @@ Sentence:
 	S: coast
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Frightened
 	S: people
 	S: are
@@ -691,7 +691,7 @@ Sentence:
 	S: for
 	S: shelter
 	S: ,
-	S: "
+	S: ''
 	S: he
 	S: said
 	S: .
@@ -933,7 +933,7 @@ Sentence:
 	S: day
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: The
 	S: hurricane
 	S: has
@@ -941,7 +941,7 @@ Sentence:
 	S: almost
 	S: everything
 	S: ,
-	S: "
+	S: ''
 	S: said
 	S: Mike
 	S: Brown
@@ -965,14 +965,14 @@ Sentence:
 	S: hurricane
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Few
 	S: houses
 	S: have
 	S: remained
 	S: standing
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: At
 	S: its
@@ -1219,7 +1219,7 @@ Sentence:
 	S: beachcombers
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: The
 	S: hurricane
 	S: has
@@ -1227,7 +1227,7 @@ Sentence:
 	S: almost
 	S: everything
 	S: ,
-	S: "
+	S: ''
 	S: said
 	S: Mike
 	S: Brown
@@ -1248,14 +1248,14 @@ Sentence:
 	S: coast
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Few
 	S: houses
 	S: have
 	S: remained
 	S: standing
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: Honduran
 	S: officials
@@ -1399,7 +1399,7 @@ Sentence:
 	S: had
 	S: been
 	S: damaged
-	S: "
+	S: ``
 	S: and
 	S: the
 	S: economic
@@ -1409,7 +1409,7 @@ Sentence:
 	S: is
 	S: uncertain
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: Rain-swollen
 	S: rivers
@@ -1709,13 +1709,13 @@ Sentence:
 	S: full
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: It
 	S: 's
 	S: been
 	S: horrible
 	S: ,
-	S: "
+	S: ''
 	S: said
 	S: Montgomery
 	S: ,
@@ -1732,7 +1732,7 @@ Sentence:
 	S: restaurant
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: We
 	S: could
 	S: n't
@@ -1749,7 +1749,7 @@ Sentence:
 	S: snorkeling
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Even
 	S: Carlos
 	S: '
@@ -1763,7 +1763,7 @@ Sentence:
 	S: are
 	S: closed
 	S: ,
-	S: "
+	S: ''
 	S: she
 	S: said
 	S: dejectedly
@@ -1774,11 +1774,11 @@ Sentence:
 	S: restaurants
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Some
 	S: vacation
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: The
 	S: U.S.
@@ -2413,7 +2413,7 @@ Sentence:
 	S: the
 	S: pope
 	S: urged
-	S: "
+	S: ``
 	S: all
 	S: public
 	S: and
@@ -2425,13 +2425,14 @@ Sentence:
 	S: of
 	S: good
 	S: will
-	S: "
+	S: ''
 	S: to
 	S: do
 	S: all
 	S: they
 	S: can
-	S: "in
+	S: ``
+	S: in
 	S: this
 	S: grave
 	S: moment
@@ -2440,7 +2441,7 @@ Sentence:
 	S: and
 	S: death
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: Hurricane
 	S: Mitch
@@ -2571,7 +2572,7 @@ Sentence:
 	S: effort
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: The
 	S: county
 	S: is
@@ -2594,7 +2595,7 @@ Sentence:
 	S: its
 	S: children
 	S: ,
-	S: "
+	S: ''
 	S: he
 	S: said
 	S: .
@@ -2671,7 +2672,7 @@ Sentence:
 	S: said
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: We
 	S: have
 	S: more
@@ -2683,12 +2684,12 @@ Sentence:
 	S: the
 	S: storm
 	S: ,
-	S: "
+	S: ''
 	S: Urbizo
 	S: explained
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Until
 	S: now
 	S: ,
@@ -2708,7 +2709,7 @@ Sentence:
 	S: reliable
 	S: information
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: In
 	S: Nicaragua
@@ -3126,7 +3127,7 @@ Sentence:
 	S: plight
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: Our
 	S: problem
 	S: is
@@ -3139,7 +3140,7 @@ Sentence:
 	S: been
 	S: affected
 	S: ,
-	S: "
+	S: ''
 	S: he
 	S: said
 	S: .
@@ -3191,7 +3192,7 @@ Sentence:
 	S: force
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: We
 	S: can
 	S: manage
@@ -3209,7 +3210,7 @@ Sentence:
 	S: to
 	S: distribute
 	S: ,
-	S: "
+	S: ''
 	S: Caceres
 	S: said
 	S: .
@@ -3353,7 +3354,7 @@ Sentence:
 	S: said
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: We
 	S: 're
 	S: trying
@@ -3372,7 +3373,7 @@ Sentence:
 	S: as
 	S: possible
 	S: ,
-	S: "
+	S: ''
 	S: Rowe
 	S: said
 	S: .
@@ -3465,7 +3466,7 @@ Sentence:
 	S: river
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: This
 	S: is
 	S: the
@@ -3474,7 +3475,7 @@ Sentence:
 	S: we
 	S: 've
 	S: been
-	S: "
+	S: ''
 	S: with
 	S: the
 	S: dogs
@@ -3490,7 +3491,7 @@ Sentence:
 	S: said
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: From
 	S: here
 	S: we
@@ -3499,7 +3500,7 @@ Sentence:
 	S: searching
 	S: downriver
 	S: .
-	S: "
+	S: ''
 Sentence:
 	S: Concerned
 	S: that
@@ -3566,7 +3567,7 @@ Sentence:
 	S: Ministry
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: We
 	S: have
 	S: to
@@ -3574,7 +3575,7 @@ Sentence:
 	S: the
 	S: children
 	S: ,
-	S: "
+	S: ''
 	S: said
 	S: Dr.
 	S: Mario
@@ -3755,7 +3756,7 @@ Sentence:
 	S: die
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: The
 	S: worst
 	S: thing
@@ -3777,7 +3778,7 @@ Sentence:
 	S: even
 	S: dying
 	S: ,
-	S: "
+	S: ''
 	S: said
 	S: the
 	S: Rev.
@@ -3858,7 +3859,7 @@ Sentence:
 	S: announced
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: We
 	S: hope
 	S: this
@@ -3878,7 +3879,7 @@ Sentence:
 	S: has
 	S: created
 	S: ,
-	S: "
+	S: ''
 	S: Carter
 	S: said
 	S: in
@@ -3892,10 +3893,11 @@ Sentence:
 	S: Clinton
 	S: requested
 	S: a
-	S: "global
+	S: ``
+	S: global
 	S: relief
 	S: effort
-	S: "
+	S: ''
 	S: to
 	S: help
 	S: Central
@@ -4044,7 +4046,7 @@ Sentence:
 	S: Friday
 	S: .
 Sentence:
-	S: "
+	S: ``
 	S: It
 	S: 's
 	S: a
@@ -4072,7 +4074,7 @@ Sentence:
 	S: organized
 	S: way
 	S: ,
-	S: "
+	S: ''
 	S: said
 	S: International
 	S: Development

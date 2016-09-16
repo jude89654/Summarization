@@ -397,8 +397,9 @@ Sentence:
 	S: for
 	S: "neglect
 	S: of
-	S: duty"
+	S: duty
 	S: .
+	S: "
 Sentence:
 	S: Duterte
 	S: ,
@@ -472,8 +473,8 @@ Sentence:
 	S: "protect
 	S: the
 	S: children
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: He
 	S: would
@@ -848,8 +849,8 @@ Sentence:
 	S: in
 	S: the
 	S: Philippines
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: The
 	S: resolution
@@ -883,8 +884,8 @@ Sentence:
 	S: for
 	S: certain
 	S: occasion
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: The
 	S: resolution
@@ -922,8 +923,8 @@ Sentence:
 	S: other
 	S: illegal
 	S: substances
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: Sun
 	S: Shimura

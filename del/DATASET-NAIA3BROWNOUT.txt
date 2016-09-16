@@ -1296,8 +1296,8 @@ Sentence:
 	S: power
 	S: back
 	S: on
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: In
 	S: a
@@ -1381,8 +1381,8 @@ Sentence:
 	S: in
 	S: Pasay
 	S: City
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: The
 	S: reason
@@ -1406,8 +1406,8 @@ Sentence:
 	S: in
 	S: Pasay
 	S: City
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: It
 	S: was
@@ -1504,8 +1504,8 @@ Sentence:
 	S: proper
 	S: bay
 	S: assignment
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: Passengers
 	S: have
@@ -1542,8 +1542,9 @@ Sentence:
 	S: any
 	S: free
 	S: terminal
-	S: bay"
+	S: bay
 	S: .
+	S: "
 Sentence:
 	S: Ariel
 	S: Arcilla

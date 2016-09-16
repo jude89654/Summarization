@@ -835,8 +835,8 @@ Sentence:
 	S: "
 	S: shows
 	S: cowardice
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: He
 	S: also

@@ -125,8 +125,8 @@ Sentence:
 	S: at
 	S: this
 	S: time
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: Ali
 	S: 's
@@ -139,8 +139,9 @@ Sentence:
 	S: was
 	S: a
 	S: "humble
-	S: mountain"
+	S: mountain
 	S: .
+	S: "
 Sentence:
 	S: "
 	S: And
@@ -241,8 +242,8 @@ Sentence:
 	S: to
 	S: God
 	S: now
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: After
 	S: Ali
@@ -364,8 +365,8 @@ Sentence:
 	S: it
 	S: was
 	S: unexpected
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: Ramsey
 	S: said
@@ -408,8 +409,8 @@ Sentence:
 	S: very
 	S: private
 	S: matter
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: Ramsey
 	S: said

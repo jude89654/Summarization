@@ -1486,8 +1486,8 @@ Sentence:
 	S: to
 	S: be
 	S: honest
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: Trump
 	S: 's
@@ -1668,8 +1668,8 @@ Sentence:
 	S: keep
 	S: at
 	S: it
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: A
 	S: source
@@ -1816,8 +1816,8 @@ Sentence:
 	S: do
 	S: its
 	S: job
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: Trump
 	S: 's
@@ -1857,8 +1857,8 @@ Sentence:
 	S: as
 	S: their
 	S: headline
-	S: "
 	S: .
+	S: "
 Sentence:
 	S: The
 	S: headline
