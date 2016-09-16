@@ -13,6 +13,7 @@ import com.util.StopWords;
 import org.apache.commons.math3.ml.clustering.CentroidCluster;
 import org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer;
 import org.apache.commons.math3.random.JDKRandomGenerator;
+import org.apache.commons.math3.random.SynchronizedRandomGenerator;
 
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
@@ -31,23 +32,36 @@ import java.util.Random;
  */
 public class MEANSStart {
 
+    static String systemName ="MEANS";
+
     /**
      * Path of the text file containing the stopwords
      */
-    private static String STOPWORDSPATH = "StopWords.txt";
+    static String STOPWORDSPATH = "StopWords.txt";
 
     /**
      * String that will be the name of the output directory of the summaries
      */
-    final static String outputFolderName = "MeansSummary";
+    static String outputFolderName = "MeansSummary";
 
     /**
      * the number of sentences selected by the user
      */
-    static int numOfSentences;
+    static int numOfSentences = 5;
+
+    /**
+     * setting this to true will remove short sentence according to the minimum sentence length.
+     */
+    static boolean removeShortSentences = true;
+
+    /**
+     * if removeShortSentences is true, it will remove sentences with less than minimumSentenceLengh
+     */
+    static int minimumSentenceLength = 7;
 
     /**
      * eto na yung main method ng thesis namin.
+     *
      * @param args not used
      */
     public static void main(String args[]) {
@@ -56,17 +70,17 @@ public class MEANSStart {
         StopWords.initializeStopWords(STOPWORDSPATH);
 
         //get the path
-        String folderPath = getFolderPath();
-        if(folderPath.equals(""))stopProgram();
+        String folderPath = "COMPILED DOCUS"; //getFolderPath();
+        if (folderPath.equals("")) stopProgram();
 
         //numOfSentences
-        numOfSentences = inputNumberOfSentences();
+        //numOfSentences = inputNumberOfSentences();
 
         //Stop the program if no folder is selected
 
 
         //for tokenization
-        tokenizeFiles(folderPath);
+        //tokenizeFiles(folderPath);
 
 
         //initialize dataset
@@ -89,11 +103,11 @@ public class MEANSStart {
             ArrayList<Sentence> reorderedSentences = reRankTopSentences(topSentenceFromEachCluster);
 
             try {
-                System.out.println("CREATING FILE: Means_ " + fileName);
+                System.out.println("CREATING FILE: " + fileName);
 
-                createSummaryFile(reorderedSentences, new File(fileName + "_Means.txt"));
+                createSummaryFile(reorderedSentences, new File(fileName +"_" + systemName + ".txt"));
 
-                System.out.println("CREATED FILE: Means_" + fileName + "\n\n");
+                System.out.println("CREATED FILE: " + fileName + "\n\n");
             } catch (IOException ioException) {
                 System.out.println("IOEXCEPTION-ERROR IN CREATING FILE:" + fileName);
                 ioException.printStackTrace();
@@ -108,11 +122,13 @@ public class MEANSStart {
 
     /**
      * method used to reorder sentences based on the ranking used by the bm25 algorithm
+     *
      * @param topSentences the top sentences extracted
      * @return reordered sentences
      */
-    public static ArrayList<Sentence> reRankTopSentences(ArrayList<Sentence> topSentences){
-        return new ArrayList<Sentence>(BM25TextRankSummaryModified.getTopSentenceList(new ArrayList(topSentences),numOfSentences));
+    public static ArrayList<Sentence> reRankTopSentences(ArrayList<Sentence> topSentences) {
+        return new ArrayList<Sentence>(BM25TextRankSummaryModified.getTopSentenceList(new ArrayList(topSentences)
+                , numOfSentences));
     }
 
 
@@ -123,7 +139,7 @@ public class MEANSStart {
      */
     public static int inputNumberOfSentences() {
 
-        String[] noOfSentences = { "5", "6", "7", "8", "9", "10"};
+        String[] noOfSentences = {"5", "6", "7", "8", "9", "10"};
         JFrame jFrame = new JFrame("MEANS SUMMARIZER");
 
 
@@ -142,6 +158,7 @@ public class MEANSStart {
 
     /**
      * Method used to extract top sentences from the clusters.
+     *
      * @param clusters the clusters.
      * @return topSentences extracted using the bm25 algorithm
      */
@@ -153,42 +170,30 @@ public class MEANSStart {
 
             for (ArrayList<Sentence> cluster : clusters) {
                 //if the cluster is empty, skip
-                if(cluster.isEmpty())continue;
+                if (cluster.isEmpty()) continue;
 
                 //else get the top sentence from each cluster a
-                ArrayList<Sentence> tempList  =new ArrayList<>(BM25TextRankSummaryModified.getTopSentenceList(cluster, 2));
+                ArrayList<Sentence> tempList = new ArrayList<>(BM25TextRankSummaryModified
+                        .getTopSentenceList(cluster, 5));
 
-                Sentence tempSentence = tempList.get(0);
-                Sentence tempSentence2;
-                if(tempList.size()==2) {
-                    tempSentence2 = tempList.get(1);
-                    topSentenceFromAllClusters.add(tempSentence2);
-                    cluster.remove(tempSentence2);
+                for (Sentence tempSentence : tempList) {
+                    topSentenceFromAllClusters.add(tempSentence);
+                    cluster.remove(tempSentence);
                 }
 
-                    //System.out.println("D:"+tempSentence.getDocumentId()+"S:"+tempSentence.getId()+": "+tempSentence.getRefSentence());
-
-                    //add to the final list of sentences
-                    topSentenceFromAllClusters.add(tempSentence);
-
-                    //and remove it from the cluster.
-                    cluster.remove(tempSentence);
-
-                //end the extraction if the number of extracted is equal to the number of sentences specified by the user
-                //if (topSentenceFromAllClusters.size() >= numOfSentences) break;
             }
-            if(topSentenceFromAllClusters.size()>numOfSentences)break;
-
+            if (topSentenceFromAllClusters.size() > numOfSentences) break;
         }
+
+        sortSentences(topSentenceFromAllClusters);
 
         return topSentenceFromAllClusters;
     }
 
 
-
-
     /**
      * method to create the summary using the top sentences in the parameter
+     *
      * @param topSentences the final summary created by the Bm25
      * @param file         the source text document where the summary came from
      * @throws IOException if there is no permission.
@@ -199,7 +204,7 @@ public class MEANSStart {
         //making sure that directory exists.
         outputFolder.mkdir();
 
-        File outputFileDirectory = new File(outputFolder + File.separator +"Means_"+ file.getName());
+        File outputFileDirectory = new File(outputFolder + File.separator + file.getName());
 
         FileWriter fileWriter = new FileWriter(outputFileDirectory, false);
 
@@ -208,23 +213,22 @@ public class MEANSStart {
         for (Sentence sentence : topSentences) {
             finalSummary += sentence.getRefSentence() + "\n";
         }
-        System.out.println("FINAL SUMMARY:\n"+finalSummary);
+        System.out.println("FINAL SUMMARY:\n" + finalSummary);
         fileWriter.write(finalSummary);
         fileWriter.close();
     }
 
 
     /**
-     * method that will tokenize text to documents and sentences, and the tokenized and segmented sentences will be put at
+     * method that will tokenize text to documents and sentences,
+     * and the tokenized and segmented sentences will be put at
      * the /del directory for processing
      *
      * @param folder the folder that contains all the text documents.
      */
     public static void tokenizeFiles(String folder) {
         try {
-
             TextFileTokenizer.tokenizeFiles(folder);
-
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("MeanNsStart:ERROR IN TOKENIZING FILES");
@@ -242,7 +246,9 @@ public class MEANSStart {
 
 
     /**
-     * a method that will open a JFileChooser and will let the user pick and will return a folder path where the text documents are.
+     * a method that will open a JFileChooser and will let the user pick and will
+     * return a folder path where the text documents are.
+     *
      * @return a String of the folder Directory chosen by the JFileChooser or null if nothing
      */
     public static String getFolderPath() {
@@ -261,6 +267,7 @@ public class MEANSStart {
 
     /**
      * method that will clusterize sentences and will return k number of clusters
+     *
      * @param topic the topic that contains documents
      * @return
      */
@@ -272,25 +279,27 @@ public class MEANSStart {
         //all of the sentences among the documents
         ArrayList<List<String>> sentences = new ArrayList<>();
 
-        preProcess(topic
-                , sentences
-                , global);
+        preProcess(topic, sentences, global);
 
         ArrayList<SentenceVector> sentenceVectors = createSentenceVectorList(topic, global, sentences);
 
         //Rule of thumb for k
         int k = (int) (Math.sqrt(sentences.size() / 2));
 
+
         System.out.println("NUMBER OF K:" + k);
-
         //Similarity measure used for distance in the clusterer
-        CosineSimilarity sim = new CosineSimilarity();
+        CosineSimilarity cosineSimilarity = new CosineSimilarity();
 
-
-        JDKRandomGenerator jdkRandomGenerator = new JDKRandomGenerator();
+        SynchronizedRandomGenerator s = new SynchronizedRandomGenerator(new JDKRandomGenerator());
 
         //initializing the clusterer
-        KMeansPlusPlusClusterer<SentenceVector> kMeansClusterer = new KMeansPlusPlusClusterer<SentenceVector>(k, 1500, sim,jdkRandomGenerator, KMeansPlusPlusClusterer.EmptyClusterStrategy.LARGEST_POINTS_NUMBER);
+        KMeansPlusPlusClusterer<SentenceVector> kMeansClusterer
+                = new KMeansPlusPlusClusterer<SentenceVector>(k,
+                                                 500,
+                                                 cosineSimilarity,
+                                                 s,
+                                                 KMeansPlusPlusClusterer.EmptyClusterStrategy.LARGEST_POINTS_NUMBER);
 
         ArrayList<ArrayList<Sentence>> clusterList = new ArrayList<>();
 
@@ -307,8 +316,8 @@ public class MEANSStart {
                 // System.out.println(vector.getSentence().getRefSentence());
             }
 
-            //sort the sentences by their position
-            Collections.sort(cluster,(a,b)->Long.compare(a.getPosition(),b.getPosition()));
+            //sort the sentences by their positions
+            sortSentences(cluster);
 
             clusterList.add(cluster);
         }
@@ -335,9 +344,17 @@ public class MEANSStart {
 
             System.out.print("CREATING VECTOR FOR SENTENCE NO.");
             for (Sentence sentence : document.getSentences()) {
+                if (removeShortSentences) {
+                    if (sentence.getContent().size() < minimumSentenceLength) continue;
+                }
                 System.out.print(sentence.getId() + ", ");
-                //creating the currrent SentenceVector from the current sentence vector.
-                SentenceVector currentSentenceVector = SentenceVectorFactory.createSentenceVector(document, sentence, global, sentences);
+                //creating the Sentence vector for the current Sentence.
+                SentenceVector currentSentenceVector
+                        = SentenceVectorFactory.createSentenceVector(topic,
+                        document,
+                        sentence,
+                        global,
+                        sentences);
 
                 sentenceVectors.add(currentSentenceVector);
             }
@@ -351,7 +368,8 @@ public class MEANSStart {
      * The subroutine that will populate the sentence list and global list.
      *
      * @param topic     the topic containing the related documents to be processed
-     * @param sentences the ArrayList that contains a List that contains the contents of the sentences that will be updated with the topics document
+     * @param sentences the ArrayList that contains a List that contains the
+     *                  contents of the sentences that will be updated with the topics document
      * @param global    the ArrayList that would be the list containing all the unique stemmed words
      */
     public static void preProcess(Topic topic, ArrayList<List<String>> sentences, ArrayList<String> global) {
@@ -360,6 +378,11 @@ public class MEANSStart {
         for (Document document : topic.getDocuments()) {
             //for each sentence
             for (Sentence sentence : document.getSentences()) {
+
+                if (removeShortSentences) {
+                    //if the number of words is less than the minimum sentence length.
+                    if (sentence.getContent().size() < minimumSentenceLength) continue;
+                }
                 sentences.add(sentence.getContent());
                 //for each word
                 for (String word : sentence.getContent()) {
@@ -373,5 +396,12 @@ public class MEANSStart {
         }
     }
 
-
+    /**
+     * Sort the sentences by their positions.
+     *
+     * @param sentences
+     */
+    public static void sortSentences(ArrayList<Sentence> sentences) {
+        Collections.sort(sentences, (a, b) -> Long.compare(a.getPosition(), b.getPosition()));
+    }
 }
