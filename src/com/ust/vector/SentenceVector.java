@@ -97,6 +97,7 @@ public class SentenceVector implements Clusterable {
         return Math.log(sentences.size() / count);
     }
 
+    //deprecated
     static double inverseDocumentFrequency(Topic topic,String term){
         int count=0;
         for(Document document:topic.getDocuments()){
