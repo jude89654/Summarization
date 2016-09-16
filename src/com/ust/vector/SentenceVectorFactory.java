@@ -9,6 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
+ * A module for creating Sentence vectors that will be used in the clustering sented
  * Created by jude8 on 8/12/2016.
  */
 public class SentenceVectorFactory {
@@ -34,7 +35,7 @@ public class SentenceVectorFactory {
             point[x]= termFrequency(document,global.get(x))
                     * inverseDocumentFrequency(topic,global.get(x));
         }
-        System.out.println("SENTENCE NO."+sentence.getId()+":"+Arrays.toString(point));
+        //System.out.println("SENTENCE NO."+sentence.getId()+":"+Arrays.toString(point));
         vector.setPoint(point);
         return vector;
     }
