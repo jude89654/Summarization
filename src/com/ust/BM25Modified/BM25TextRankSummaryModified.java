@@ -2,9 +2,15 @@ package com.ust.BM25Modified;
 
 import com.hankcs.hanlp.dictionary.stopword.CoreStopWordDictionary;
 import com.hankcs.hanlp.seg.common.Term;
+import com.model.DataSet;
+import com.model.Document;
 import com.model.Sentence;
+import com.model.Topic;
+import com.ust.tokenizer.TextFileTokenizer;
+import com.util.StopWords;
 
 
+import java.io.IOException;
 import java.util.*;
 
 /**
@@ -16,7 +22,7 @@ public class BM25TextRankSummaryModified {
 
     final int maxIterations = 200;
 
-    final double minimumDifference = 0.001f;
+    final double minimumDifference = 0.1f;
 
     int numberOfSentences;
 
@@ -32,72 +38,75 @@ public class BM25TextRankSummaryModified {
 
     BM25Modified bm25Modified;
 
-    public BM25TextRankSummaryModified(List<Sentence> document){
-        this.document=document;
+    public BM25TextRankSummaryModified(List<Sentence> document) {
+        this.document = document;
         bm25Modified = new BM25Modified(document);
         numberOfSentences = document.size();
         weight = new double[numberOfSentences][numberOfSentences];
-        weightSum= new double[numberOfSentences];
+        weightSum = new double[numberOfSentences];
         vertex = new double[numberOfSentences];
-        top = new TreeMap<Double,Integer>(Collections.reverseOrder());
+
+        //top = new TreeMap<Double, Integer>();
+
+       top = new TreeMap<Double, Integer>(Collections.reverseOrder());
         solve();
     }
 
-    private void solve(){
-        int sentenceIndex=0;
-        for(Sentence sentence : document){
+    private void solve() {
+        int sentenceIndex = 0;
+        for (Sentence sentence : document) {
             double[] scores = bm25Modified.simAll(sentence);
             //System.out.println(Arrays.toString(scores));
 
             weight[sentenceIndex] = scores;
 
-            weightSum[sentenceIndex] = sum(scores)-scores[sentenceIndex];
+            weightSum[sentenceIndex] = sum(scores) - scores[sentenceIndex];
 
-            vertex[sentenceIndex]=1.0;
+            vertex[sentenceIndex] = 1.0;
 
             ++sentenceIndex;
         }
 
-        for(int index =0; index<maxIterations; index++ ){
-            double[]m = new double[numberOfSentences];
+        for (int index = 0; index < maxIterations; index++) {
+            double[] m = new double[numberOfSentences];
             double maxDifference = 0;
 
-            for(int innerLoopIndex=0; innerLoopIndex<numberOfSentences;innerLoopIndex++){
-                m[innerLoopIndex]= 1-dampingFactor;
+            for (int innerLoopIndex = 0; innerLoopIndex < numberOfSentences; innerLoopIndex++) {
+                m[innerLoopIndex] = 1 - dampingFactor;
 
-                for(int innerInnerLoopIndex =0 ; innerInnerLoopIndex<numberOfSentences;innerInnerLoopIndex++){
-                    if(innerLoopIndex==innerInnerLoopIndex||weightSum[innerInnerLoopIndex]==0)continue;
+                for (int innerInnerLoopIndex = 0; innerInnerLoopIndex < numberOfSentences; innerInnerLoopIndex++) {
+                    if (innerLoopIndex == innerInnerLoopIndex || weightSum[innerInnerLoopIndex] == 0) continue;
 
-                    m[innerInnerLoopIndex]+=(dampingFactor*weight[innerInnerLoopIndex][innerLoopIndex]
-                            /weightSum[innerInnerLoopIndex]*vertex[innerInnerLoopIndex]);
+                    m[innerInnerLoopIndex] += (dampingFactor * weight[innerInnerLoopIndex][innerLoopIndex]
+                            / weightSum[innerInnerLoopIndex] * vertex[innerInnerLoopIndex]);
                 }
 
 
-                double currentDifference=Math.abs(m[innerLoopIndex]-vertex[innerLoopIndex]);
+                double currentDifference = Math.abs(m[innerLoopIndex] - vertex[innerLoopIndex]);
                 //update difference to the current max difference
-                if (currentDifference>maxDifference){
-                    maxDifference= currentDifference;
+                if (currentDifference > maxDifference) {
+                    maxDifference = currentDifference;
                 }
             }
             vertex = m;
-            if(maxDifference<=minimumDifference)break;
+            if (maxDifference <= minimumDifference) break;
         }
 
-        for(int index=0; index<numberOfSentences;index++){
-            top.put(vertex[index],index);
+        for (int index = 0; index < numberOfSentences; index++) {
+            top.put(vertex[index], index);
         }
     }
 
-    public int[] getTopSentence(int size){
+    public int[] getTopSentence(int size) {
         Collection<Integer> values = top.values();
         //pipiliin kung maliit ang size na int o yung number ng sentences
-        size=Math.min(size,values.size());
+        size = Math.min(size, values.size());
 
-        int[] array= new int [size];
+        int[] array = new int[size];
 
         Iterator<Integer> iterator = values.iterator();
 
-        for(int index =0; index<size ; index++){
+        for (int index = 0; index < size; index++) {
             array[index] = iterator.next();
         }
 
@@ -105,21 +114,51 @@ public class BM25TextRankSummaryModified {
     }
 
 
-    private static double sum(double[] array){
-        double total =0;
-        for(double number: array){
-            total+= number;
+    private static double sum(double[] array) {
+        double total = 0;
+        for (double number : array) {
+            total += number;
         }
         return total;
     }
 
-    public static List<Sentence> getTopSentenceList(List<Sentence> document, int size){
+    /**
+     * method used to get the top sentences in the list of sentences.
+     * @param document
+     * @param size
+     * @return
+     */
+
+    public static void main(String args[]){
+        StopWords.initializeStopWords("StopWords.txt");
+       // try {
+          //  TextFileTokenizer.tokenizeFiles("FOR PROFESSORS");
+       // } catch (IOException e) {
+       //     e.printStackTrace();
+       // }
+        DataSet dataSet = new DataSet("FOR PROFESSORS");
+
+        for (Topic topic:dataSet.getTopics()){
+            Document document = topic.getDocuments().get(0);
+            List<Sentence> top = getTopSentenceList(document.getSentences(),5);
+            System.out.println("SUMMARY:");
+            for (Sentence topS:
+                 top) {
+
+                System.out.println(topS.getRefSentence());
+
+            }
+        }
+
+    }
+
+    public static List<Sentence> getTopSentenceList(List<Sentence> document, int size) {
 
         BM25TextRankSummaryModified textRankSummaryModified = new BM25TextRankSummaryModified(document);
         int[] topSentence = textRankSummaryModified.getTopSentence(size);
         //System.out.println(Arrays.toString(topSentence));
         List<Sentence> finalResults = new LinkedList();
-        for(int index:topSentence){
+        for (int index : topSentence) {
             finalResults.add(document.get(index));
         }
         return finalResults;

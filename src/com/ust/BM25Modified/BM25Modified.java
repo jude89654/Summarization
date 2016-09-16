@@ -23,9 +23,14 @@ public class BM25Modified {
 
     Map<String,Double> inverseDocumentFrequency;
 
-    //regulators
+    /**
+     * REGULATORS
+     */
     final static float k1=1.5f;
 
+    /**
+     * REGULATORS
+     */
     final static float b=0.75f;
 
     public BM25Modified(List<Sentence> document){
@@ -92,7 +97,7 @@ public class BM25Modified {
             Integer wordFrequency = frequency[index].get(word);
 
             score+=(inverseDocumentFrequency.get(word)*wordFrequency*(k1+1)
-            /(wordFrequency+k1*(1-b+b*documentSize/ averageLengthOfSentences)));
+            /(wordFrequency+k1*((1-b)+(b*documentSize)/averageLengthOfSentences)));
         }
 
         return score;
