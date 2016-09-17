@@ -70,7 +70,7 @@ public class MEANSStart {
         StopWords.initializeStopWords(STOPWORDSPATH);
 
         //get the path
-        String folderPath = "COMPILED DOCUS"; //getFolderPath();
+        String folderPath = getFolderPath();
         if (folderPath.equals("")) stopProgram();
 
         //numOfSentences
@@ -80,7 +80,7 @@ public class MEANSStart {
 
 
         //for tokenization
-        //tokenizeFiles(folderPath);
+        tokenizeFiles(folderPath);
 
 
         //initialize dataset
