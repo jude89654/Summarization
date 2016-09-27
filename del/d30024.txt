@@ -5495,11 +5495,7 @@ Sentence:
 	S: father
 	S: ,
 	S: Henry
-	S: .
-Sentence:
-	S: #
-Sentence:
-	S: Stunned
+	S: .#Stunned
 	S: by
 	S: the
 	S: Democratic
@@ -13471,6 +13467,5 @@ Sentence:
 	S: candidates
 	S: .
 	S: ''
-Sentence:
 	S: #
 Sentence:

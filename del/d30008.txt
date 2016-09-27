@@ -2934,9 +2934,7 @@ Sentence:
 	S: Peru
 	S: .
 Sentence:
-	S: #
-Sentence:
-	S: Again
+	S: #Again
 	S: bowing
 	S: to
 	S: Chinese

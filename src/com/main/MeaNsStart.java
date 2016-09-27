@@ -4,7 +4,7 @@ import com.model.DataSet;
 import com.model.Document;
 import com.model.Sentence;
 import com.model.Topic;
-import com.ust.BM25Modified.BM25TextRankSummaryModified;
+import com.ust.BM25Modified.BM25TextRank;
 import com.ust.similarity.CosineSimilarity;
 import com.ust.tokenizer.TextFileTokenizer;
 import com.ust.vector.SentenceVector;
@@ -23,8 +23,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
-import java.util.Random;
 
 
 /**
@@ -32,7 +30,7 @@ import java.util.Random;
  */
 public class MEANSStart {
 
-    static String systemName ="MEANS";
+    static String systemName = "MEANS";
 
     /**
      * Path of the text file containing the stopwords
@@ -47,12 +45,12 @@ public class MEANSStart {
     /**
      * the number of sentences selected by the user
      */
-    static int numOfSentences = 5;
+    static int numOfSentences = 4;
 
     /**
      * setting this to true will remove short sentence according to the minimum sentence length.
      */
-    static boolean removeShortSentences = true;
+    static boolean removeShortSentences =true;
 
     /**
      * if removeShortSentences is true, it will remove sentences with less than minimumSentenceLengh
@@ -71,7 +69,7 @@ public class MEANSStart {
 
         //get the path
         String folderPath = getFolderPath();
-        if (folderPath.equals("")) stopProgram();
+        //if (folderPath.equals("")) stopProgram();
 
         //numOfSentences
         //numOfSentences = inputNumberOfSentences();
@@ -103,11 +101,7 @@ public class MEANSStart {
             ArrayList<Sentence> reorderedSentences = reRankTopSentences(topSentenceFromEachCluster);
 
             try {
-                System.out.println("CREATING FILE: " + fileName);
-
-                createSummaryFile(reorderedSentences, new File(fileName +"_" + systemName + ".txt"));
-
-                System.out.println("CREATED FILE: " + fileName + "\n\n");
+                createSummaryFile(reorderedSentences, new File(fileName + "_" + systemName + ".txt"));
             } catch (IOException ioException) {
                 System.out.println("IOEXCEPTION-ERROR IN CREATING FILE:" + fileName);
                 ioException.printStackTrace();
@@ -127,8 +121,7 @@ public class MEANSStart {
      * @return reordered sentences
      */
     public static ArrayList<Sentence> reRankTopSentences(ArrayList<Sentence> topSentences) {
-        return new ArrayList<Sentence>(BM25TextRankSummaryModified.getTopSentenceList(new ArrayList(topSentences)
-                , numOfSentences));
+        return new ArrayList<Sentence>(BM25TextRank.getTopSentenceList(topSentences, numOfSentences));
     }
 
 
@@ -173,8 +166,8 @@ public class MEANSStart {
                 if (cluster.isEmpty()) continue;
 
                 //else get the top sentence from each cluster a
-                ArrayList<Sentence> tempList = new ArrayList<>(BM25TextRankSummaryModified
-                        .getTopSentenceList(cluster, 5));
+                ArrayList<Sentence> tempList = new ArrayList<>(BM25TextRank
+                        .getTopSentenceList(cluster, numOfSentences));
 
                 for (Sentence tempSentence : tempList) {
                     topSentenceFromAllClusters.add(tempSentence);
@@ -200,6 +193,8 @@ public class MEANSStart {
      */
     public static void createSummaryFile(ArrayList<Sentence> topSentences, File file) throws IOException {
 
+        System.out.println("CREATING FILE:" + file.getName());
+
         File outputFolder = new File(outputFolderName);
         //making sure that directory exists.
         outputFolder.mkdir();
@@ -216,6 +211,7 @@ public class MEANSStart {
         System.out.println("FINAL SUMMARY:\n" + finalSummary);
         fileWriter.write(finalSummary);
         fileWriter.close();
+        System.out.println("FILE CREATED:" + file.getName());
     }
 
 
@@ -260,6 +256,7 @@ public class MEANSStart {
         } else {
             System.out.println("YOU MUST SELECT A FOLDER WHERE THE SOURCE DATA COMES FROM");
             JOptionPane.showConfirmDialog(new JFrame(), "YOU MUST SELECT A FOLDER");
+            stopProgram();
             return "";
         }
     }
@@ -274,20 +271,21 @@ public class MEANSStart {
     public static ArrayList<ArrayList<Sentence>> clusterize(Topic topic) {
 
         //all of the unique stemmed words
-        ArrayList<String> global = new ArrayList<>();
+        ArrayList<String> vectorSpace
+                = new ArrayList<>();
 
         //all of the sentences among the documents
-        ArrayList<List<String>> sentences = new ArrayList<>();
+        ArrayList<Sentence> sentences = new ArrayList<>();
 
-        preProcess(topic, sentences, global);
+        preProcess(topic, sentences, vectorSpace);
 
-        ArrayList<SentenceVector> sentenceVectors = createSentenceVectorList(topic, global, sentences);
+        ArrayList<SentenceVector> sentenceVectors = createSentenceVectorList(topic, vectorSpace, sentences);
 
         //Rule of thumb for k
         int k = (int) (Math.sqrt(sentences.size() / 2));
 
 
-        System.out.println("NUMBER OF K:" + k);
+        System.out.println("NUMBER OF CLUSTERS:" + k);
         //Similarity measure used for distance in the clusterer
         CosineSimilarity cosineSimilarity = new CosineSimilarity();
 
@@ -296,15 +294,13 @@ public class MEANSStart {
         //initializing the clusterer
         KMeansPlusPlusClusterer<SentenceVector> kMeansClusterer
                 = new KMeansPlusPlusClusterer<SentenceVector>(k,
-                                                 500,
-                                                 cosineSimilarity,
-                                                 s,
-                                                 KMeansPlusPlusClusterer.EmptyClusterStrategy.LARGEST_POINTS_NUMBER);
+                500, cosineSimilarity, s, KMeansPlusPlusClusterer.EmptyClusterStrategy.LARGEST_VARIANCE);
 
         ArrayList<ArrayList<Sentence>> clusterList = new ArrayList<>();
 
         int clusterCount = 0;
 
+        // if(kMeansClusterer.)
         for (CentroidCluster<SentenceVector> centroid : kMeansClusterer.cluster(sentenceVectors)) {
             //System.out.println(centroid.getCenter());
             ArrayList<Sentence> cluster = new ArrayList<>();
@@ -334,7 +330,7 @@ public class MEANSStart {
      * @return an ArrayList of SentenceVectors based on a given topic
      */
     public static ArrayList<SentenceVector> createSentenceVectorList(Topic topic, ArrayList<String> global
-            , ArrayList<List<String>> sentences) {
+            , ArrayList<Sentence> sentences) {
 
         ArrayList<SentenceVector> sentenceVectors = new ArrayList<>();
 
@@ -372,7 +368,7 @@ public class MEANSStart {
      *                  contents of the sentences that will be updated with the topics document
      * @param global    the ArrayList that would be the list containing all the unique stemmed words
      */
-    public static void preProcess(Topic topic, ArrayList<List<String>> sentences, ArrayList<String> global) {
+    public static void preProcess(Topic topic, ArrayList<Sentence> sentences, ArrayList<String> global) {
 
         //for each document
         for (Document document : topic.getDocuments()) {
@@ -383,14 +379,13 @@ public class MEANSStart {
                     //if the number of words is less than the minimum sentence length.
                     if (sentence.getContent().size() < minimumSentenceLength) continue;
                 }
-                sentences.add(sentence.getContent());
+                sentences.add(sentence);
                 //for each word
-                for (String word : sentence.getContent()) {
-                    //if the word is not a stop word and is not within the global
-                    if (!global.contains(word) & !StopWords.isStopWord(word)) {
+                for (String word : sentence.getFreqMap().keySet()) {
+                    if (!global.contains(word.toLowerCase()) & !StopWords.isStopWord(word)) {
+                        //   System.out.println(word);
                         global.add(word);
                     }
-
                 }
             }
         }

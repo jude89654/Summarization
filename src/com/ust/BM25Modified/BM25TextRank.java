@@ -6,17 +6,15 @@ import com.model.DataSet;
 import com.model.Document;
 import com.model.Sentence;
 import com.model.Topic;
-import com.ust.tokenizer.TextFileTokenizer;
 import com.util.StopWords;
 
 
-import java.io.IOException;
 import java.util.*;
 
 /**
  * Created by jude8 on 8/1/2016.
  */
-public class BM25TextRankSummaryModified {
+public class BM25TextRank {
 
     final double dampingFactor = 0.85f;
 
@@ -38,7 +36,7 @@ public class BM25TextRankSummaryModified {
 
     BM25Modified bm25Modified;
 
-    public BM25TextRankSummaryModified(List<Sentence> document) {
+    public BM25TextRank(List<Sentence> document) {
         this.document = document;
         bm25Modified = new BM25Modified(document);
         numberOfSentences = document.size();
@@ -154,7 +152,7 @@ public class BM25TextRankSummaryModified {
 
     public static List<Sentence> getTopSentenceList(List<Sentence> document, int size) {
 
-        BM25TextRankSummaryModified textRankSummaryModified = new BM25TextRankSummaryModified(document);
+        BM25TextRank textRankSummaryModified = new BM25TextRank(document);
         int[] topSentence = textRankSummaryModified.getTopSentence(size);
         //System.out.println(Arrays.toString(topSentence));
         List<Sentence> finalResults = new LinkedList();

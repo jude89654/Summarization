@@ -1092,12 +1092,9 @@ Sentence:
 	S: and
 	S: economic
 	S: chaos
-	S: .
-Sentence:
-	S: #
-Sentence:
-	S: Cambodia
+	S: .#Cambodia
 	S: 's
+Sentence:
 	S: two-party
 	S: opposition
 	S: asked
@@ -1604,12 +1601,9 @@ Sentence:
 	S: ,
 	S: Machimura
 	S: said
-	S: .
-Sentence:
-	S: #
-Sentence:
-	S: Cambodia
+	S: .#Cambodia
 	S: 's
+Sentence:
 	S: ruling
 	S: party
 	S: responded
@@ -4876,11 +4870,8 @@ Sentence:
 	S: the
 	S: National
 	S: Assembly
-	S: .
+	S: .#King
 Sentence:
-	S: #
-Sentence:
-	S: King
 	S: Norodom
 	S: Sihanouk
 	S: on

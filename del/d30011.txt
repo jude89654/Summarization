@@ -746,11 +746,8 @@ Sentence:
 	S: President
 	S: B.J.
 	S: Habibie
-	S: .
+	S: .#Prime
 Sentence:
-	S: #
-Sentence:
-	S: Prime
 	S: Minister
 	S: Mahathir
 	S: Mohamad
@@ -1036,12 +1033,9 @@ Sentence:
 	S: 's
 	S: party
 	S: elections
-	S: .
-Sentence:
-	S: #
-Sentence:
-	S: BRUSSELS
+	S: .#BRUSSELS
 	S: ,
+Sentence:
 	S: Belgium
 	S: (
 	S: AP

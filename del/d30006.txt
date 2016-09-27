@@ -5090,11 +5090,8 @@ Sentence:
 	S: from
 	S: the
 	S: players
-	S: .
+	S: .#Despite
 Sentence:
-	S: #
-Sentence:
-	S: Despite
 	S: modest
 	S: encouragement
 	S: over
@@ -9067,11 +9064,8 @@ Sentence:
 	S: much
 	S: as
 	S: possible
-	S: .
+	S: .#As
 Sentence:
-	S: #
-Sentence:
-	S: As
 	S: labor
 	S: battles
 	S: go
@@ -9740,6 +9734,5 @@ Sentence:
 	S: for
 	S: months
 	S: .
-Sentence:
 	S: #
 Sentence:

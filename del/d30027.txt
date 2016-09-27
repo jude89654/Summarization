@@ -1581,9 +1581,7 @@ Sentence:
 	S: money
 	S: .
 Sentence:
-	S: #
-Sentence:
-	S: Ukraine
+	S: #Ukraine
 	S: 's
 	S: parliament
 	S: on

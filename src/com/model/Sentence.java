@@ -1,9 +1,6 @@
 package com.model;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import com.constants.Constants;
 import com.util.StopWords;
@@ -113,7 +110,7 @@ public class Sentence {
     }
 
     private Map<String, Integer> buildMap() {
-        Map<String, Integer> map = new HashMap<String, Integer>();
+        Map<String, Integer> map = new TreeMap<String, Integer>(String.CASE_INSENSITIVE_ORDER);
         for (String word : getContent()) {
             word = word.toLowerCase();
             if (map.containsKey(word))

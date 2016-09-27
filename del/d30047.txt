@@ -2089,9 +2089,7 @@ Sentence:
 	S: Newman
 	S: .
 Sentence:
-	S: #
-Sentence:
-	S: WASHINGTON
+	S: #WASHINGTON
 	S: _
 	S: NASA
 	S: and

@@ -3236,9 +3236,7 @@ Sentence:
 	S: rule
 	S: .
 Sentence:
-	S: #
-Sentence:
-	S: JAKARTA
+	S: #JAKARTA
 	S: ,
 	S: Indonesia
 	S: (
