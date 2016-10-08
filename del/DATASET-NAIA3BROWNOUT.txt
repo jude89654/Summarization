@@ -171,7 +171,8 @@ Sentence:
 	S: failed
 	S: to
 	S: transmit
-	S: power…there
+	S: power
+	S: ...there
 	S: is
 	S: drainage
 	S: in
@@ -217,9 +218,8 @@ Sentence:
 	S: such
 	S: an
 	S: event
-	S: .
-	S: ”
-Sentence:
+	S: ,
+	S: "
 	S: He
 	S: said
 	S: the
@@ -231,9 +231,8 @@ Sentence:
 	S: say
 	S: the
 	S: least
-	S: .
-	S: ”
-Sentence:
+	S: ,
+	S: "
 	S: “It
 	S: showed
 	S: the
@@ -740,9 +739,8 @@ Sentence:
 	S: in
 	S: the
 	S: future
-	S: .
-	S: ”
-Sentence:
+	S: ,
+	S: "
 	S: He
 	S: added
 	S: that
@@ -820,9 +818,8 @@ Sentence:
 	S: with
 	S: “limited
 	S: resources
-	S: .
-	S: ”
-Sentence:
+	S: ,
+	S: "
 	S: #
 Sentence:
 	S: Thousands
@@ -1565,9 +1562,8 @@ Sentence:
 	S: 4
 	S: for
 	S: offboarding
-	S: .
-	S: ”
-Sentence:
+	S: ,
+	S: "
 	S: Manila
 	S: International
 	S: Airport

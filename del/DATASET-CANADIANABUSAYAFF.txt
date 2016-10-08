@@ -245,7 +245,7 @@ Sentence:
 	S: said
 	S: .
 Sentence:
-	S: Malacañang
+	S: Malacañang
 	S: thanked
 	S: the
 	S: Canadian
@@ -375,7 +375,7 @@ Sentence:
 Sentence:
 	S: #
 Sentence:
-	S: Malacañang
+	S: Malacañang
 	S: on
 	S: Tuesday
 	S: slammed
@@ -509,9 +509,8 @@ Sentence:
 	S: support
 	S: and
 	S: understanding
-	S: .
-	S: ”
-Sentence:
+	S: ,
+	S: "
 	S: He
 	S: said
 	S: this
@@ -526,9 +525,8 @@ Sentence:
 	S: this
 	S: decades-old
 	S: problem
-	S: .
-	S: ”
-Sentence:
+	S: ,
+	S: "
 	S: Canadian
 	S: Prime
 	S: Minister
@@ -738,9 +736,8 @@ Sentence:
 	S: terror
 	S: and
 	S: banditry
-	S: .
-	S: ”
-Sentence:
+	S: ,
+	S: "
 	S: #
 Sentence:
 	S: “It
@@ -909,9 +906,8 @@ Sentence:
 	S: recovered
 	S: a
 	S: Caucasian-looking
-	S: one…
-	S: .
-Sentence:
+	S: one
+	S: ....
 	S: Seems
 	S: like
 	S: Robert
@@ -1311,9 +1307,8 @@ Sentence:
 	S: long
 	S: it
 	S: takes
-	S: .
-	S: ”
-Sentence:
+	S: ,
+	S: "
 	S: Aquino
 	S: vowed
 	S: after

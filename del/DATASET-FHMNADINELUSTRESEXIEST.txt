@@ -369,8 +369,8 @@ Sentence:
 	S: !
 	S: ?
 	S: !
-	S: .
-	S: ”
+	S: ,
+	S: "
 Sentence:
 	S: He
 	S: added
@@ -385,9 +385,8 @@ Sentence:
 	S: same
 	S: team
 	S: :(
-	S: .
-	S: ”
-Sentence:
+	S: ,
+	S: "
 	S: #
 Sentence:
 	S: FHM

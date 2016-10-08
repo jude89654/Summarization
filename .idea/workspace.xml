@@ -2,87 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1bce966-458c-445a-9139-1164e2c12326" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ust/gui/MenuGUI.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ust/gui/MenuGUI.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DATASET-DUTERTEELECTION.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/gui/MenuGUI.form" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/gui/MenuGUI.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/da-sent.bin" afterPath="$PROJECT_DIR$/models/da-sent.bin" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/da-token.bin" afterPath="$PROJECT_DIR$/models/da-token.bin" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/en-sent.bin" afterPath="$PROJECT_DIR$/models/en-sent.bin" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/en-token.bin" afterPath="$PROJECT_DIR$/models/en-token.bin" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/ust/BM25Modified/BM25TextRankSummaryModified.java" afterPath="$PROJECT_DIR$/src/com/ust/BM25Modified/BM25TextRank.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ust/swing/SwingAppender.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/main/MeaNsStart.class" afterPath="$PROJECT_DIR$/bin/com/main/MeaNsStart.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/main/SandeepStart.class" afterPath="$PROJECT_DIR$/bin/com/main/SandeepStart.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/com/model/Sentence.class" afterPath="$PROJECT_DIR$/bin/com/model/Sentence.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30001_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30001_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30002_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30002_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30003_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30003_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30005_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30005_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30006_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30006_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30007_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30007_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30008_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30008_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30010_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30010_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30011_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30011_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30015_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30015_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30017_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30017_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30020_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30020_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30022_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30022_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30024_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30024_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30026_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30026_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30027_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30027_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30028_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30028_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30029_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30029_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30031_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30031_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30033_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30033_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30034_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30034_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30036_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30036_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30037_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30037_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30038_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30038_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30040_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30040_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30042_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30042_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30044_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30044_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30045_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30045_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30046_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30046_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30047_Means.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30047_Means.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30048_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30048_MEANS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30049_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30049_MEANS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30050_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30050_MEANS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30051_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30051_MEANS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30053_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30053_MEANS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30055_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30055_MEANS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30056_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30056_MEANS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d30059_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/d30059_MEANS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d31001_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/d31001_MEANS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d31008_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/d31008_MEANS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d31009_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/d31009_MEANS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d31013_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/d31013_MEANS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d31022_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/d31022_MEANS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d31026_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/d31026_MEANS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d31031_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/d31031_MEANS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d31032_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/d31032_MEANS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d31033_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/d31033_MEANS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d31038_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/d31038_MEANS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d31043_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/d31043_MEANS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/d31050_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/d31050_MEANS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30001.txt" afterPath="$PROJECT_DIR$/del/d30001.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30002.txt" afterPath="$PROJECT_DIR$/del/d30002.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30005.txt" afterPath="$PROJECT_DIR$/del/d30005.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30006.txt" afterPath="$PROJECT_DIR$/del/d30006.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30008.txt" afterPath="$PROJECT_DIR$/del/d30008.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30011.txt" afterPath="$PROJECT_DIR$/del/d30011.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30020.txt" afterPath="$PROJECT_DIR$/del/d30020.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30024.txt" afterPath="$PROJECT_DIR$/del/d30024.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30027.txt" afterPath="$PROJECT_DIR$/del/d30027.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30028.txt" afterPath="$PROJECT_DIR$/del/d30028.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30031.txt" afterPath="$PROJECT_DIR$/del/d30031.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30034.txt" afterPath="$PROJECT_DIR$/del/d30034.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30038.txt" afterPath="$PROJECT_DIR$/del/d30038.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30046.txt" afterPath="$PROJECT_DIR$/del/d30046.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/d30047.txt" afterPath="$PROJECT_DIR$/del/d30047.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FOR PROFESSORS/DATASET-CURFEW.txt" afterPath="$PROJECT_DIR$/FOR PROFESSORS/DATASET-CURFEW.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FOR PROFESSORS/DATASET-LTFRB.txt" afterPath="$PROJECT_DIR$/FOR PROFESSORS/DATASET-LTFRB.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FOR PROFESSORS/DATASET-MOUNTBULUSAN.txt" afterPath="$PROJECT_DIR$/FOR PROFESSORS/DATASET-MOUNTBULUSAN.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FOR PROFESSORS/DATASET-RODYMEETSLIENIFORTHEFIRSTTIME.txt" afterPath="$PROJECT_DIR$/FOR PROFESSORS/DATASET-RODYMEETSLIENIFORTHEFIRSTTIME.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FOR PROFESSORS/DATASET-SHARONTHEVOICE.txt" afterPath="$PROJECT_DIR$/FOR PROFESSORS/DATASET-SHARONTHEVOICE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-ABALOS_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-ABALOS_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-ATHLETEOFTHEYEAR_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-ATHLETEOFTHEYEAR_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-BADJAOGIRLVIRAL_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-BADJAOGIRLVIRAL_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-CANADIANABUSAYAFF_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-CANADIANABUSAYAFF_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-CHED_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-CHED_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-CHRISTINAGRIMMIE_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-CHRISTINAGRIMMIE_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-COMELECWEBSITEHACKED_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-COMELECWEBSITEHACKED_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-CORONA_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-CORONA_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-CURFEW_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-CURFEW_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-DONALDTRUMP_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-DONALDTRUMP_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-DUTERTEELECTION_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-DUTERTEELECTION_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-DUTERTEROBREDO_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-DUTERTEROBREDO_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-FHMNADINELUSTRESEXIEST_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-FHMNADINELUSTRESEXIEST_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-HENRYSYRICHESTFORBES_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-HENRYSYRICHESTFORBES_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-JACLYNJOSECANNES_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-JACLYNJOSECANNES_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-KIKOMATOSBARONGEISLER_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-KIKOMATOSBARONGEISLER_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-KUYAGERMS_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-KUYAGERMS_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-LOWPRESSUREAREAAMBO_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-LOWPRESSUREAREAAMBO_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-LTFRB_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-LTFRB_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-MIRIAMSANTIAGOOUTOFHOSPITAL_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-MIRIAMSANTIAGOOUTOFHOSPITAL_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-MOUNTBULUSAN_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-MOUNTBULUSAN_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-MUHAMMADALI_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-MUHAMMADALI_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-NAIA3BROWNOUT_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-NAIA3BROWNOUT_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-NORAAUNORANINGDANGAL_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-NORAAUNORANINGDANGAL_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-ORLANDOSHOOTINGS_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-ORLANDOSHOOTINGS_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-PLDTANDSMARTNEWLOGO_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-PLDTANDSMARTNEWLOGO_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-RODYMEETSLIENIFORTHEFIRSTTIME_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-RODYMEETSLIENIFORTHEFIRSTTIME_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-SHARONTHEVOICE_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-SHARONTHEVOICE_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-TYPHOONBUTCHOYEXITSBUTSTILLBRINGSRAIN_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-TYPHOONBUTCHOYEXITSBUTSTILLBRINGSRAIN_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MeansSummary/DATASET-UAAPVOLLEYBALL_MEANS.txt" afterPath="$PROJECT_DIR$/MeansSummary/DATASET-UAAPVOLLEYBALL_MEANS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-BADJAOGIRLVIRAL.txt" afterPath="$PROJECT_DIR$/del/DATASET-BADJAOGIRLVIRAL.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-CANADIANABUSAYAFF.txt" afterPath="$PROJECT_DIR$/del/DATASET-CANADIANABUSAYAFF.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-CHED.txt" afterPath="$PROJECT_DIR$/del/DATASET-CHED.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-CURFEW.txt" afterPath="$PROJECT_DIR$/del/DATASET-CURFEW.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-DUTERTEELECTION.txt" afterPath="$PROJECT_DIR$/del/DATASET-DUTERTEELECTION.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-FHMNADINELUSTRESEXIEST.txt" afterPath="$PROJECT_DIR$/del/DATASET-FHMNADINELUSTRESEXIEST.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-KIKOMATOSBARONGEISLER.txt" afterPath="$PROJECT_DIR$/del/DATASET-KIKOMATOSBARONGEISLER.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-LOWPRESSUREAREAAMBO.txt" afterPath="$PROJECT_DIR$/del/DATASET-LOWPRESSUREAREAAMBO.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-MOUNTBULUSAN.txt" afterPath="$PROJECT_DIR$/del/DATASET-MOUNTBULUSAN.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-NAIA3BROWNOUT.txt" afterPath="$PROJECT_DIR$/del/DATASET-NAIA3BROWNOUT.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-NORAAUNORANINGDANGAL.txt" afterPath="$PROJECT_DIR$/del/DATASET-NORAAUNORANINGDANGAL.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-ORLANDOSHOOTINGS.txt" afterPath="$PROJECT_DIR$/del/DATASET-ORLANDOSHOOTINGS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-PLDTANDSMARTNEWLOGO.txt" afterPath="$PROJECT_DIR$/del/DATASET-PLDTANDSMARTNEWLOGO.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-RODYMEETSLIENIFORTHEFIRSTTIME.txt" afterPath="$PROJECT_DIR$/del/DATASET-RODYMEETSLIENIFORTHEFIRSTTIME.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-SHARONTHEVOICE.txt" afterPath="$PROJECT_DIR$/del/DATASET-SHARONTHEVOICE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-TYPHOONBUTCHOYEXITSBUTSTILLBRINGSRAIN.txt" afterPath="$PROJECT_DIR$/del/DATASET-TYPHOONBUTCHOYEXITSBUTSTILLBRINGSRAIN.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/del/DATASET-UAAPVOLLEYBALL.txt" afterPath="$PROJECT_DIR$/del/DATASET-UAAPVOLLEYBALL.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/main/MeaNsStart.java" afterPath="$PROJECT_DIR$/src/com/main/MeaNsStart.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/main/SandeepStart.java" afterPath="$PROJECT_DIR$/src/com/main/SandeepStart.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/model/Sentence.java" afterPath="$PROJECT_DIR$/src/com/model/Sentence.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ust/BM25Modified/BM25Modified.java" afterPath="$PROJECT_DIR$/src/com/ust/BM25Modified/BM25Modified.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ust/BM25Modified/BM25TextRank.java" afterPath="$PROJECT_DIR$/src/com/ust/BM25Modified/BM25TextRank.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ust/gui/MenuGUI.form" afterPath="$PROJECT_DIR$/src/com/ust/gui/MenuGUI.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ust/gui/MenuGUI.java" afterPath="$PROJECT_DIR$/src/com/ust/gui/MenuGUI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ust/tokenizer/TextFileTokenizer.java" afterPath="$PROJECT_DIR$/src/com/ust/tokenizer/TextFileTokenizer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ust/vector/SentenceVectorFactory.java" afterPath="$PROJECT_DIR$/src/com/ust/vector/SentenceVectorFactory.java" />
     </list>
@@ -128,8 +110,18 @@
       <file leaf-file-name="MEANSStart.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/main/MEANSStart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4110">
-              <caret line="296" column="24" selection-start-line="296" selection-start-column="24" selection-end-line="296" selection-end-column="24" />
+            <state relative-caret-position="285">
+              <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SentenceVectorFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ust/vector/SentenceVectorFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="37" column="99" selection-start-line="37" selection-start-column="99" selection-end-line="37" selection-end-column="99" />
               <folding>
                 <element signature="imports" expanded="false" />
               </folding>
@@ -137,11 +129,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CosineSimilarity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ust/similarity/CosineSimilarity.java">
+      <file leaf-file-name="SentenceVector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ust/vector/SentenceVector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+            <state relative-caret-position="120">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#358#359#0" expanded="false" />
+                <element signature="e#398#399#0" expanded="false" />
+                <element signature="e#485#486#0" expanded="false" />
+                <element signature="e#519#520#0" expanded="false" />
+                <element signature="e#1688#1689#0" expanded="false" />
+                <element signature="e#1719#1720#0" expanded="false" />
+                <element signature="e#1858#1859#0" expanded="false" />
+                <element signature="e#1886#1887#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SwingAppender.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ust/swing/SwingAppender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuGUI.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/ust/gui/MenuGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+              <folding>
+                <element signature="e#2634#2635#0" expanded="true" />
+                <element signature="e#2715#2716#0" expanded="true" />
+                <element signature="e#2780#2781#0" expanded="true" />
+                <element signature="e#2820#2821#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuGUI.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ust/gui/MenuGUI.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DATASET-LTFRB.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FOR PROFESSORS/DATASET-LTFRB.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SandeepStart.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/main/SandeepStart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="29" column="0" selection-start-line="26" selection-start-column="8" selection-end-line="29" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="false" />
               </folding>
@@ -149,133 +203,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DATASET-FHMNADINELUSTRESEXIEST.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FOR PROFESSORS/DATASET-FHMNADINELUSTRESEXIEST.txt">
+      <file leaf-file-name="TextFileTokenizer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/ust/tokenizer/TextFileTokenizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="767">
+              <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DATASET-FHMNADINELUSTRESEXIEST_MEANS.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MeansSummary/DATASET-FHMNADINELUSTRESEXIEST_MEANS.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DATASET-ABALOS.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FOR PROFESSORS/DATASET-ABALOS.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DATASET-SHARONTHEVOICE_MEANS.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MeansSummary/DATASET-SHARONTHEVOICE_MEANS.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DATASET-CHRISTINAGRIMMIE_MEANS.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MeansSummary/DATASET-CHRISTINAGRIMMIE_MEANS.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DATASET-CHRISTINAGRIMMIE.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FOR PROFESSORS/DATASET-CHRISTINAGRIMMIE.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-223">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StringBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/lang/StringBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="111" column="11" selection-start-line="111" selection-start-column="11" selection-end-line="111" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#11950#0" expanded="false" />
-                <element signature="e#2871#2872#0" expanded="false" />
-                <element signature="e#2896#2897#0" expanded="false" />
-                <element signature="e#3272#3273#0" expanded="false" />
-                <element signature="e#3303#3304#0" expanded="false" />
-                <element signature="e#4161#4162#0" expanded="false" />
-                <element signature="e#4211#4212#0" expanded="false" />
-                <element signature="e#10229#10230#0" expanded="false" />
-                <element signature="e#10270#10271#0" expanded="false" />
-                <element signature="e#10337#10338#0" expanded="false" />
-                <element signature="e#10389#10390#0" expanded="false" />
-                <element signature="e#10445#10446#0" expanded="false" />
-                <element signature="e#10490#10491#0" expanded="false" />
-                <element signature="e#10561#10562#0" expanded="false" />
-                <element signature="e#10617#10618#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractStringBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/lang/AbstractStringBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#56545#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#1588#1589#0" expanded="false" />
-                <element signature="e#1616#1617#0" expanded="false" />
-                <element signature="e#1874#1875#0" expanded="false" />
-                <element signature="e#1909#1910#0" expanded="false" />
-                <element signature="e#14779#14780#0" expanded="false" />
-                <element signature="e#14829#14830#0" expanded="false" />
-                <element signature="e#32344#32345#0" expanded="false" />
-                <element signature="e#32390#32391#0" expanded="false" />
-                <element signature="e#33359#33360#0" expanded="false" />
-                <element signature="e#33403#33404#0" expanded="false" />
-                <element signature="e#37123#37124#0" expanded="false" />
-                <element signature="e#37181#37182#0" expanded="false" />
-                <element signature="e#45857#45858#0" expanded="false" />
-                <element signature="e#45913#45914#0" expanded="false" />
-                <element signature="e#47867#47868#0" expanded="false" />
-                <element signature="e#47923#47924#0" expanded="false" />
-                <element signature="e#48805#48806#0" expanded="false" />
-                <element signature="e#48861#48862#0" expanded="false" />
-                <element signature="e#49747#49748#0" expanded="false" />
-                <element signature="e#49803#49804#0" expanded="false" />
-                <element signature="e#50693#50694#0" expanded="false" />
-                <element signature="e#50749#50750#0" expanded="false" />
-                <element signature="e#51393#51394#0" expanded="false" />
-                <element signature="e#51431#51432#0" expanded="false" />
-                <element signature="e#52207#52208#0" expanded="false" />
-                <element signature="e#52277#52278#0" expanded="false" />
-                <element signature="e#53047#53048#0" expanded="false" />
-                <element signature="e#53093#53094#0" expanded="false" />
-                <element signature="e#53792#53793#0" expanded="false" />
-                <element signature="e#53866#53867#0" expanded="false" />
-                <element signature="e#56512#56513#0" expanded="false" />
-                <element signature="e#56540#56541#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -308,11 +241,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/MeansSummary/DATASET-FHMNADINELUSTRESEXIEST.txt" />
-        <option value="$PROJECT_DIR$/MeansSummary/DATASET-MOUNTBULUSAN.txt" />
-        <option value="$PROJECT_DIR$/MeansSummary/DATASET-ATHLETEOFTHEYEAR.txt" />
-        <option value="$PROJECT_DIR$/MeansSummary/DATASET-MUHAMMADALI.txt" />
-        <option value="$PROJECT_DIR$/MeansSummary/DATASET-COMELECWEBSITEHACKED.txt" />
         <option value="$PROJECT_DIR$/MeansSummary/DATASET-NORAAUNORANINGDANGAL.txt" />
         <option value="$PROJECT_DIR$/MeansSummary/DATASET-DUTERTEROBREDO.txt" />
         <option value="$PROJECT_DIR$/MeansSummary/DATASET-MIRIAMSANTIAGOOUTOFHOSPITAL.txt" />
@@ -345,20 +273,25 @@
         <option value="$PROJECT_DIR$/MeansSummary/Means_DATASET-KIKOMATOSBARONGEISLER.txt" />
         <option value="$PROJECT_DIR$/MeansSummary/Means_DATASET-LOWPRESSUREAREAAMBO.txt" />
         <option value="$PROJECT_DIR$/MeansSummary/Means_DATASET-KUYAGERMS.txt" />
-        <option value="$PROJECT_DIR$/src/com/ust/BM25Modified/BM25Modified.java" />
         <option value="$PROJECT_DIR$/src/com/ust/BM25Modified/BM25TextRankSummaryModified.java" />
-        <option value="$PROJECT_DIR$/src/com/ust/vector/SentenceVector.java" />
         <option value="$PROJECT_DIR$/src/com/main/SandeepStart.java" />
         <option value="$PROJECT_DIR$/src/com/processor/SentenceProcessor.java" />
-        <option value="$PROJECT_DIR$/src/com/model/Sentence.java" />
         <option value="$PROJECT_DIR$/MeansSummary/DATASET-KUYAGERMS_MEANS.txt" />
         <option value="$PROJECT_DIR$/src/com/gui/MenuGUI.java" />
         <option value="$PROJECT_DIR$/src/com/gui/MenuGUI.form" />
+        <option value="$PROJECT_DIR$/src/com/ust/vector/SentenceVectorFactory.java" />
+        <option value="$PROJECT_DIR$/src/com/ust/BM25Modified/BM25TextRank.java" />
+        <option value="$PROJECT_DIR$/src/com/ust/BM25Modified/BM25Modified.java" />
+        <option value="$PROJECT_DIR$/FOR PROFESSORS/DATASET-NORAAUNORANINGDANGAL.txt" />
+        <option value="$PROJECT_DIR$/src/com/model/Sentence.java" />
+        <option value="$PROJECT_DIR$/FOR PROFESSORS/DATASET-LTFRB.txt" />
+        <option value="$PROJECT_DIR$/FOR PROFESSORS/DATASET-RODYMEETSLIENIFORTHEFIRSTTIME.txt" />
+        <option value="$PROJECT_DIR$/src/com/ust/vector/SentenceVector.java" />
+        <option value="$PROJECT_DIR$/src/com/main/MEANSStart.java" />
+        <option value="$PROJECT_DIR$/src/com/ust/swing/SwingAppender.java" />
+        <option value="$PROJECT_DIR$/src/com/ust/tokenizer/TextFileTokenizer.java" />
         <option value="$PROJECT_DIR$/src/com/ust/gui/MenuGUI.form" />
         <option value="$PROJECT_DIR$/src/com/ust/gui/MenuGUI.java" />
-        <option value="$PROJECT_DIR$/src/com/ust/vector/SentenceVectorFactory.java" />
-        <option value="$PROJECT_DIR$/src/com/ust/tokenizer/TextFileTokenizer.java" />
-        <option value="$PROJECT_DIR$/src/com/main/MEANSStart.java" />
       </list>
     </option>
   </component>
@@ -381,7 +314,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1378" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -476,249 +409,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ust" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ust" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ust" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tokenizer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ust" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="similarity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ust" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ust" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="comparator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MeansSummary" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Summarization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="COMPILED DOCUS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -727,14 +423,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/models" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15655577" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SearchEverywhereHistoryKey" value="Stopw&#9;PSI&#9;JAVA://com.util.StopWords&#10;.sum&#9;PSI&#9;JAVA://com.model.Sentence#setPartOfHumanSummary&#10;.&quot;.sum&quot;&#9;null&#9;null&#10;nav&#9;null&#9;null" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="331" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="337" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
   </component>
   <component name="RecentsManager">
@@ -745,20 +441,20 @@
       <recent name="com.ust" />
       <recent name="com.gui" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\jude8\Documents\GitHub\Summarization" />
-      <recent name="C:\Users\jude8\Documents\GitHub\Summarization\FOR PROFESSORS" />
-      <recent name="C:\Users\jude8\Documents\GitHub\Summarization\testTokenize" />
-      <recent name="C:\Users\jude8\Documents\GitHub\Summarization\src\com\ust\BM25" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jude8\Documents\GitHub\Summarization\src\com\ust" />
       <recent name="C:\Users\jude8\Documents\GitHub\Summarization\models" />
       <recent name="C:\Users\jude8\Documents\GitHub\Summarization\preprocessmodels" />
       <recent name="C:\Users\jude8\Documents\GitHub\Summarization\testTokenize" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jude8\Documents\GitHub\Summarization\FOR PROFESSORS" />
+      <recent name="C:\Users\jude8\Documents\GitHub\Summarization" />
+      <recent name="C:\Users\jude8\Documents\GitHub\Summarization\testTokenize" />
+      <recent name="C:\Users\jude8\Documents\GitHub\Summarization\src\com\ust\BM25" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.MEANSStart">
+  <component name="RunManager" selected="Application.MenuGUI">
     <configuration default="false" name="SandeepStart" type="Application" factoryName="Application" singleton="true" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -819,7 +515,7 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="MenuGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="MenuGUI" type="Application" factoryName="Application" singleton="true" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.ust.gui.*" />
@@ -837,13 +533,11 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="Yelp" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="MEANS" />
+        </option>
+      </method>
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
@@ -1167,14 +861,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1192,9 +878,9 @@
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="WORKING_DIRECTORY" />
       <option name="OUTPUT_DIRECTORY" />
       <option name="ANNOTATION_TYPE" />
       <option name="ENV_VARIABLES" />
@@ -1267,8 +953,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.MEANSStart" />
-        <item index="1" class="java.lang.String" itemvalue="Application.MenuGUI" />
+        <item index="0" class="java.lang.String" itemvalue="Application.MenuGUI" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MEANSStart" />
         <item index="2" class="java.lang.String" itemvalue="Application.MenuGUI" />
         <item index="3" class="java.lang.String" itemvalue="Application.SandeepStart" />
         <item index="4" class="java.lang.String" itemvalue="Application.BM25TextRank" />
@@ -1397,12 +1083,20 @@
       <workItem from="1474548645861" duration="1949000" />
       <workItem from="1474594577594" duration="608000" />
       <workItem from="1474610099284" duration="4308000" />
-      <workItem from="1474968955874" duration="1212000" />
+      <workItem from="1474968955874" duration="1814000" />
+      <workItem from="1475048746314" duration="3813000" />
+      <workItem from="1475067938998" duration="5223000" />
+      <workItem from="1475248298476" duration="4555000" />
+      <workItem from="1475312199442" duration="2182000" />
+      <workItem from="1475332252120" duration="978000" />
+      <workItem from="1475573870513" duration="2992000" />
+      <workItem from="1475902722760" duration="8496000" />
+      <workItem from="1475923569122" duration="2734000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="446468000" />
+    <option name="totallyTimeSpent" value="478043000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1414,21 +1108,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15698586" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23731588" sideWeight="0.49092284" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16693944" sideWeight="0.51059" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.53177005" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16719243" sideWeight="0.48940998" order="2" side_tool="false" content_ui="tabs" x="22" y="224" width="1322" height="280" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32569557" sideWeight="0.46822995" order="2" side_tool="false" content_ui="tabs" x="22" y="224" width="1322" height="280" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34042552" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31423897" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24506828" sideWeight="0.47463176" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24205749" sideWeight="0.47463176" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17754173" sideWeight="0.4882353" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2927383" sideWeight="0.48772505" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1439,11 +1134,10 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23731588" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="127" y="526" width="1182" height="128" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19742814" sideWeight="0.5117647" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30932897" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30932897" sideWeight="0.4969743" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1513,17 +1207,11 @@
           <properties />
           <option name="timeStamp" value="69" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/main/MEANSStart.java</url>
-          <line>98</line>
-          <properties />
-          <option name="timeStamp" value="85" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="86" />
+      <option name="time" value="87" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1532,158 +1220,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/main/SandeepStart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="60" column="129" selection-start-line="60" selection-start-column="129" selection-end-line="60" selection-end-column="129" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summaries/D30003_SANDEEP.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summaries/D30007_SANDEEP.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summaries/D30010_SANDEEP.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summaries/D30015_SANDEEP.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summaries/D30017_SANDEEP.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summaries/D30036_SANDEEP.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summaries/D30051_SANDEEP.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/summaries/D31032_SANDEEP.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.project">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MeansSummary/d30022_Means.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MeansSummary/d30050_MEANS.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MeansSummary/d30049_MEANS.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MeansSummary/d30051_MEANS.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MeansSummary/d30055_MEANS.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MeansSummary/d30056_MEANS.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MeansSummary/d31050_MEANS.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MeansSummary/d30053_MEANS.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/summaries/D30031_SANDEEP.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/model/Sentence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="112" column="45" selection-start-line="112" selection-start-column="45" selection-end-line="112" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/processor/SentenceProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="224" column="49" selection-start-line="224" selection-start-column="49" selection-end-line="224" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -1769,34 +1309,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ust/gui/MenuGUI.form">
-      <provider editor-type-id="ui-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ust/gui/MenuGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MeansSummary/DATASET-CHED_MEANS.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FOR PROFESSORS/DATASET-RODYMEETSLIENIFORTHEFIRSTTIME.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="75" selection-start-line="6" selection-start-column="75" selection-end-line="6" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -1805,43 +1321,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ust/vector/SentenceVectorFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="22" column="73" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ust/tokenizer/TextFileTokenizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="98" column="16" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/lang/StringBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
           <caret line="111" column="11" selection-start-line="111" selection-start-column="11" selection-end-line="111" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#11950#0" expanded="false" />
-            <element signature="e#2871#2872#0" expanded="false" />
-            <element signature="e#2896#2897#0" expanded="false" />
-            <element signature="e#3272#3273#0" expanded="false" />
-            <element signature="e#3303#3304#0" expanded="false" />
-            <element signature="e#4161#4162#0" expanded="false" />
-            <element signature="e#4211#4212#0" expanded="false" />
-            <element signature="e#10229#10230#0" expanded="false" />
-            <element signature="e#10270#10271#0" expanded="false" />
-            <element signature="e#10337#10338#0" expanded="false" />
-            <element signature="e#10389#10390#0" expanded="false" />
-            <element signature="e#10445#10446#0" expanded="false" />
-            <element signature="e#10490#10491#0" expanded="false" />
-            <element signature="e#10561#10562#0" expanded="false" />
-            <element signature="e#10617#10618#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1849,42 +1332,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#56545#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#1588#1589#0" expanded="false" />
-            <element signature="e#1616#1617#0" expanded="false" />
-            <element signature="e#1874#1875#0" expanded="false" />
-            <element signature="e#1909#1910#0" expanded="false" />
-            <element signature="e#14779#14780#0" expanded="false" />
-            <element signature="e#14829#14830#0" expanded="false" />
-            <element signature="e#32344#32345#0" expanded="false" />
-            <element signature="e#32390#32391#0" expanded="false" />
-            <element signature="e#33359#33360#0" expanded="false" />
-            <element signature="e#33403#33404#0" expanded="false" />
-            <element signature="e#37123#37124#0" expanded="false" />
-            <element signature="e#37181#37182#0" expanded="false" />
-            <element signature="e#45857#45858#0" expanded="false" />
-            <element signature="e#45913#45914#0" expanded="false" />
-            <element signature="e#47867#47868#0" expanded="false" />
-            <element signature="e#47923#47924#0" expanded="false" />
-            <element signature="e#48805#48806#0" expanded="false" />
-            <element signature="e#48861#48862#0" expanded="false" />
-            <element signature="e#49747#49748#0" expanded="false" />
-            <element signature="e#49803#49804#0" expanded="false" />
-            <element signature="e#50693#50694#0" expanded="false" />
-            <element signature="e#50749#50750#0" expanded="false" />
-            <element signature="e#51393#51394#0" expanded="false" />
-            <element signature="e#51431#51432#0" expanded="false" />
-            <element signature="e#52207#52208#0" expanded="false" />
-            <element signature="e#52277#52278#0" expanded="false" />
-            <element signature="e#53047#53048#0" expanded="false" />
-            <element signature="e#53093#53094#0" expanded="false" />
-            <element signature="e#53792#53793#0" expanded="false" />
-            <element signature="e#53866#53867#0" expanded="false" />
-            <element signature="e#56512#56513#0" expanded="false" />
-            <element signature="e#56540#56541#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1892,19 +1339,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/main/MEANSStart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4110">
-          <caret line="296" column="24" selection-start-line="296" selection-start-column="24" selection-end-line="296" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1912,7 +1346,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1920,7 +1353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1928,15 +1360,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MeansSummary/DATASET-SHARONTHEVOICE_MEANS.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1944,15 +1367,242 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FOR PROFESSORS/DATASET-CHRISTINAGRIMMIE.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-223">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMPILED DOCUS/d30007.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/COMPILED DOCUS/d30017.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MeansSummary/d30015_Means.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ust/BM25Modified/BM25TextRank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1965">
+          <caret line="140" column="77" selection-start-line="140" selection-start-column="77" selection-end-line="140" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FOR PROFESSORS/DATASET-ATHLETEOFTHEYEAR.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FOR PROFESSORS/DATASET-NORAAUNORANINGDANGAL.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="79" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FOR PROFESSORS/DATASET-MOUNTBULUSAN.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ust/BM25Modified/BM25Modified.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MeansSummary/DATASET-ORLANDOSHOOTINGS_MEANS.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MeansSummary/DATASET-RODYMEETSLIENIFORTHEFIRSTTIME_MEANS.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MeansSummary/DATASET-SHARONTHEVOICE_MEANS.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FOR PROFESSORS/DATASET-RODYMEETSLIENIFORTHEFIRSTTIME.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/processor/SentenceProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3195">
+          <caret line="224" column="49" selection-start-line="224" selection-start-column="49" selection-end-line="224" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/model/Sentence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="90" column="12" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/src.zip!/java/io/Writer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="155" column="16" selection-start-line="155" selection-start-column="16" selection-end-line="155" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/log4j-1.2.17.jar!/org/apache/log4j/Appender.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/log4j-1.2.17.jar!/org/apache/log4j/WriterAppender.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-419">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FOR PROFESSORS/DATASET-UAAPVOLLEYBALL.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FOR PROFESSORS/DATASET-LTFRB.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ust/vector/SentenceVectorFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="37" column="99" selection-start-line="37" selection-start-column="99" selection-end-line="37" selection-end-column="99" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ust/vector/SentenceVector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#358#359#0" expanded="false" />
+            <element signature="e#398#399#0" expanded="false" />
+            <element signature="e#485#486#0" expanded="false" />
+            <element signature="e#519#520#0" expanded="false" />
+            <element signature="e#1688#1689#0" expanded="false" />
+            <element signature="e#1719#1720#0" expanded="false" />
+            <element signature="e#1858#1859#0" expanded="false" />
+            <element signature="e#1886#1887#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/main/SandeepStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="29" column="0" selection-start-line="26" selection-start-column="8" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ust/swing/SwingAppender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/main/MEANSStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ust/tokenizer/TextFileTokenizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="767">
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ust/gui/MenuGUI.form">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ust/gui/MenuGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding>
+            <element signature="e#2634#2635#0" expanded="true" />
+            <element signature="e#2715#2716#0" expanded="true" />
+            <element signature="e#2780#2781#0" expanded="true" />
+            <element signature="e#2820#2821#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1961,11 +1611,20 @@
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor />
+          <artifact-editor>
+            <show-content>
+              <type id="artifact" />
+              <type id="jpa-descriptors" />
+              <type id="library" />
+              <type id="javaee-facet-resources" />
+            </show-content>
+          </artifact-editor>
+          <last-edited>MEANS</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1985,6 +1644,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>jquery</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -172,7 +172,9 @@ Sentence:
 Sentence:
 	S: #
 Sentence:
-	S: Mount
+	S: Mt
+	S: .
+Sentence:
 	S: Bulusan
 	S: in
 	S: Sorsogon
@@ -368,7 +370,9 @@ Sentence:
 	S: .
 	S: #
 Sentence:
-	S: Mount
+	S: Mt
+	S: .
+Sentence:
 	S: Bulusan
 	S: in
 	S: Sorsogon

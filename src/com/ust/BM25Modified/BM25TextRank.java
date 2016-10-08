@@ -16,11 +16,11 @@ import java.util.*;
  */
 public class BM25TextRank {
 
-    final double dampingFactor = 0.85f;
+    final double dampingFactor = 1f;
 
-    final int maxIterations = 200;
+    final int maxIterations = 100;
 
-    final double minimumDifference = 0.1f;
+    final double minimumDifference = 0.01f;
 
     int numberOfSentences;
 

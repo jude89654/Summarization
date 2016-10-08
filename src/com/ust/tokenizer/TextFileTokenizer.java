@@ -1,5 +1,6 @@
 package com.ust.tokenizer;
 
+import com.ust.gui.MenuGUI;
 import opennlp.tools.sentdetect.SentenceDetectorME;
 import opennlp.tools.sentdetect.SentenceModel;
 import opennlp.tools.tokenize.Tokenizer;
@@ -19,7 +20,7 @@ import java.util.Iterator;
 
 public class TextFileTokenizer {
 
-    //
+    static MenuGUI instance;
     static final String outputFolder = "del";
     static final String modelSentenceFile="models"+File.separator+"en-sent.bin";
     static final String modelTokensFile = "models"+File.separator+"en-token.bin";
@@ -29,6 +30,8 @@ public class TextFileTokenizer {
      * @throws IOException if the file does not exist or the file cannot be used
      */
     static void tokenize(String filename) throws IOException {
+
+
 
         InputStream inputStream = new FileInputStream(modelSentenceFile);
 
@@ -74,7 +77,7 @@ public class TextFileTokenizer {
                     fileWriter.append("Sentence:\n");
                 }
                 else{
-                    fileWriter.append("\tS: "+token+"\n");
+                    fileWriter.append("\tS: ").append(token).append("\n");
                 }
             }
 
@@ -99,10 +102,15 @@ public class TextFileTokenizer {
         StringBuilder stringBuilder = new StringBuilder();
         String line;
         while((line=bufferedReader.readLine())!=null){
-            stringBuilder.append(line+" ");
+            stringBuilder.append(line).append("\n");
         }
 
-        return Normalizer.normalize(stringBuilder.toString(), Normalizer.Form.NFC);
+       // Normalizer.normalize(stringBuilder.toString(), Normalizer.Form.NFC)
+        return Normalizer.normalize(stringBuilder.toString()
+                .replace(".”",",\"")
+                .replace(" Mt. "," Mount ")
+                .replace("Metro Manila CNN Philippines —","")
+                .replace("MANILA, Philippines",""), Normalizer.Form.NFKD);
         //return Normalizer.normalize(flattenedText, Normalizer.Form.NFD);
          //flattenedText;
     }
@@ -113,9 +121,11 @@ public class TextFileTokenizer {
      * @throws IOException
      */
     public static void tokenizeFiles(String folder)throws IOException{
+        instance = MenuGUI.getInstance();
         File[] mgaDocuments = new File(folder).listFiles((dir,name)->name.endsWith(".txt"));
 
         for(File file: mgaDocuments){
+            instance.doLog("NOW TOKENIZING FILE: "+file.getName());
             System.out.println("NOW TOKENIZING FILE: "+file.getName());
 
             tokenize(file.getPath());

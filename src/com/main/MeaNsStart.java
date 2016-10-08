@@ -5,6 +5,7 @@ import com.model.Document;
 import com.model.Sentence;
 import com.model.Topic;
 import com.ust.BM25Modified.BM25TextRank;
+import com.ust.gui.MenuGUI;
 import com.ust.similarity.CosineSimilarity;
 import com.ust.tokenizer.TextFileTokenizer;
 import com.ust.vector.SentenceVector;
@@ -35,22 +36,22 @@ public class MEANSStart {
     /**
      * Path of the text file containing the stopwords
      */
-    static String STOPWORDSPATH = "StopWords.txt";
+    final static String STOPWORDSPATH = "StopWords.txt";
 
     /**
      * String that will be the name of the output directory of the summaries
      */
-    static String outputFolderName = "MeansSummary";
+     static String outputFolderName = "MeansSummary";
 
     /**
      * the number of sentences selected by the user
      */
-    static int numOfSentences = 4;
+    final static int numOfSentences = 4;
 
     /**
      * setting this to true will remove short sentence according to the minimum sentence length.
      */
-    static boolean removeShortSentences =true;
+    final static boolean removeShortSentences = true;
 
     /**
      * if removeShortSentences is true, it will remove sentences with less than minimumSentenceLengh
@@ -62,14 +63,37 @@ public class MEANSStart {
      *
      * @param args not used
      */
-    public static void main(String args[]) {
+
+    public static MenuGUI instance;
+
+
+    public static String inputfolderPath;
+
+    public static void main(String args[]){
+        summarize("","");
+    }
+
+
+    public static void summarize(String inputDirectory,String outputDirectory){
+         instance = MenuGUI.getInstance();
 
         //initialize StopWords Class
         StopWords.initializeStopWords(STOPWORDSPATH);
 
         //get the path
-        String folderPath = getFolderPath();
-        //if (folderPath.equals("")) stopProgram();
+        if(inputDirectory.trim().equals("")) {
+            inputfolderPath = "FOR PROFESSORS";
+        }else{
+            inputfolderPath =inputDirectory;
+        }
+
+        if(outputDirectory.trim().equals("")){
+            outputFolderName = outputDirectory+File.separator+outputFolderName;
+            File output = new File(outputFolderName);
+            output.mkdirs();
+        }
+
+        //if (inputfolderPath.equals("")) stopProgram();
 
         //numOfSentences
         //numOfSentences = inputNumberOfSentences();
@@ -78,11 +102,12 @@ public class MEANSStart {
 
 
         //for tokenization
-        tokenizeFiles(folderPath);
+        instance.doLog("TOKENIZATION");
+        tokenizeFiles(inputfolderPath);
 
 
         //initialize dataset
-        DataSet dataSet = new DataSet(folderPath);
+        DataSet dataSet = new DataSet(inputfolderPath);
 
 
         //CREATING SUMMARIZATION FOR EACH TOPIC
@@ -90,7 +115,7 @@ public class MEANSStart {
 
             String fileName = dataSet.getTopicName(topic.getTopicId());
 
-            System.out.println("NOW CREATING SUMMARY FOR:" + fileName);
+            instance.doLog("NOW CREATING SUMMARY FOR:" + fileName);
 
             //cluster the topics
             ArrayList<ArrayList<Sentence>> clusterList = clusterize(topic);
@@ -100,16 +125,18 @@ public class MEANSStart {
 
             ArrayList<Sentence> reorderedSentences = reRankTopSentences(topSentenceFromEachCluster);
 
+            // sortSentences(reorderedSentences);
             try {
-                createSummaryFile(reorderedSentences, new File(fileName + "_" + systemName + ".txt"));
+                createSummaryFile(reorderedSentences, new File(outputDirectory+File.separator+fileName + "_" + systemName + ".txt"));
             } catch (IOException ioException) {
-                System.out.println("IOEXCEPTION-ERROR IN CREATING FILE:" + fileName);
+                instance.doLog("IOEXCEPTION-ERROR IN CREATING FILE:" + fileName);
+                //instance.doLog("IOEXCEPTION-ERROR IN CREATING FILE:" + fileName);
                 ioException.printStackTrace();
             }
 
 
         }
-        stopProgram();
+        //stopProgram();
 
     }
 
@@ -121,7 +148,9 @@ public class MEANSStart {
      * @return reordered sentences
      */
     public static ArrayList<Sentence> reRankTopSentences(ArrayList<Sentence> topSentences) {
-        return new ArrayList<Sentence>(BM25TextRank.getTopSentenceList(topSentences, numOfSentences));
+        ArrayList topSentencesArrayList = new ArrayList(BM25TextRank.getTopSentenceList(topSentences, numOfSentences));
+
+        return topSentencesArrayList;
     }
 
 
@@ -161,20 +190,26 @@ public class MEANSStart {
 
         while (true) {
 
+            //for each clusters
             for (ArrayList<Sentence> cluster : clusters) {
+
                 //if the cluster is empty, skip
                 if (cluster.isEmpty()) continue;
 
-                //else get the top sentence from each cluster a
+                //else get the top sentence from each cluster
                 ArrayList<Sentence> tempList = new ArrayList<>(BM25TextRank
-                        .getTopSentenceList(cluster, numOfSentences));
+                                                                    .getTopSentenceList(cluster
+                                                                                            ,numOfSentences));
 
+
+                //remove the sentences from the cluster
                 for (Sentence tempSentence : tempList) {
                     topSentenceFromAllClusters.add(tempSentence);
                     cluster.remove(tempSentence);
                 }
 
             }
+            //break the loop if the number of sentences is over the limit.
             if (topSentenceFromAllClusters.size() > numOfSentences) break;
         }
 
@@ -193,7 +228,8 @@ public class MEANSStart {
      */
     public static void createSummaryFile(ArrayList<Sentence> topSentences, File file) throws IOException {
 
-        System.out.println("CREATING FILE:" + file.getName());
+        instance.doLog("CREATING FILE:"+file.getName());
+        //instance.doLog("CREATING FILE:" + file.getName());
 
         File outputFolder = new File(outputFolderName);
         //making sure that directory exists.
@@ -203,15 +239,20 @@ public class MEANSStart {
 
         FileWriter fileWriter = new FileWriter(outputFileDirectory, false);
 
-        String finalSummary = "";
+        StringBuilder finalSummaryStringBuilder = new StringBuilder();
 
+        //transfer the final summary to a string.
         for (Sentence sentence : topSentences) {
-            finalSummary += sentence.getRefSentence() + "\n";
+            finalSummaryStringBuilder.append(sentence.getRefSentence() + "\n");
         }
-        System.out.println("FINAL SUMMARY:\n" + finalSummary);
-        fileWriter.write(finalSummary);
+
+        instance.doLog("FINAL SUMMARY:\n" + finalSummaryStringBuilder.toString());
+        //instance.doLog();
+        //add the final Summary to the file :D
+        fileWriter.write(finalSummaryStringBuilder.toString());
         fileWriter.close();
-        System.out.println("FILE CREATED:" + file.getName());
+
+        instance.doLog("FILE CREATED:" + file.getName());
     }
 
 
@@ -227,7 +268,7 @@ public class MEANSStart {
             TextFileTokenizer.tokenizeFiles(folder);
         } catch (Exception e) {
             e.printStackTrace();
-            System.out.println("MeanNsStart:ERROR IN TOKENIZING FILES");
+            instance.doLog("ERROR IN TOKENIZING FILES");
             stopProgram();
         }
     }
@@ -236,7 +277,7 @@ public class MEANSStart {
      * a method that will end the program immediately/
      */
     public static void stopProgram() {
-        System.out.println("MEANS SUMMARIZATION PROGRAM ENDED");
+        instance.doLog("MEANS SUMMARIZATION PROGRAM ENDED");
         System.exit(0);
     }
 
@@ -247,14 +288,14 @@ public class MEANSStart {
      *
      * @return a String of the folder Directory chosen by the JFileChooser or null if nothing
      */
-    public static String getFolderPath() {
+    public static String getInputfolderPath() {
         JFileChooser chooser = new JFileChooser();
         chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
         chooser.setAcceptAllFileFilterUsed(false);
         if (chooser.showDialog(new JFrame(), "SELECT FOLDER") == JFileChooser.APPROVE_OPTION) {
             return chooser.getSelectedFile().getPath();
         } else {
-            System.out.println("YOU MUST SELECT A FOLDER WHERE THE SOURCE DATA COMES FROM");
+            instance.doLog("YOU MUST SELECT A FOLDER WHERE THE SOURCE DATA COMES FROM");
             JOptionPane.showConfirmDialog(new JFrame(), "YOU MUST SELECT A FOLDER");
             stopProgram();
             return "";
@@ -285,31 +326,34 @@ public class MEANSStart {
         int k = (int) (Math.sqrt(sentences.size() / 2));
 
 
-        System.out.println("NUMBER OF CLUSTERS:" + k);
+        instance.doLog("NUMBER OF CLUSTERS:" + k);
         //Similarity measure used for distance in the clusterer
         CosineSimilarity cosineSimilarity = new CosineSimilarity();
 
-        SynchronizedRandomGenerator s = new SynchronizedRandomGenerator(new JDKRandomGenerator());
+        SynchronizedRandomGenerator randomGenerator = new SynchronizedRandomGenerator(new JDKRandomGenerator());
 
         //initializing the clusterer
         KMeansPlusPlusClusterer<SentenceVector> kMeansClusterer
-                = new KMeansPlusPlusClusterer<SentenceVector>(k,
-                500, cosineSimilarity, s, KMeansPlusPlusClusterer.EmptyClusterStrategy.LARGEST_VARIANCE);
+                = new KMeansPlusPlusClusterer<SentenceVector>(k
+                , 500
+                , cosineSimilarity
+                , randomGenerator
+                , KMeansPlusPlusClusterer.EmptyClusterStrategy.LARGEST_VARIANCE);
 
         ArrayList<ArrayList<Sentence>> clusterList = new ArrayList<>();
 
         int clusterCount = 0;
 
         // if(kMeansClusterer.)
-        for (CentroidCluster<SentenceVector> centroid : kMeansClusterer.cluster(sentenceVectors)) {
-            //System.out.println(centroid.getCenter());
+        for (CentroidCluster<SentenceVector> sentenceClusters : kMeansClusterer.cluster(sentenceVectors)) {
+            //instance.doLog(centroid.getCenter());
             ArrayList<Sentence> cluster = new ArrayList<>();
 
-            System.out.println("================CLUSTER NO." + (++clusterCount) + "================");
-            System.out.println("CLUSTER SIZE:" + (centroid.getPoints().size()));
-            for (SentenceVector vector : centroid.getPoints()) {
+            instance.doLog("================CLUSTER NO." + (++clusterCount) + "================");
+            instance.doLog("CLUSTER SIZE:" + (sentenceClusters.getPoints().size()));
+
+            for (SentenceVector vector : sentenceClusters.getPoints()) {
                 cluster.add(vector.getSentence());
-                // System.out.println(vector.getSentence().getRefSentence());
             }
 
             //sort the sentences by their positions
@@ -336,14 +380,14 @@ public class MEANSStart {
 
 
         for (Document document : topic.getDocuments()) {
-            System.out.println("CREATING SENTENCE VECTORS FOR DOCUMENT NO." + document.getDocumentId());
+            instance.doLog("CREATING SENTENCE VECTORS FOR DOCUMENT NO." + document.getDocumentId());
 
-            System.out.print("CREATING VECTOR FOR SENTENCE NO.");
+            instance.append("CREATING VECTOR FOR SENTENCE NO.");
             for (Sentence sentence : document.getSentences()) {
                 if (removeShortSentences) {
                     if (sentence.getContent().size() < minimumSentenceLength) continue;
                 }
-                System.out.print(sentence.getId() + ", ");
+                instance.append(sentence.getId() + ", ");
                 //creating the Sentence vector for the current Sentence.
                 SentenceVector currentSentenceVector
                         = SentenceVectorFactory.createSentenceVector(topic,
@@ -354,7 +398,7 @@ public class MEANSStart {
 
                 sentenceVectors.add(currentSentenceVector);
             }
-            System.out.println("");
+            instance.doLog("");
         }
         return sentenceVectors;
     }
@@ -370,6 +414,8 @@ public class MEANSStart {
      */
     public static void preProcess(Topic topic, ArrayList<Sentence> sentences, ArrayList<String> global) {
 
+        instance.doLog("CREATING VECTOR SPACE");
+
         //for each document
         for (Document document : topic.getDocuments()) {
             //for each sentence
@@ -378,17 +424,22 @@ public class MEANSStart {
                 if (removeShortSentences) {
                     //if the number of words is less than the minimum sentence length.
                     if (sentence.getContent().size() < minimumSentenceLength) continue;
-                }
-                sentences.add(sentence);
-                //for each word
-                for (String word : sentence.getFreqMap().keySet()) {
-                    if (!global.contains(word.toLowerCase()) & !StopWords.isStopWord(word)) {
-                        //   System.out.println(word);
-                        global.add(word);
+                } else {
+                    //put the sentence in the sentence list.
+                    sentences.add(sentence);
+
+
+                    //for each word in the sentence
+                    for (String word : sentence.getFreqMap().keySet()) {
+                        // add the word in the vector space if the word is not a stopword
+                        if (!global.contains(word.toLowerCase()) & !StopWords.isStopWord(word)) {
+                            global.add(word);
+                        }
                     }
                 }
             }
         }
+        instance.doLog("VECTOR SPACE LENGTH: "+global.size());
     }
 
     /**
@@ -397,6 +448,8 @@ public class MEANSStart {
      * @param sentences
      */
     public static void sortSentences(ArrayList<Sentence> sentences) {
-        Collections.sort(sentences, (a, b) -> Long.compare(a.getPosition(), b.getPosition()));
+
+        Collections.sort(sentences, (a, b) -> Double.compare(a.getPosition(), b.getPosition()));
+        //  Collections.
     }
 }

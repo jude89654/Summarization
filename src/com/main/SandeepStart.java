@@ -35,7 +35,7 @@ public class SandeepStart {
             String folderPath = chooser.getSelectedFile().getAbsolutePath();
 
             //tokenization
-            //TextFileTokenizer.tokenizeFiles(folderPath);
+            //TextFileTokenizer.tokenizeFiles(inputfolderPath);
 
             //Test dataset - Stack Decoder
             DataSet testDataSet = new DataSet(folderPath);

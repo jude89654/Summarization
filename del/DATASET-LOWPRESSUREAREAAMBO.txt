@@ -1,7 +1,4 @@
 Sentence:
-	S: MANILA
-	S: ,
-	S: Philippines
 	S: (
 	S: Updated
 	S: 6:00

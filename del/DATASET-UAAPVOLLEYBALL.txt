@@ -553,9 +553,8 @@ Sentence:
 	S: dapat
 	S: nilang
 	S: gawin
-	S: .
-	S: ”
-Sentence:
+	S: ,
+	S: "
 	S: “Itong
 	S: year
 	S: na
@@ -564,9 +563,9 @@ Sentence:
 	S: talagang
 	S: hindi
 	S: sila
-	S: magpapatalo.
-	S: ”
-Sentence:
+	S: magpapatalo
+	S: ,
+	S: "
 	S: #
 Sentence:
 	S: De

@@ -697,9 +697,6 @@ Sentence:
 Sentence:
 	S: #
 Sentence:
-	S: MANILA
-	S: ,
-	S: Philippines
 	S: -
 	S: They
 	S: have
