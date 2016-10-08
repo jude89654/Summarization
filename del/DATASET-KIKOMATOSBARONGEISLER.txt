@@ -765,8 +765,9 @@ Sentence:
 	S: in
 	S: the
 	S: pros
-	S: ,
-	S: "
+	S: .
+	S: ”
+Sentence:
 	S: Last
 	S: week
 	S: ,

@@ -47,7 +47,6 @@ public class BM25Modified {
         frequency  = new Map[numberOfSentences];
 
         documentFrequency = new TreeMap<String, Integer>();
-
         inverseDocumentFrequency = new TreeMap<String,Double>();
 
         initialize();
@@ -90,7 +89,6 @@ public class BM25Modified {
         double score=0;
 
         for(String word:sentence.getContent()){
-
             if(!frequency[index].containsKey(word)){
                 continue;
             }
@@ -99,7 +97,7 @@ public class BM25Modified {
             Integer wordFrequency = frequency[index].get(word);
 
             score+=(inverseDocumentFrequency.get(word)*wordFrequency*(k1+1)
-            /(wordFrequency+k1*((1-b)+b*documentSize/averageLengthOfSentences)));
+            /(wordFrequency+k1*((1-b)+(b*documentSize)/averageLengthOfSentences)));
         }
 
         return score;

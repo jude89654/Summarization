@@ -109,8 +109,9 @@ Sentence:
 	S: their
 	S: sexual
 	S: orientation
-	S: ,
-	S: "
+	S: .
+	S: ”
+Sentence:
 	S: “Bearing
 	S: in
 	S: the
@@ -209,8 +210,9 @@ Sentence:
 	S: violence
 	S: of
 	S: government
-	S: ,
-	S: "
+	S: .
+	S: ”
+Sentence:
 	S: Violence
 	S: ‘in
 	S: the
@@ -279,8 +281,9 @@ Sentence:
 	S: ,
 	S: and
 	S: harassment
-	S: ,
-	S: "
+	S: .
+	S: ”
+Sentence:
 	S: “We
 	S: urge
 	S: government
@@ -346,8 +349,9 @@ Sentence:
 	S: world
 	S: needs
 	S: mercy
-	S: ,
-	S: "
+	S: .
+	S: ”
+Sentence:
 	S: Pope
 	S: Francis
 	S: earlier
@@ -361,8 +365,9 @@ Sentence:
 	S: and
 	S: senseless
 	S: hatred
-	S: ,
-	S: "
+	S: .
+	S: ”
+Sentence:
 	S: The
 	S: Islamic
 	S: State
@@ -670,8 +675,9 @@ Sentence:
 	S: don’t
 	S: yet
 	S: know
-	S: ,
-	S: "
+	S: .
+	S: ”
+Sentence:
 	S: Investigators
 	S: in
 	S: that
@@ -1216,8 +1222,9 @@ Sentence:
 	S: path
 	S: toward
 	S: extremism
-	S: ,
-	S: "
+	S: .
+	S: ”
+Sentence:
 	S: Saudi
 	S: Arabia
 	S: has

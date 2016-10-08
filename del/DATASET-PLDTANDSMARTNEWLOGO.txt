@@ -229,9 +229,8 @@ Sentence:
 	S: ”
 	S: to
 	S: “PLDT
-	S: Inc
-	S: ,
-	S: "
+	S: Inc.
+	S: ”
 	S: to
 	S: better
 	S: represent

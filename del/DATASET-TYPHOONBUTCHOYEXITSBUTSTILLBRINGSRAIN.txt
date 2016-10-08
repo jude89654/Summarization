@@ -358,6 +358,9 @@ Sentence:
 Sentence:
 	S: #
 Sentence:
+	S: MANILA
+	S: ,
+	S: Philippines
 	S: –
 	S: Typhoon
 	S: Butchoy
@@ -475,6 +478,9 @@ Sentence:
 Sentence:
 	S: #
 Sentence:
+	S: MANILA
+	S: ,
+	S: Philippines
 	S: -
 	S: Classes
 	S: and

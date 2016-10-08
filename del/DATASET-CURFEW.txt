@@ -47,7 +47,8 @@ Sentence:
 	S: Duterte
 	S: replied
 	S: ,
-	S: “The
+	S: "
+	S: The
 	S: very
 	S: fundamentals
 	S: of
@@ -59,10 +60,11 @@ Sentence:
 	S: drinking
 	S: beyond
 	S: 1
-	S: o’clock
-	S: ,
+	S: o’clock"
+	S: .
+Sentence:
 	S: "
-	S: “I’ll
+	S: I’ll
 	S: ask
 	S: if
 	S: I
@@ -71,8 +73,7 @@ Sentence:
 	S: a
 	S: national
 	S: law
-	S: .
-Sentence:
+	S: ;
 	S: If
 	S: I
 	S: have
@@ -94,8 +95,7 @@ Sentence:
 	S: implement
 	S: them
 	S: )
-	S: .
-Sentence:
+	S: ,
 	S: But
 	S: if
 	S: it
@@ -114,7 +114,7 @@ Sentence:
 	S: law
 	S: )
 	S: ,
-	S: ”
+	S: "
 	S: Duterte
 	S: said
 	S: in
@@ -126,22 +126,22 @@ Sentence:
 	S: here
 	S: .
 Sentence:
-	S: “
+	S: "
 	S: Why
 	S: should
 	S: we
 	S: drink
 	S: until
 	S: 2
-	S: a.m.
-	S: ?
+	S: am
+	S: ,
 	S: Is
 	S: this
 	S: a
 	S: drinking
 	S: contest
 	S: ?
-	S: ”
+	S: "
 	S: he
 	S: added
 	S: .
@@ -183,7 +183,8 @@ Sentence:
 	S: places
 	S: .
 Sentence:
-	S: “They
+	S: "
+	S: They
 	S: say
 	S: that
 	S: they
@@ -194,8 +195,7 @@ Sentence:
 	S: for
 	S: the
 	S: cigarettes
-	S: .
-Sentence:
+	S: ,
 	S: Look
 	S: ,
 	S: if
@@ -223,14 +223,15 @@ Sentence:
 	S: to
 	S: others
 	S: ,
-	S: ”
+	S: "
 	S: the
 	S: incoming
 	S: president
 	S: said
 	S: .
 Sentence:
-	S: “It’s
+	S: "
+	S: It’s
 	S: not
 	S: fair
 	S: for
@@ -238,8 +239,7 @@ Sentence:
 	S: to
 	S: distribute
 	S: cancer
-	S: .
-Sentence:
+	S: ,
 	S: It
 	S: is
 	S: scientifically
@@ -254,7 +254,7 @@ Sentence:
 	S: causes
 	S: cancer
 	S: ,
-	S: ”
+	S: "
 	S: he
 	S: added
 	S: .
@@ -317,12 +317,13 @@ Sentence:
 	S: sessions
 	S: .
 Sentence:
-	S: “Curfew
+	S: "
+	S: Curfew
 	S: for
 	S: minors
 	S: mandatory
 	S: ,
-	S: ”
+	S: "
 	S: said
 	S: Duterte
 	S: during
@@ -365,7 +366,7 @@ Sentence:
 	S: the
 	S: charge
 	S: of
-	S: “abandonment
+	S: "abandonment
 	S: of
 	S: minors
 	S: ,
@@ -377,7 +378,7 @@ Sentence:
 	S: in
 	S: jeopardy
 	S: ,
-	S: ”
+	S: "
 	S: he
 	S: said
 	S: .
@@ -394,11 +395,12 @@ Sentence:
 	S: face
 	S: suspension
 	S: for
-	S: “neglect
+	S: "neglect
 	S: of
 	S: duty
-	S: ,
+	S: .
 	S: "
+Sentence:
 	S: Duterte
 	S: ,
 	S: as
@@ -468,11 +470,12 @@ Sentence:
 	S: in
 	S: order
 	S: to
-	S: “protect
+	S: "protect
 	S: the
 	S: children
-	S: ,
+	S: .
 	S: "
+Sentence:
 	S: He
 	S: would
 	S: be
@@ -488,7 +491,8 @@ Sentence:
 	S: places
 	S: .
 Sentence:
-	S: “No
+	S: "
+	S: No
 	S: drinking
 	S: in
 	S: all
@@ -518,12 +522,13 @@ Sentence:
 	S: a
 	S: place
 	S: ,
-	S: ”
+	S: "
 	S: he
 	S: said
 	S: .
 Sentence:
-	S: “The
+	S: "
+	S: The
 	S: police
 	S: must
 	S: arrest
@@ -534,14 +539,13 @@ Sentence:
 	S: public
 	S: ,
 	S: alcoholic
-	S: .
-Sentence:
+	S: ,
 	S: Do
 	S: not
 	S: occupy
 	S: streets
 	S: ,
-	S: ”
+	S: "
 	S: he
 	S: added
 	S: .
@@ -641,21 +645,22 @@ Sentence:
 	S: own
 	S: rendition
 	S: of
-	S: “My
+	S: "
+	S: My
 	S: Way
 	S: ,
-	S: ”
+	S: "
 	S: a
 	S: popular
 	S: karaoke
 	S: song
 	S: .
 Sentence:
-	S: “You
+	S: "
+	S: You
 	S: disturb
 	S: the
-	S: neighborhood
-	S: ...Noise
+	S: neighborhood…Noise
 	S: pollution
 	S: can
 	S: be
@@ -666,8 +671,7 @@ Sentence:
 	S: is
 	S: a
 	S: nuisance
-	S: .
-Sentence:
+	S: ,
 	S: A
 	S: barangay
 	S: captain
@@ -701,7 +705,7 @@ Sentence:
 	S: summarily
 	S: stopped
 	S: ,
-	S: ”
+	S: "
 	S: he
 	S: said
 	S: .

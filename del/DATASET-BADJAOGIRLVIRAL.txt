@@ -466,8 +466,9 @@ Sentence:
 	S: moniker
 	S: “Badjao
 	S: Girl
-	S: ,
-	S: "
+	S: .
+	S: ”
+Sentence:
 	S: But
 	S: instead
 	S: of

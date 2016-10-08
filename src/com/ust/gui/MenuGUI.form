@@ -54,7 +54,7 @@
               <text value="Output Path:"/>
             </properties>
           </component>
-          <component id="8b94" class="javax.swing.JButton" binding="browseInputDirectoryButton">
+          <component id="8b94" class="javax.swing.JButton" binding="browseButton">
             <constraints>
               <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -64,7 +64,7 @@
               <text value="BROWSE"/>
             </properties>
           </component>
-          <component id="94db4" class="javax.swing.JButton" binding="outputPathBrowseButton">
+          <component id="94db4" class="javax.swing.JButton">
             <constraints>
               <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -106,7 +106,6 @@
                 <constraints/>
                 <properties>
                   <background color="-8816778"/>
-                  <foreground color="-16777216"/>
                 </properties>
               </component>
             </children>

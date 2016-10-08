@@ -56,8 +56,9 @@ Sentence:
 	S: for
 	S: the
 	S: people
-	S: ,
-	S: "
+	S: .
+	S: ”
+Sentence:
 	S: Camarines
 	S: Sur
 	S: Rep.
@@ -269,8 +270,9 @@ Sentence:
 	S: for
 	S: genuine
 	S: change
-	S: ,
-	S: "
+	S: .
+	S: ”
+Sentence:
 	S: Robredo
 	S: said
 	S: she
@@ -474,8 +476,9 @@ Sentence:
 	S: plunge
 	S: into
 	S: work]
-	S: ,
-	S: "
+	S: .
+	S: ”
+Sentence:
 	S: She
 	S: said
 	S: with

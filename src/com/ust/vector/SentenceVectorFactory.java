@@ -45,7 +45,7 @@ public class SentenceVectorFactory {
 
     public static double sentenceTermFrequency(Sentence sentence, String term) {
         if (containsIgnoreCase(sentence.getContent(),term)) {
-            //System.out.println("STF:"+ ((double)sentence.getFreqMap().get(term) / sentence.getSentenceLength()));
+            System.out.println("STF:"+ ((double)sentence.getFreqMap().get(term) / sentence.getSentenceLength()));
             return ((double)sentence.getFreqMap().get(term) / sentence.getSentenceLength());
         }
         return 0;
@@ -58,7 +58,7 @@ public class SentenceVectorFactory {
             if (sentence.getContent().contains(term)) count+=1;
         }
        // System.out.println("COUNT:"+count);
-        return Math.log(sentences.size()/count);
+        return (sentences.size()/count);
     }
 
 

@@ -252,7 +252,7 @@ Sentence:
 	S: Lucero
 	S: ,
 	S: Liza
-	S: Diño
+	S: Diño
 	S: ,
 	S: LJ
 	S: Reyes
@@ -429,7 +429,7 @@ Sentence:
 Sentence:
 	S: Professor
 	S: Joey
-	S: Tañedo
+	S: Tañedo
 	S: ,
 	S: chairman
 	S: of
@@ -652,7 +652,7 @@ Sentence:
 	S: Garcia
 	S: ,
 	S: Liza
-	S: Diño
+	S: Diño
 	S: ,
 	S: LJ
 	S: Reyes
@@ -1135,7 +1135,7 @@ Sentence:
 	S: Lucero
 	S: ,
 	S: Liza
-	S: Diño
+	S: Diño
 	S: ,
 	S: LJ
 	S: Reyes
