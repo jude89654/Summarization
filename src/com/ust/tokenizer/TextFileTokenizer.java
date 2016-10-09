@@ -30,6 +30,8 @@ public class TextFileTokenizer {
      */
     static void tokenize(String filename) throws IOException {
 
+        new File(outputFolder).mkdir();
+
         InputStream inputStream = new FileInputStream(modelSentenceFile);
 
         //the model for the basis of sentence detection
@@ -106,6 +108,8 @@ public class TextFileTokenizer {
                 .replace("Metro Manila (CNN Philippines) — ","")
                 .replace("MANILA, Philippines - ","")
                 .replace("MANILA, Philippines — ","")
+                .replace("MANILA Philippines - ","")
+                .replace("MANILA Philippines — ","")
                 , Normalizer.Form.NFC);
         //return Normalizer.normalize(flattenedText, Normalizer.Form.NFD);
          //flattenedText;
