@@ -728,7 +728,9 @@ Sentence:
 	S: .
 	S: ''
 Sentence:
-	S: #NAIROBI
+	S: #
+Sentence:
+	S: NAIROBI
 	S: ,
 	S: Kenya
 	S: (

@@ -1173,8 +1173,11 @@ Sentence:
 	S: every
 	S: four
 	S: years
-	S: .#Saudi
+	S: .
 Sentence:
+	S: #
+Sentence:
+	S: Saudi
 	S: Arabia
 	S: 's
 	S: abrupt

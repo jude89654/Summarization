@@ -400,13 +400,6 @@ Sentence:
 	S: morning
 	S: .
 Sentence:
-	S: //PHILIPPINE
-	S: STAR
-	S: ,
-	S: JUNE
-	S: 26
-	S: ,
-	S: 2016
 	S: #
 Sentence:
 	S: The
@@ -591,12 +584,6 @@ Sentence:
 	S: landslides
 	S: .
 Sentence:
-	S: //INQUIRER
-	S: ,
-	S: JUNE
-	S: 26
-	S: ,
-	S: 2016
 	S: #
 Sentence:
 	S: Tropical
@@ -865,9 +852,3 @@ Sentence:
 	S: actions
 	S: .
 	S: �
-Sentence:
-	S: //RAPPLER
-	S: JUNE
-	S: 26
-	S: ,
-	S: 2016

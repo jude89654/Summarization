@@ -326,7 +326,9 @@ Sentence:
 	S: 4th
 	S: graf
 	S: pvs
-	S: #Egyptian
+	S: #
+Sentence:
+	S: Egyptian
 	S: President
 	S: Hosni
 	S: Mubarak
@@ -975,7 +977,9 @@ Sentence:
 	S: .
 	S: ''
 Sentence:
-	S: #Egyptian
+	S: #
+Sentence:
+	S: Egyptian
 	S: President
 	S: Hosni
 	S: Mubarak

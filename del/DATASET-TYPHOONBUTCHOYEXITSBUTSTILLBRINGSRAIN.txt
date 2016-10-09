@@ -1,11 +1,4 @@
 Sentence:
-	S: Metro
-	S: Manila
-	S: (
-	S: CNN
-	S: Philippines
-	S: )
-	S: —
 	S: Typhoon
 	S: Butchoy
 	S: brought
@@ -478,10 +471,6 @@ Sentence:
 Sentence:
 	S: #
 Sentence:
-	S: MANILA
-	S: ,
-	S: Philippines
-	S: -
 	S: Classes
 	S: and
 	S: work

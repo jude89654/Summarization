@@ -1684,7 +1684,9 @@ Sentence:
 	S: 3rd
 	S: graf
 	S: pvs
-	S: #LAUSANNE
+	S: #
+Sentence:
+	S: LAUSANNE
 	S: ,
 	S: Switzerland
 	S: (

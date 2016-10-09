@@ -2115,7 +2115,9 @@ Sentence:
 	S: said
 	S: .
 Sentence:
-	S: #BRUSSELS
+	S: #
+Sentence:
+	S: BRUSSELS
 	S: ,
 	S: Belgium
 	S: (
