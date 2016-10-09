@@ -60,8 +60,20 @@ public class  MenuGUI extends JFrame {
         sourcePathBrowseButton.addActionListener(e -> sourcePathTextField.setText(getFolderPath()));
 
         destPathBrowseButton.addActionListener(e -> outputPathTextField.setText(getFolderPath()));
+        resetButton.addActionListener(e -> {
+            sourcePathTextField.setText("");
+            outputPathTextField.setText("");
+            logTextArea.setText("");
+        });
     }
 
+    /**
+     * THE SINGLETON INSTANCE NA HINDI NA PALA KAILANGAN PUTA SA CODE HINDI KO ALAM BAKIT KO PA ITO CINODE KASI MAY
+     * PABIDA SA LECHENG STACK OVERFLOW NA GAGAMITIN DAW ANG GANITO PARANG GAGO AMPUTA HINDI KO NAMAN KAILANGAN ITO
+     * PERO NILAGAY KO PA RIN SA CODE KASI TINATAMAD AKO AT HALOS KALAHATING ARAW ANG NAUBOS PARA SA LECHENG SINGLETON
+     * PUTA
+     * @return nanay mo nirereturn..
+     */
     public static MenuGUI getInstance(){
         if(instance==null){
             instance  = new MenuGUI();
@@ -71,16 +83,30 @@ public class  MenuGUI extends JFrame {
         }
     }
 
+    /**
+     * OUR MAIN METHOD WOOHOO
+     * @param args
+     */
     public static void main(String args[]) {
         instance = getInstance();
     }
 
+
+    /**
+     * Thread that will be run after clicking the summarize button
+     * @param input the source directory of text documents
+     * @param output the output directory for the summaries  of the system
+     */
     public void start(String input, String output){
 
         Thread thread = new Thread(){
             @Override
             public void run(){
+                resetButton.setEnabled(false);
+                summarizeButton.setEnabled(false);
                 MEANSStart.summarize(input,output);
+                resetButton.setEnabled(true);
+                summarizeButton.setEnabled(true);
             }
         };
         thread.start();
