@@ -108,6 +108,8 @@
                 <constraints/>
                 <properties>
                   <background color="-8816778"/>
+                  <font/>
+                  <wrapStyleWord value="true"/>
                 </properties>
               </component>
             </children>

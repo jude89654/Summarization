@@ -253,7 +253,7 @@ public class MEANSStart {
      */
     public static void stopProgram() {
         System.out.println("MEANS SUMMARIZATION PROGRAM ENDED");
-        System.exit(0);
+      //  System.exit(0);
     }
 
 
