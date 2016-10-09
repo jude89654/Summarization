@@ -102,7 +102,11 @@ public class TextFileTokenizer {
             stringBuilder.append(line+" ");
         }
 
-        return Normalizer.normalize(stringBuilder.toString(), Normalizer.Form.NFC);
+        return Normalizer.normalize(stringBuilder.toString()
+                .replace("Metro Manila (CNN Philippines) — ","")
+                .replace("MANILA, Philippines - ","")
+                .replace("MANILA, Philippines — ","")
+                , Normalizer.Form.NFC);
         //return Normalizer.normalize(flattenedText, Normalizer.Form.NFD);
          //flattenedText;
     }

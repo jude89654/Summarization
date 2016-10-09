@@ -5,6 +5,7 @@ import com.model.Document;
 import com.model.Sentence;
 import com.model.Topic;
 import com.ust.BM25Modified.BM25TextRank;
+import com.ust.gui.MenuGUI;
 import com.ust.similarity.CosineSimilarity;
 import com.ust.tokenizer.TextFileTokenizer;
 import com.ust.vector.SentenceVector;
@@ -57,25 +58,36 @@ public class MEANSStart {
      */
     static int minimumSentenceLength = 7;
 
+    static MenuGUI instance;
+
     /**
      * eto na yung main method ng thesis namin.
      *
      * @param args not used
      */
     public static void main(String args[]) {
+        instance = MenuGUI.getInstance();
+        if(args.length!=2) {
+            end();
+        }else{
+            summarize(args[0],args[1]);
+        }
 
+
+
+    }
+
+    public static void summarize(String sourceFolder, String destFolder){
         //initialize StopWords Class
         StopWords.initializeStopWords(STOPWORDSPATH);
 
         //get the path
-        String folderPath = getFolderPath();
-        //if (folderPath.equals("")) stopProgram();
+        String folderPath = sourceFolder;
 
-        //numOfSentences
-        //numOfSentences = inputNumberOfSentences();
+        new File("del").mkdir();
 
-        //Stop the program if no folder is selected
-
+        outputFolderName=destFolder+File.separator+outputFolderName;
+        new File(outputFolderName).mkdirs();
 
         //for tokenization
         tokenizeFiles(folderPath);
@@ -109,8 +121,12 @@ public class MEANSStart {
 
 
         }
-        stopProgram();
 
+    }
+
+
+    public static void end(){
+        System.out.println("YOU MUST SELECT A FOLDER");
     }
 
 
@@ -197,7 +213,7 @@ public class MEANSStart {
 
         File outputFolder = new File(outputFolderName);
         //making sure that directory exists.
-        outputFolder.mkdir();
+        outputFolder.mkdirs();
 
         File outputFileDirectory = new File(outputFolder + File.separator + file.getName());
 
@@ -241,25 +257,6 @@ public class MEANSStart {
     }
 
 
-    /**
-     * a method that will open a JFileChooser and will let the user pick and will
-     * return a folder path where the text documents are.
-     *
-     * @return a String of the folder Directory chosen by the JFileChooser or null if nothing
-     */
-    public static String getFolderPath() {
-        JFileChooser chooser = new JFileChooser();
-        chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-        chooser.setAcceptAllFileFilterUsed(false);
-        if (chooser.showDialog(new JFrame(), "SELECT FOLDER") == JFileChooser.APPROVE_OPTION) {
-            return chooser.getSelectedFile().getPath();
-        } else {
-            System.out.println("YOU MUST SELECT A FOLDER WHERE THE SOURCE DATA COMES FROM");
-            JOptionPane.showConfirmDialog(new JFrame(), "YOU MUST SELECT A FOLDER");
-            stopProgram();
-            return "";
-        }
-    }
 
 
     /**
