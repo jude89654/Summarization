@@ -1,7 +1,6 @@
 package com.ust.BM25Modified;
 
-import com.hankcs.hanlp.dictionary.stopword.CoreStopWordDictionary;
-import com.hankcs.hanlp.seg.common.Term;
+
 import com.model.DataSet;
 import com.model.Document;
 import com.model.Sentence;
@@ -120,12 +119,6 @@ public class BM25TextRank {
         return total;
     }
 
-    /**
-     * method used to get the top sentences in the list of sentences.
-     * @param document
-     * @param size
-     * @return
-     */
 
     public static void main(String args[]){
         StopWords.initializeStopWords("StopWords.txt");
@@ -164,9 +157,5 @@ public class BM25TextRank {
     }
 
 
-    public static boolean shouldInclude(Term term) {
-        return CoreStopWordDictionary.shouldInclude(term);
-
-    }
 
 }
