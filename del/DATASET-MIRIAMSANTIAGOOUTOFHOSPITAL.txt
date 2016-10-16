@@ -35,7 +35,7 @@ Sentence:
 	S: program
 	S: .
 Sentence:
-	S: |
+	S: EOS
 Sentence:
 	S: Miriam
 	S: Defensor
@@ -126,7 +126,7 @@ Sentence:
 	S: 30
 	S: .
 Sentence:
-	S: |
+	S: EOS
 Sentence:
 	S: Senator
 	S: Miriam
