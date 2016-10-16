@@ -1,5 +1,6 @@
 package com.ust.tokenizer;
 
+import com.processor.SentenceProcessor;
 import opennlp.tools.sentdetect.SentenceDetectorME;
 import opennlp.tools.sentdetect.SentenceModel;
 import opennlp.tools.tokenize.Tokenizer;
@@ -71,8 +72,10 @@ public class TextFileTokenizer {
             String[] tokens= tokenizer.tokenize(sentence);
 
             for(String token : tokens){
-                if(token.equals("#")){
-                    fileWriter.append("\tS: #\n");
+
+                //if the token is terminal.
+                if(token.equals(SentenceProcessor.TERMINAL)){
+                    fileWriter.append("\tS: "+ SentenceProcessor.TERMINAL+"\n");
                     fileWriter.append("Sentence:\n");
                 }
                 else{
@@ -93,6 +96,7 @@ public class TextFileTokenizer {
      * @return a String that is the contents of the text document
      * @throws IOException
      */
+
     static String flattenText(String filename) throws IOException {
         //String flattenedText="";
         FileInputStream fileInputStream = new FileInputStream(filename);
@@ -105,11 +109,15 @@ public class TextFileTokenizer {
         }
 
         return Normalizer.normalize(stringBuilder.toString()
+                .replace("Mt.", "Mount")
                 .replace("Metro Manila (CNN Philippines) — ","")
                 .replace("MANILA, Philippines - ","")
                 .replace("MANILA, Philippines — ","")
                 .replace("MANILA Philippines - ","")
                 .replace("MANILA Philippines — ","")
+                .replace(".com","dot com")
+                .replace(".\"",",\"")
+                .replace("Mt.","Mount")
                 , Normalizer.Form.NFC);
         //return Normalizer.normalize(flattenedText, Normalizer.Form.NFD);
          //flattenedText;

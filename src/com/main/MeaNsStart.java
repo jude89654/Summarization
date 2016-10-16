@@ -4,6 +4,7 @@ import com.model.DataSet;
 import com.model.Document;
 import com.model.Sentence;
 import com.model.Topic;
+import com.sun.prism.paint.Stop;
 import com.ust.BM25Modified.BM25TextRank;
 import com.ust.gui.MenuGUI;
 import com.ust.similarity.CosineSimilarity;
@@ -23,6 +24,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 
@@ -41,7 +43,7 @@ public class MEANSStart {
     /**
      * String that will be the name of the output directory of the summaries
      */
-    static String outputFolderName = "MeansSummary";
+     static String outputFolderName = "MeansSummary";
 
     /**
      * the number of sentences selected by the user
@@ -66,12 +68,11 @@ public class MEANSStart {
      * @param args not used
      */
     public static void main(String args[]) {
-        instance = MenuGUI.getInstance();
-        if(args.length!=2) {
-            end();
-        }else{
-            summarize(args[0],args[1]);
-        }
+        //instance = MenuGUI.getInstance();
+
+
+            summarize("FOR PROFESSORS","MEANS");
+
 
 
 
@@ -85,7 +86,8 @@ public class MEANSStart {
         String folderPath = sourceFolder;
 
         new File("del").mkdir();
-
+        
+        outputFolderName = "MeansSummary";
         outputFolderName=destFolder+File.separator+outputFolderName;
         new File(outputFolderName).mkdirs();
 
@@ -95,6 +97,7 @@ public class MEANSStart {
 
         //initialize dataset
         DataSet dataSet = new DataSet(folderPath);
+
 
 
         //CREATING SUMMARIZATION FOR EACH TOPIC
@@ -137,7 +140,7 @@ public class MEANSStart {
      * @return reordered sentences
      */
     public static ArrayList<Sentence> reRankTopSentences(ArrayList<Sentence> topSentences) {
-        return new ArrayList<Sentence>(BM25TextRank.getTopSentenceList(topSentences, numOfSentences));
+        return new ArrayList<>(BM25TextRank.getTopSentenceList(topSentences, numOfSentences));
     }
 
 
@@ -377,15 +380,22 @@ public class MEANSStart {
                     if (sentence.getContent().size() < minimumSentenceLength) continue;
                 }
                 sentences.add(sentence);
+                System.out.println("["+sentence.getDocumentId()+","+sentence.getPosition()+"] "+sentence.getRefSentence());
+                System.out.println(sentence.getContent());
+
                 //for each word
-                for (String word : sentence.getFreqMap().keySet()) {
-                    if (!global.contains(word.toLowerCase()) & !StopWords.isStopWord(word)) {
-                        //   System.out.println(word);
-                        global.add(word);
+                //   System.out.println(word);
+                for (String term:
+                     sentence.getFreqMap().keySet()) {
+                    if(!global.contains(term)& !StopWords.isStopWord(term)){
+
+                            global.add(term);
+
                     }
-                }
             }
         }
+        }
+        System.out.println(Arrays.toString(global.toArray(new String[global.size()])));
     }
 
     /**

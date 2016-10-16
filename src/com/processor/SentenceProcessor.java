@@ -20,7 +20,7 @@ public class SentenceProcessor {
     final static String SENTENCE_MARKER = "Sentence:";
     final static String WORD_MARKER = "\tS:";
     final static String PUNCTUATION = "\"'`!?&_/\\);][<>~@-({}:";
-    final static String TERMINAL = "#";
+    public final static String TERMINAL = "*";
 
 
     /*

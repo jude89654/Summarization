@@ -33,10 +33,12 @@ public class SentenceVectorFactory {
         vector.setSentence(sentence);
         double point[] = new double[vectorSpace.size()];
 
+        System.out.println("["+sentence.getDocumentId()+","+sentence.getPosition()+"]");
         for (int x = 0; x < vectorSpace.size(); x++) {
 
             point[x] = termFrequency(document, vectorSpace.get(x)) * inverseDocumentFrequency(topic,vectorSpace.get(x));
         }
+        System.out.println(Arrays.toString(point));
 
         vector.setPoint(point);
         return vector;

@@ -28,6 +28,7 @@ public class  MenuGUI extends JFrame {
     public  JButton summarizeButton;
     private JButton resetButton;
     private JButton destPathBrowseButton;
+    private JTabbedPane tabbedPane1;
 
     private static MenuGUI instance;
 

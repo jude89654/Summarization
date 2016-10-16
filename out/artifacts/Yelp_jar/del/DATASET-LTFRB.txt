@@ -70,7 +70,7 @@ Sentence:
 	S: board
 	S: .
 Sentence:
-	S: ï¿½Ito
+	S: “Ito
 	S: ay
 	S: binaba
 	S: namin
@@ -109,7 +109,7 @@ Sentence:
 	S: year
 	S: 2015-2016
 	S: ,
-	S: ï¿½
+	S: ”
 	S: In
 	S: 2015
 	S: ,
@@ -133,7 +133,7 @@ Sentence:
 	S: extension
 	S: .
 Sentence:
-	S: ï¿½Kami
+	S: “Kami
 	S: ay
 	S: pumayag
 	S: provided
@@ -162,7 +162,7 @@ Sentence:
 	S: requirements
 	S: natin
 	S: ,
-	S: ï¿½
+	S: ”
 	S: he
 	S: said
 	S: .
@@ -380,11 +380,11 @@ Sentence:
 	S: operate
 	S: .
 Sentence:
-	S: ï¿½Ipagpapatuloy
+	S: “Ipagpapatuloy
 	S: na
 	S: po
 	S: namin
-	S: ï¿½to
+	S: ‘to
 	S: ,
 	S: hindi
 	S: na
@@ -413,7 +413,7 @@ Sentence:
 	S: na
 	S: ito
 	S: ,
-	S: ï¿½
+	S: ”
 	S: he
 	S: stressed
 	S: .
@@ -444,7 +444,7 @@ Sentence:
 	S: impounded
 	S: and
 	S: the
-	S: operatorï¿½s
+	S: operator’s
 	S: franchise
 	S: may
 	S: also
@@ -452,7 +452,7 @@ Sentence:
 	S: canceled
 	S: .
 Sentence:
-	S: ï¿½Kapag
+	S: “Kapag
 	S: ito
 	S: ay
 	S: ginamit
@@ -488,7 +488,7 @@ Sentence:
 	S: mga
 	S: kabataan
 	S: ,
-	S: ï¿½
+	S: ”
 	S: Ginez
 	S: said
 	S: .
@@ -950,7 +950,7 @@ Sentence:
 	S: vehicles
 	S: .
 Sentence:
-	S: ï¿½There
+	S: “There
 	S: can
 	S: be
 	S: no
@@ -973,7 +973,7 @@ Sentence:
 	S: phased
 	S: out
 	S: ,
-	S: ï¿½
+	S: ”
 	S: he
 	S: told
 	S: The
@@ -1011,11 +1011,11 @@ Sentence:
 	S: such
 	S: units
 	S: is
-	S: ï¿½open
+	S: “open
 	S: .
-	S: ï¿½
+	S: ”
 Sentence:
-	S: ï¿½There
+	S: “There
 	S: are
 	S: other
 	S: people
@@ -1028,7 +1028,7 @@ Sentence:
 	S: the
 	S: vacuum
 	S: ,
-	S: ï¿½
+	S: ”
 	S: he
 	S: added
 	S: .
@@ -1078,7 +1078,7 @@ Sentence:
 	S: above
 	S: .
 Sentence:
-	S: ï¿½We
+	S: “We
 	S: have
 	S: obeyed
 	S: the
@@ -1093,7 +1093,7 @@ Sentence:
 	S: bus
 	S: units
 	S: ,
-	S: ï¿½
+	S: ”
 	S: he
 	S: told
 	S: The
@@ -1154,7 +1154,7 @@ Sentence:
 	S: moratorium
 	S: .
 Sentence:
-	S: ï¿½
+	S: “
 	S: Here
 	S: comes
 	S: the
@@ -1171,7 +1171,7 @@ Sentence:
 	S: been
 	S: implemented
 	S: ,
-	S: ï¿½
+	S: ”
 	S: Enrile
 	S: Inton
 	S: said
@@ -1195,7 +1195,7 @@ Sentence:
 	S: 2016
 	S: .
 Sentence:
-	S: ï¿½The
+	S: “The
 	S: chairman
 	S: fielded
 	S: inspectors
@@ -1216,15 +1216,15 @@ Sentence:
 	S: school
 	S: buses
 	S: ,
-	S: ï¿½
+	S: ”
 	S: he
 	S: said
 	S: .
 Sentence:
-	S: ï¿½
+	S: “
 	S: But
 	S: there
 	S: was
 	S: none
 	S: .
-	S: ï¿½
+	S: ”

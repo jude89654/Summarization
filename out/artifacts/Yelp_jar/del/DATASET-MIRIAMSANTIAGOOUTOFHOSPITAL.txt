@@ -35,7 +35,7 @@ Sentence:
 	S: program
 	S: .
 Sentence:
-	S: *
+	S: #
 Sentence:
 	S: Miriam
 	S: Defensor
@@ -126,7 +126,7 @@ Sentence:
 	S: 30
 	S: .
 Sentence:
-	S: *
+	S: #
 Sentence:
 	S: Senator
 	S: Miriam
@@ -210,8 +210,9 @@ Sentence:
 	S: and
 	S: suffered
 	S: complication
-	S: ,
+	S: .
 	S: "
+Sentence:
 	S: Two
 	S: days
 	S: later
@@ -316,3 +317,5 @@ Sentence:
 	S: Ferdinand
 	S: Marcos
 	S: Jr.
+	S: #
+Sentence:
