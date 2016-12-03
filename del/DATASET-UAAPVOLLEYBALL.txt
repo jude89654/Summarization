@@ -164,7 +164,7 @@ Sentence:
 	S: plums
 	S: .
 Sentence:
-	S: #
+	S: EOS
 Sentence:
 	S: The
 	S: La
@@ -502,7 +502,8 @@ Sentence:
 	S: medals
 	S: .
 Sentence:
-	S: “Very
+	S: "
+	S: Very
 	S: proud
 	S: ako
 	S: sa
@@ -522,13 +523,14 @@ Sentence:
 	S: na
 	S: matalo
 	S: ,
-	S: ”
+	S: "
 	S: said
 	S: De
 	S: Jesus
 	S: .
 Sentence:
-	S: “Nag-exert
+	S: "
+	S: Nag-exert
 	S: kami
 	S: sa
 	S: training
@@ -553,10 +555,10 @@ Sentence:
 	S: dapat
 	S: nilang
 	S: gawin
-	S: .
-	S: ”
-Sentence:
-	S: “Itong
+	S: ,
+	S: "
+	S: "
+	S: Itong
 	S: year
 	S: na
 	S: ito
@@ -564,10 +566,10 @@ Sentence:
 	S: talagang
 	S: hindi
 	S: sila
-	S: magpapatalo.
-	S: ”
-Sentence:
-	S: #
+	S: magpapatalo
+	S: ,
+	S: "
+	S: EOS
 Sentence:
 	S: De
 	S: La
@@ -722,5 +724,5 @@ Sentence:
 	S: Season’s
 	S: MVP.
 Sentence:
-	S: #
+	S: EOS
 Sentence:

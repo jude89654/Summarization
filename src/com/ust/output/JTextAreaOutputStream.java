@@ -27,14 +27,10 @@ public class JTextAreaOutputStream extends OutputStream
     public void write(byte[] buffer, int offset, int length) throws IOException
     {
         final String text = new String (buffer, offset, length);
-        SwingUtilities.invokeLater(new Runnable ()
-            {
-                @Override
-                public void run() 
-                {
-                    destination.append (text);
-                }
-            });
+        SwingUtilities.invokeLater(() -> {
+            //System.out.println(text);
+            destination.append (text);
+        });
     }
 
     @Override

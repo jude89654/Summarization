@@ -6,9 +6,8 @@ Sentence:
 	S: funding
 	S: for
 	S: filmmakers
-	S: .
+	S: ,
 	S: "
-Sentence:
 	S: This
 	S: is
 	S: the
@@ -517,11 +516,9 @@ Sentence:
 	S: every
 	S: Filipino
 	S: proud
-	S: .
+	S: ,
 	S: "
-Sentence:
 	S: #
-Sentence:
 	S: Philippine
 	S: cinema
 	S: superstar
@@ -692,7 +689,6 @@ Sentence:
 	S: ,
 	S: Balikbayan
 	S: #
-Sentence:
 	S: 1
 	S: ,
 	S: Bambanti
@@ -835,7 +831,6 @@ Sentence:
 	S: .
 Sentence:
 	S: #
-Sentence:
 	S: The
 	S: National
 	S: Commission
@@ -1174,7 +1169,6 @@ Sentence:
 	S: ,
 	S: Balikbayan
 	S: #
-Sentence:
 	S: 1
 	S: ,
 	S: Bambanti
@@ -1501,4 +1495,3 @@ Sentence:
 	S: (NCCA/RJB/JEG/PIA-NCR
 	S: )
 	S: #
-Sentence:

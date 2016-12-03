@@ -19,7 +19,7 @@ public class BM25TextRank {
 
     final int maxIterations = 200;
 
-    final double minimumDifference = 0.1f;
+    final double minimumDifference = 0.4f;
 
     int numberOfSentences;
 
@@ -31,7 +31,7 @@ public class BM25TextRank {
 
     double[] weightSum;
 
-    double[] vertex;
+    static double[] vertex;
 
     BM25Modified bm25Modified;
 
@@ -90,6 +90,7 @@ public class BM25TextRank {
         }
 
         for (int index = 0; index < numberOfSentences; index++) {
+
             top.put(vertex[index], index);
         }
     }
@@ -122,11 +123,7 @@ public class BM25TextRank {
 
     public static void main(String args[]){
         StopWords.initializeStopWords("StopWords.txt");
-       // try {
-          //  TextFileTokenizer.tokenizeFiles("FOR PROFESSORS");
-       // } catch (IOException e) {
-       //     e.printStackTrace();
-       // }
+
         DataSet dataSet = new DataSet("FOR PROFESSORS");
 
         for (Topic topic:dataSet.getTopics()){
@@ -148,8 +145,12 @@ public class BM25TextRank {
         BM25TextRank textRankSummaryModified = new BM25TextRank(document);
         int[] topSentence = textRankSummaryModified.getTopSentence(size);
         //System.out.println(Arrays.toString(topSentence));
-        List<Sentence> finalResults = new LinkedList();
+        List<Sentence> finalResults = new LinkedList<>();
+
+        //System.out.println("SENTENCE SCORES");
         for (int index : topSentence) {
+            document.get(index).setScore(vertex[index]);
+            System.out.println("SENTENCE:"+document.get(index));
             finalResults.add(document.get(index));
         }
         return finalResults;

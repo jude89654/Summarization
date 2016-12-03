@@ -32,7 +32,8 @@ Sentence:
 	S: morning
 	S: .
 Sentence:
-	S: “It
+	S: "
+	S: It
 	S: is
 	S: a
 	S: common
@@ -42,7 +43,7 @@ Sentence:
 	S: Mount
 	S: Bulusan
 	S: ,
-	S: ”
+	S: "
 	S: Phivolcs
 	S: director
 	S: Renato
@@ -170,7 +171,7 @@ Sentence:
 	S: implemented
 	S: .
 Sentence:
-	S: #
+	S: EOS
 Sentence:
 	S: Mount
 	S: Bulusan
@@ -267,10 +268,11 @@ Sentence:
 	S: warned
 	S: of
 	S: the
-	S: “no
+	S: "
+	S: no
 	S: human
 	S: activity
-	S: ”
+	S: "
 	S: inside
 	S: the
 	S: 4
@@ -308,7 +310,8 @@ Sentence:
 	S: falls
 	S: .
 Sentence:
-	S: “Yung
+	S: "
+	S: Yung
 	S: unang
 	S: biktima
 	S: ng
@@ -344,7 +347,7 @@ Sentence:
 	S: mga
 	S: sasakyan
 	S: ,
-	S: ”
+	S: "
 	S: he
 	S: narrated
 	S: .
@@ -366,7 +369,7 @@ Sentence:
 	S: February
 	S: 22
 	S: .
-	S: #
+	S: EOS
 Sentence:
 	S: Mount
 	S: Bulusan
@@ -407,7 +410,8 @@ Sentence:
 	S: the
 	S: eruption
 	S: was
-	S: “phreatic”
+	S: "phreatic
+	S: "
 	S: which
 	S: produced
 	S: a
@@ -441,7 +445,8 @@ Sentence:
 	S: Bulusan
 	S: .
 Sentence:
-	S: “Residents
+	S: "
+	S: Residents
 	S: outside
 	S: the
 	S: 4-kilometer
@@ -456,7 +461,7 @@ Sentence:
 	S: possible
 	S: ashfall
 	S: ,
-	S: ”
+	S: "
 	S: he
 	S: added
 	S: .
@@ -485,5 +490,5 @@ Sentence:
 	S: town
 	S: .
 Sentence:
-	S: #
+	S: EOS
 Sentence:

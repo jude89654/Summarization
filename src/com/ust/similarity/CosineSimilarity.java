@@ -19,7 +19,11 @@ public class CosineSimilarity implements DistanceMeasure{
      */
     @Override
     public double compute(double[] a, double[] b) throws DimensionMismatchException {
-        return cosSim(a,b);
+        try {
+            return cosineSimilarity(a, b);
+        }catch(Exception e) {
+            return 0;
+        }
     }
 
     /**
@@ -28,7 +32,7 @@ public class CosineSimilarity implements DistanceMeasure{
      * @param b the second vector
      * @return returns a double that will have the cosine sim
      */
-    static double cosSim(double[] a, double[] b) {
+    static double cosineSimilarity(double[] a, double[] b) {
         double dotp = 0, maga = 0, magb = 0;
         for (int i = 0; i < a.length; i++) {
             dotp += a[i] * b[i];

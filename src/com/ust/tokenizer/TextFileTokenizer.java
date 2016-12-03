@@ -109,6 +109,8 @@ public class TextFileTokenizer {
         }
 
         return Normalizer.normalize(stringBuilder.toString()
+                .replace("“","\"")
+                .replace("”","\"")
                 .replace("Mt.", "Mount")
                 .replace("Metro Manila (CNN Philippines) — ","")
                 .replace("MANILA, Philippines - ","")

@@ -114,7 +114,7 @@ Sentence:
 	S: customers
 	S: .
 Sentence:
-	S: “
+	S: "
 	S: Taken
 	S: together
 	S: ,
@@ -160,7 +160,7 @@ Sentence:
 	S: the
 	S: structure
 	S: ,
-	S: ”
+	S: "
 	S: PLDT
 	S: and
 	S: Smart
@@ -221,16 +221,18 @@ Sentence:
 	S: its
 	S: name
 	S: from
-	S: “Philippine
+	S: "
+	S: Philippine
 	S: Long
 	S: Distance
 	S: Telephone
 	S: Company
-	S: ”
+	S: "
 	S: to
-	S: “PLDT
-	S: Inc.
-	S: ”
+	S: "PLDT
+	S: Inc
+	S: ,
+	S: "
 	S: to
 	S: better
 	S: represent
@@ -449,7 +451,8 @@ Sentence:
 	S: services
 	S: .
 Sentence:
-	S: “Rather
+	S: "
+	S: Rather
 	S: than
 	S: allow
 	S: ourselves
@@ -494,12 +497,12 @@ Sentence:
 	S: digital
 	S: economy
 	S: ,
-	S: ”
+	S: "
 	S: Pangilinan
 	S: said
 	S: .
 Sentence:
-	S: #
+	S: EOS
 Sentence:
 	S: PLDT
 	S: and
@@ -867,7 +870,7 @@ Sentence:
 	S: review
 	S: .
 Sentence:
-	S: #
+	S: EOS
 Sentence:
 	S: PLDT
 	S: and
@@ -886,7 +889,8 @@ Sentence:
 	S: 13
 	S: .
 Sentence:
-	S: “The
+	S: "
+	S: The
 	S: new
 	S: logo
 	S: symbolizes
@@ -910,7 +914,7 @@ Sentence:
 	S: enterprise
 	S: customers
 	S: ,
-	S: ”
+	S: "
 	S: PLDT
 	S: said
 	S: in
@@ -955,7 +959,8 @@ Sentence:
 	S: lives
 	S: .
 Sentence:
-	S: “Rather
+	S: "
+	S: Rather
 	S: than
 	S: allow
 	S: ourselves
@@ -1000,7 +1005,7 @@ Sentence:
 	S: digital
 	S: economy
 	S: ,
-	S: ”
+	S: "
 	S: said
 	S: PLDT
 	S: and
@@ -1013,7 +1018,8 @@ Sentence:
 	S: Pangilinan
 	S: .
 Sentence:
-	S: “We
+	S: "
+	S: We
 	S: shall
 	S: lead
 	S: the
@@ -1063,12 +1069,13 @@ Sentence:
 	S: their
 	S: fingertips
 	S: ,
-	S: ”
+	S: "
 	S: Pangilinan
 	S: stressed
 	S: .
 Sentence:
-	S: “The
+	S: "
+	S: The
 	S: new
 	S: logo
 	S: symbolizes
@@ -1092,7 +1099,7 @@ Sentence:
 	S: enterprise
 	S: customers
 	S: ,
-	S: ”
+	S: "
 	S: PLDT
 	S: said
 	S: .
@@ -1150,8 +1157,10 @@ Sentence:
 	S: which
 	S: stands
 	S: for
-	S: “Change”
+	S: "
+	S: Change
+	S: "
 	S: .
 Sentence:
-	S: #
+	S: EOS
 Sentence:

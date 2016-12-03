@@ -824,7 +824,6 @@ Sentence:
 	S: ”
 Sentence:
 	S: #
-Sentence:
 	S: Thousands
 	S: of
 	S: passengers
@@ -1107,7 +1106,6 @@ Sentence:
 	S: .
 Sentence:
 	S: #
-Sentence:
 	S: Power
 	S: went
 	S: out
@@ -1296,9 +1294,8 @@ Sentence:
 	S: power
 	S: back
 	S: on
-	S: .
+	S: ,
 	S: "
-Sentence:
 	S: In
 	S: a
 	S: phone
@@ -1381,9 +1378,8 @@ Sentence:
 	S: in
 	S: Pasay
 	S: City
-	S: .
+	S: ,
 	S: "
-Sentence:
 	S: The
 	S: reason
 	S: cited
@@ -1406,9 +1402,8 @@ Sentence:
 	S: in
 	S: Pasay
 	S: City
-	S: .
+	S: ,
 	S: "
-Sentence:
 	S: It
 	S: was
 	S: not
@@ -1504,9 +1499,8 @@ Sentence:
 	S: proper
 	S: bay
 	S: assignment
-	S: .
+	S: ,
 	S: "
-Sentence:
 	S: Passengers
 	S: have
 	S: not
@@ -1543,9 +1537,8 @@ Sentence:
 	S: free
 	S: terminal
 	S: bay
-	S: .
+	S: ,
 	S: "
-Sentence:
 	S: Ariel
 	S: Arcilla
 	S: of
@@ -2009,4 +2002,3 @@ Sentence:
 	S: .
 Sentence:
 	S: #
-Sentence:

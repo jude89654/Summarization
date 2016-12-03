@@ -695,8 +695,7 @@ Sentence:
 	S: effect
 	S: .
 Sentence:
-	S: #
-Sentence:
+	S: *
 	S: They
 	S: have
 	S: yet
@@ -1275,8 +1274,7 @@ Sentence:
 	S: race
 	S: .
 Sentence:
-	S: #
-Sentence:
+	S: *
 	S: It
 	S: was
 	S: a

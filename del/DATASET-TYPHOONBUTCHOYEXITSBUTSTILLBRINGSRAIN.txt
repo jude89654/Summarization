@@ -350,7 +350,6 @@ Sentence:
 	S: .
 Sentence:
 	S: #
-Sentence:
 	S: MANILA
 	S: ,
 	S: Philippines
@@ -470,7 +469,6 @@ Sentence:
 	S: .
 Sentence:
 	S: #
-Sentence:
 	S: Classes
 	S: and
 	S: work

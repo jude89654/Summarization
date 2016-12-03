@@ -402,7 +402,6 @@ Sentence:
 	S: .
 Sentence:
 	S: #
-Sentence:
 	S: President
 	S: Barack
 	S: Obama
@@ -893,7 +892,6 @@ Sentence:
 	S: .
 Sentence:
 	S: #
-Sentence:
 	S: The
 	S: American
 	S: gunman
@@ -1249,4 +1247,3 @@ Sentence:
 	S: .
 Sentence:
 	S: #
-Sentence:

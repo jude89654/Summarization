@@ -85,7 +85,7 @@
           </component>
         </children>
       </grid>
-      <grid id="4ca4a" layout-manager="GridLayoutManager" row-count="4" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="4ca4a" layout-manager="GridLayoutManager" row-count="3" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints border-constraint="Center"/>
         <properties>
@@ -95,7 +95,7 @@
         <children>
           <scrollpane id="eb9d7">
             <constraints>
-              <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+              <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
                 <minimum-size width="100" height="75"/>
               </grid>
             </constraints>
@@ -103,11 +103,23 @@
               <horizontalScrollBarPolicy value="30"/>
             </properties>
             <border type="etched"/>
-            <children/>
+            <children>
+              <component id="720af" class="javax.swing.JTextArea" binding="logTextArea">
+                <constraints/>
+                <properties>
+                  <background color="-1182285"/>
+                  <editable value="false"/>
+                  <font name="Consolas"/>
+                  <foreground color="-16777216"/>
+                  <text value=""/>
+                  <wrapStyleWord value="true"/>
+                </properties>
+              </component>
+            </children>
           </scrollpane>
           <component id="50708" class="javax.swing.JButton" binding="summarizeButton">
             <constraints>
-              <grid row="3" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <background color="-12170933"/>
@@ -125,37 +137,6 @@
               <text value="RESET"/>
             </properties>
           </component>
-          <tabbedpane id="7443a" binding="tabbedPane1" default-binding="true">
-            <constraints>
-              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                <preferred-size width="200" height="200"/>
-              </grid>
-            </constraints>
-            <properties/>
-            <border type="none"/>
-            <children>
-              <grid id="3186d" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-                <margin top="0" left="0" bottom="0" right="0"/>
-                <constraints>
-                  <tabbedpane title="Untitled"/>
-                </constraints>
-                <properties/>
-                <border type="none"/>
-                <children>
-                  <component id="720af" class="javax.swing.JTextArea" binding="logTextArea">
-                    <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                    <properties>
-                      <background color="-8816778"/>
-                      <font/>
-                      <wrapStyleWord value="true"/>
-                    </properties>
-                  </component>
-                </children>
-              </grid>
-            </children>
-          </tabbedpane>
         </children>
       </grid>
       <grid id="d4691" binding="statusPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">

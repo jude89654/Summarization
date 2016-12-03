@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.ust.form.gui.DemoGUI">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1090" height="758"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="9e849" layout-manager="GridLayoutManager" row-count="8" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="1010" height="650"/>
+            <preferred-size width="1010" height="650"/>
+            <maximum-size width="1010" height="650"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-15913685"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="b5d75" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="7" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="7a814" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <icon value="com/ust/form/gui/Means6.jpg"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="d1bda" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="7" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-16310756"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="2ccc5" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-1"/>
+                  <text value="Text File path:"/>
+                </properties>
+              </component>
+              <component id="6ad9" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="725" height="25"/>
+                    <preferred-size width="725" height="25"/>
+                    <maximum-size width="725" height="25"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-2887699"/>
+                  <editable value="false"/>
+                </properties>
+              </component>
+              <component id="b2cd3" class="javax.swing.JButton" binding="browseButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="85" height="25"/>
+                    <preferred-size width="85" height="25"/>
+                    <maximum-size width="85" height="25"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-16752295"/>
+                  <foreground color="-1"/>
+                  <text value="Browse"/>
+                </properties>
+              </component>
+              <component id="95d2a" class="javax.swing.JButton" binding="summarizeButton" default-binding="true">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="100" height="25"/>
+                    <preferred-size width="100" height="25"/>
+                    <maximum-size width="100" height="25"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-16752295"/>
+                  <foreground color="-1"/>
+                  <text value="Summarize"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <vspacer id="a594c">
+            <constraints>
+              <grid row="3" column="1" row-span="4" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <vspacer id="265c6">
+            <constraints>
+              <grid row="3" column="3" row-span="4" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <scrollpane id="b0083">
+            <constraints>
+              <grid row="3" column="0" row-span="4" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="300" height="200"/>
+                <preferred-size width="300" height="200"/>
+                <maximum-size width="300" height="200"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="64a0d" class="javax.swing.JTextArea" binding="document1TextArea">
+                <constraints/>
+                <properties>
+                  <background color="-2887699"/>
+                  <lineWrap value="true"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+          <scrollpane id="e39f9">
+            <constraints>
+              <grid row="3" column="2" row-span="4" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="300" height="200"/>
+                <preferred-size width="300" height="200"/>
+                <maximum-size width="300" height="200"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="628c8" class="javax.swing.JTextArea" binding="document2TextArea">
+                <constraints/>
+                <properties>
+                  <background color="-2887699"/>
+                  <lineWrap value="true"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+          <scrollpane id="ed322">
+            <constraints>
+              <grid row="3" column="4" row-span="4" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="300" height="200"/>
+                <preferred-size width="300" height="200"/>
+                <maximum-size width="300" height="200"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="3cca3" class="javax.swing.JTextArea" binding="document3TextArea">
+                <constraints/>
+                <properties>
+                  <background color="-2887699"/>
+                  <lineWrap value="true"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+          <grid id="b089b" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="5" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="1010" height="250"/>
+                <preferred-size width="1010" height="250"/>
+                <maximum-size width="1010" height="250"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-15055292"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="aef4" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <minimum-size width="373" height="250"/>
+                    <preferred-size width="373" height="250"/>
+                    <maximum-size width="373" height="250"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-15055292"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="d7036">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <minimum-size width="380" height="200"/>
+                        <preferred-size width="380" height="200"/>
+                        <maximum-size width="380" height="200"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="de8ad" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints/>
+                        <properties>
+                          <background color="-16742273"/>
+                          <foreground color="-327685"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="96dee" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-327685"/>
+                              <text value="Logs"/>
+                            </properties>
+                          </component>
+                          <component id="5e7a7" class="javax.swing.JTextArea" binding="logsTextArea">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="50"/>
+                              </grid>
+                            </constraints>
+                            <properties>
+                              <background color="-2887699"/>
+                              <lineWrap value="true"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+              <grid id="992f0" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <minimum-size width="575" height="250"/>
+                    <preferred-size width="575" height="250"/>
+                    <maximum-size width="575" height="250"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-15055292"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="bc664">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                        <minimum-size width="550" height="200"/>
+                        <preferred-size width="550" height="200"/>
+                        <maximum-size width="550" height="200"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="d53d" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints/>
+                        <properties>
+                          <background color="-16742273"/>
+                          <foreground color="-327685"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="91a9d" class="javax.swing.JTextArea" binding="SummaryTextArea">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="50"/>
+                              </grid>
+                            </constraints>
+                            <properties>
+                              <background color="-2887699"/>
+                              <lineWrap value="true"/>
+                            </properties>
+                          </component>
+                          <component id="c7190" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                            </constraints>
+                            <properties>
+                              <foreground color="-327685"/>
+                              <text value="Summary"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <component id="610" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1182285"/>
+              <text value="DOCUMENT 3"/>
+            </properties>
+          </component>
+          <component id="f0f12" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1182285"/>
+              <text value="DOCUMENT 2"/>
+            </properties>
+          </component>
+          <component id="ed293" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <foreground color="-1182285"/>
+              <text value="DOCUMENT 1"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

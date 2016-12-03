@@ -66,7 +66,8 @@ public class SandeepStart {
 
             //final time
             long finalTime = System.currentTimeMillis();
-            System.out.println("SandeepStart:main:: Time taken by Stack decoder (s): " + ((finalTime - initialTime) / 1000));
+            double averageTime = ((((double)finalTime - (double)initialTime) / 1000.0)/(double)testDataSet.getTopics().size());
+            System.out.println("SandeepStart:main:: Time taken by Stack decoder (s): " +averageTime);
         }
 
     }
@@ -87,7 +88,11 @@ public class SandeepStart {
         //Obtained from training
         List<Double> res = new ArrayList<Double>();
         //Note: Set theta_0 in importance module
-        //TFIDFSum,SentLength,SentPost,NumLiteralsCalculator,UpperCaseCalculator
+        //TFIDFSum,
+        // SentLength,
+        // SentPost
+        // ,NumLiteralsCalculator
+        // ,UpperCaseCalculator
         res.add(0.197971);
         res.add(0.283136);
         res.add(-0.300287);

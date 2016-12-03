@@ -1,5 +1,7 @@
 package com.constants;
 
+
+
 public class IdProvider
 {
 	static long topicId=-1;

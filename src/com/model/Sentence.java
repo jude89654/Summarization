@@ -94,7 +94,7 @@ public class Sentence {
             try {
               stemmedWord = Constants.porterStemmer.stem(word);
             } catch (Exception e) {
-                System.out.println("Sentence:preProcess:: " + word);
+                System.out.println("Sentence:createVectorSpace:: " + word);
             }
             if (stemmedWord.equalsIgnoreCase("Invalid term")) {
                 res.add(word);

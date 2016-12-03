@@ -18,7 +18,7 @@ public class Document
 
 	
 	public Document(){
-		this.sentences = new ArrayList<Sentence>();
+		this.sentences = new ArrayList<>();
 	}
 	
 	public void addSentence(Sentence sentence){
@@ -38,5 +38,17 @@ public class Document
 	public int getNumberOfSentences()
 	{
 		return sentences.size();
+	}
+
+	public String toString(){
+
+		StringBuilder sb = new StringBuilder();
+		for (Sentence sentence:
+			 sentences) {
+			sb.append(sentence.getRefSentence())
+					.append(" ");
+
+		}
+		return sb.toString();
 	}
 } 
